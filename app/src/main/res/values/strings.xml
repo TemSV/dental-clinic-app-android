@@ -2,4 +2,11 @@
     <string name="app_name">android</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_profile_btn_desc">Go to profile</string>
+    <string name="edit_schedule_btn_desc">Edit schedule</string>
+    <string name="go_to_portfolio_btn_desc">Go to profile</string>
+    <string name="portfolio_label_text">Портфолио</string>
+    <string name="review_label_text">Отзывы</string>
+    <string name="schedule_label_text">Расписание</string>
+    <string name="events_label_text">События</string>
 </resources>

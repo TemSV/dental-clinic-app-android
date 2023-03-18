@@ -9,4 +9,18 @@
     <color name="white">#FFFFFFFF</color>
     <color name="home_bg_color">#CDCDCD</color>
     <color name="bottom_nav_bg_color">#FFFFFF</color>
+    <color name="profile_bg_color">#CDCDCD</color>
+    <color name="name_card_bg_color">#FFFFFF</color>
+    <color name="portfolio_card_bg_color">#FFFFFF</color>
+    <color name="schedule_card_bg_color">#FFFFFF</color>
+    <color name="review_card_bg_color">#FFFFFF</color>
+    <color name="schedule_label_text_color">#000000</color>
+    <color name="name_text_color">#000000</color>
+    <color name="event_description_text_color">#000000</color>
+    <color name="information_text_color">#818181</color>
+    <color name="current_data_text_color">#818181</color>
+    <color name="event_action_text_color">#818181</color>
+    <color name="event_date_text_color">#818181</color>
+    <color name="portfolio_label_text_color">#000000</color>
+    <color name="events_label_text_color">#000000</color>
 </resources>
