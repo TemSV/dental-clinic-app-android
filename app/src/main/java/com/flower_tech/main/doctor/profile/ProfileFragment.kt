@@ -1,7 +1,6 @@
 package com.flower_tech.main.doctor.profile
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +13,6 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.d("hehe", "2")
         return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
