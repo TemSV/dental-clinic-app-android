@@ -1,4 +1,4 @@
-package com.flower_tech.home.profile
+package com.flower_tech.main.doctor.profile
 
 import android.os.Bundle
 import android.util.Log

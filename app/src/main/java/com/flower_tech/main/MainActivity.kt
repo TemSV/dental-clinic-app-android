@@ -1,4 +1,4 @@
-package com.flower_tech.home
+package com.flower_tech.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

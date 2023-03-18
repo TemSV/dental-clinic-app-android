@@ -1,4 +1,4 @@
-package com.flower_tech.home.patients
+package com.flower_tech.main.doctor.patients
 
 import android.os.Bundle
 import android.view.LayoutInflater
