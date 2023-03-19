@@ -18,6 +18,7 @@
     <color name="name_text_color">#000000</color>
     <color name="event_description_text_color">#000000</color>
     <color name="information_text_color">#818181</color>
+    <color name="divider_color">#818181</color>
     <color name="current_data_text_color">#818181</color>
     <color name="event_action_text_color">#818181</color>
     <color name="event_date_text_color">#818181</color>
