@@ -2,7 +2,8 @@ package com.flower_tech.main.doctor.profile
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
+import android.text.SpannableString
+import android.text.style.UnderlineSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,19 +30,30 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
-            val manager = LinearLayoutManager(context)
-            manager.orientation = RecyclerView.VERTICAL
-            eventsList.apply {
-                adapter = ProfileAdapter(getEvents())
-                layoutManager = manager
-                addItemDecoration(getRecyclerViewDivider(context))
-            }
+            setUpRecyclerView(eventsList)
+            seeMoreEvents.text = underLineText(seeMoreEvents.text)
         }
     }
 
     companion object {
         @JvmStatic
         fun newInstance() = ProfileFragment()
+    }
+
+    private fun underLineText(text: CharSequence) : SpannableString {
+        val underlinedText = SpannableString(text)
+        underlinedText.setSpan(UnderlineSpan(), 0, underlinedText.length, 0)
+        return underlinedText
+    }
+
+    private fun setUpRecyclerView(eventsList: RecyclerView) {
+        val manager = LinearLayoutManager(context)
+        manager.orientation = RecyclerView.VERTICAL
+        eventsList.apply {
+            adapter = ProfileAdapter(getEvents())
+            layoutManager = manager
+            addItemDecoration(getRecyclerViewDivider(context))
+        }
     }
 
     private fun getRecyclerViewDivider(context: Context): DividerItemDecoration {

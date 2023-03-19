@@ -9,4 +9,5 @@
     <string name="review_label_text">Отзывы</string>
     <string name="schedule_label_text">Расписание</string>
     <string name="events_label_text">События</string>
+    <string name="go_to_events_btn">Смотреть больше</string>
 </resources>

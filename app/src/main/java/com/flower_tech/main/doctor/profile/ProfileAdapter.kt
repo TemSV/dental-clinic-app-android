@@ -1,6 +1,5 @@
 package com.flower_tech.main.doctor.profile
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
