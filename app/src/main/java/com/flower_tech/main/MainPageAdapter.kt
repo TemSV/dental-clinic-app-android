@@ -28,6 +28,7 @@ class MainPageAdapter(
             MainNavigation.CHATS.position -> {
                 ChatListFragment.newInstance()
             }
+
             else -> {
                 ProfileFragment.newInstance()
             }

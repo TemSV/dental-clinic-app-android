@@ -10,15 +10,11 @@ import com.flower_tech.structures.Event
 
 class ProfileAdapter(private val events: List<Event>) : RecyclerView.Adapter<ProfileAdapter.ChatItemViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatItemViewHolder {
-        return ChatItemViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ChatItemViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.events_item, null)
         )
-    }
 
-    override fun getItemCount(): Int {
-        return events.size
-    }
+    override fun getItemCount() = events.size
 
     override fun onBindViewHolder(holder: ChatItemViewHolder, position: Int) {
         holder.bind(events[position])
