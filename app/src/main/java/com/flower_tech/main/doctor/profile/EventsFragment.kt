@@ -49,7 +49,6 @@ class EventsFragment : Fragment() {
         binding.allEventsContainer.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = EventsAdapter(itemList, sectionNamesList)
-            addItemDecoration(getRecyclerViewDivider(requireContext()))
         }
     }
 
@@ -57,17 +56,6 @@ class EventsFragment : Fragment() {
         @JvmStatic
         fun newInstance() =
             EventsFragment()
-    }
-
-    private fun getRecyclerViewDivider(context: Context): DividerItemDecoration {
-        val decoration = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
-        decoration.setDrawable(
-            ContextCompat.getDrawable(
-                context,
-                R.drawable.divider
-            )!!
-        )
-        return decoration
     }
 
     private fun getTodayEvents() = arrayListOf(
