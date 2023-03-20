@@ -16,8 +16,8 @@
         android:maxLines="1"
         android:textSize="12sp"
         android:textColor="@color/event_action_text_color"
-        tools:text="Отзыв"
-        />
+        tools:text="Отзыв" />
+
     <TextView
         android:id="@+id/event_description"
         android:layout_width="390dp"
@@ -30,6 +30,7 @@
         android:textSize="14sp"
         android:textColor="@color/event_description_text_color"
         tools:text="О вас оставлен новый отзыв" />
+
     <TextView
         android:id="@+id/event_date"
         android:layout_width="wrap_content"

@@ -8,11 +8,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
 import com.flower_tech.structures.Event
 
-class ProfileAdapter(private val events: List<Event>) : RecyclerView.Adapter<ProfileAdapter.EventItemViewHolder>() {
+class ProfileAdapter(private val events: List<Event>) :
+    RecyclerView.Adapter<ProfileAdapter.EventItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = EventItemViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.events_item, null)
-        )
+        LayoutInflater.from(parent.context).inflate(R.layout.events_item, null)
+    )
 
     override fun getItemCount() = events.size
 

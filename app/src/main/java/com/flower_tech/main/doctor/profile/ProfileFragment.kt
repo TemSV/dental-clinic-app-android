@@ -40,7 +40,7 @@ class ProfileFragment : Fragment() {
         fun newInstance() = ProfileFragment()
     }
 
-    private fun underLineText(text: CharSequence) : SpannableString {
+    private fun underLineText(text: CharSequence): SpannableString {
         val underlinedText = SpannableString(text)
         underlinedText.setSpan(UnderlineSpan(), 0, underlinedText.length, 0)
         return underlinedText
@@ -68,25 +68,25 @@ class ProfileFragment : Fragment() {
     }
 
     private fun getEvents() = arrayListOf(
-            Event(
-                name = "Отзыв",
-                date = "25.03.2023",
-                description = "О вас оставлен новый отзыв"
-            ),
-            Event(
-                name = "Отзыв",
-                date = "12.03.2023",
-                description = "О вас оставлен новый отзыв"
-            ),
-            Event(
-                name = "Отзыв",
-                date = "05.03.2023",
-                description = "О вас оставлен новый отзыв"
-            ),
-            Event(
-                name = "Отзыв",
-                date = "25.12.2022",
-                description = "О вас оставлен новый отзыв"
-            )
+        Event(
+            name = "Отзыв",
+            date = "25.03.2023",
+            description = "О вас оставлен новый отзыв"
+        ),
+        Event(
+            name = "Отзыв",
+            date = "12.03.2023",
+            description = "О вас оставлен новый отзыв"
+        ),
+        Event(
+            name = "Отзыв",
+            date = "05.03.2023",
+            description = "О вас оставлен новый отзыв"
+        ),
+        Event(
+            name = "Отзыв",
+            date = "25.12.2022",
+            description = "О вас оставлен новый отзыв"
         )
+    )
 }

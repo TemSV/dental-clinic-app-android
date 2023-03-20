@@ -6,7 +6,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.flower_tech.main.doctor.appointment.AppointmentInformationFragment
 import com.flower_tech.main.doctor.chats.ChatListFragment
 import com.flower_tech.main.doctor.patients.PacientListFragment
-import com.flower_tech.main.doctor.profile.ProfileFragment
+import com.flower_tech.main.doctor.profile.EventsFragment
 import com.flower_tech.structures.MainNavigation
 
 class MainPageAdapter(
@@ -30,7 +30,7 @@ class MainPageAdapter(
             }
 
             else -> {
-                ProfileFragment.newInstance()
+                EventsFragment.newInstance()
             }
         }
     }
