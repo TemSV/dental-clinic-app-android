@@ -67,8 +67,7 @@ class ProfileFragment : Fragment() {
         return decoration
     }
 
-    private fun getEvents(): ArrayList<Event> {
-        return arrayListOf(
+    private fun getEvents() = arrayListOf(
             Event(
                 name = "Отзыв",
                 date = "25.03.2023",
@@ -90,5 +89,4 @@ class ProfileFragment : Fragment() {
                 description = "О вас оставлен новый отзыв"
             )
         )
-    }
 }

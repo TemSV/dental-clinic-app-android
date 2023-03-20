@@ -8,19 +8,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
 import com.flower_tech.structures.Event
 
-class ProfileAdapter(private val events: List<Event>) : RecyclerView.Adapter<ProfileAdapter.ChatItemViewHolder>() {
+class ProfileAdapter(private val events: List<Event>) : RecyclerView.Adapter<ProfileAdapter.EventItemViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ChatItemViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = EventItemViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.events_item, null)
         )
 
     override fun getItemCount() = events.size
 
-    override fun onBindViewHolder(holder: ChatItemViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: EventItemViewHolder, position: Int) {
         holder.bind(events[position])
     }
 
-    class ChatItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class EventItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val action: TextView = itemView.findViewById(R.id.event_action)
         private val date: TextView = itemView.findViewById(R.id.event_date)
         private val description: TextView = itemView.findViewById(R.id.event_description)
