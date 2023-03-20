@@ -10,4 +10,5 @@
     <string name="schedule_label_text">Расписание</string>
     <string name="events_label_text">События</string>
     <string name="go_to_events_btn">Смотреть больше</string>
+    <string name="event_app_bar_name">События</string>
 </resources>
