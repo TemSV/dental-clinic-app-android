@@ -11,4 +11,7 @@
     <string name="events_label_text">События</string>
     <string name="go_to_events_btn">Смотреть больше</string>
     <string name="event_app_bar_name">События</string>
+    <string name="profile_information_app_bar_name">Профиль</string>
+    <string name="map_marker_description">Icon with map marker</string>
+    <string name="profile_education_label">Образование</string>
 </resources>

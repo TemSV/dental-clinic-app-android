@@ -258,7 +258,7 @@
 
     <Button
         android:textSize="12sp"
-        android:textColor="#818181"
+        android:textColor="@color/see_more_events_text_color"
         android:id="@+id/see_more_events"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
