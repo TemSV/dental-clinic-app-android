@@ -32,7 +32,7 @@ class MainPageAdapter(
             }
 
             else -> {
-                ProfileFragment.newInstance()
+                ProfileInformationFragment.newInstance()
             }
         }
     }
