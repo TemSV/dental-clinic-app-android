@@ -31,7 +31,6 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             setUpRecyclerView(eventsList)
-            seeMoreEvents.text = underLineText(seeMoreEvents.text)
         }
     }
 
@@ -81,6 +80,36 @@ class ProfileFragment : Fragment() {
         Event(
             name = "Отзыв",
             date = "05.03.2023",
+            description = "О вас оставлен новый отзыв"
+        ),
+        Event(
+            name = "Отзыв",
+            date = "25.12.2022",
+            description = "О вас оставлен новый отзыв"
+        ),
+        Event(
+            name = "Отзыв",
+            date = "25.12.2022",
+            description = "О вас оставлен новый отзыв"
+        ),
+        Event(
+            name = "Отзыв",
+            date = "25.12.2022",
+            description = "О вас оставлен новый отзыв"
+        ),
+        Event(
+            name = "Отзыв",
+            date = "25.12.2022",
+            description = "О вас оставлен новый отзыв"
+        ),
+        Event(
+            name = "Отзыв",
+            date = "25.12.2022",
+            description = "О вас оставлен новый отзыв"
+        ),
+        Event(
+            name = "Отзыв",
+            date = "25.12.2022",
             description = "О вас оставлен новый отзыв"
         ),
         Event(

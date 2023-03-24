@@ -7,6 +7,7 @@ import com.flower_tech.main.doctor.appointment.AppointmentInformationFragment
 import com.flower_tech.main.doctor.chats.ChatListFragment
 import com.flower_tech.main.doctor.patients.PacientListFragment
 import com.flower_tech.main.doctor.profile.EventsFragment
+import com.flower_tech.main.doctor.profile.ProfileFragment
 import com.flower_tech.main.doctor.profile.ProfileInformationFragment
 import com.flower_tech.structures.MainNavigation
 
@@ -31,7 +32,7 @@ class MainPageAdapter(
             }
 
             else -> {
-                ProfileInformationFragment.newInstance()
+                ProfileFragment.newInstance()
             }
         }
     }
