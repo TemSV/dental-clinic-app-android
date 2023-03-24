@@ -114,7 +114,7 @@
                             tools:text="Рейтинг: 4,5"
                             android:ellipsize="end"
                             android:textColor="@color/user_rating_text_color"
-                            />
+                            tools:ignore="SmallSp" />
                         <TextView
                             android:id="@+id/user_experience"
                             app:layout_constraintTop_toTopOf="@id/user_rating"
@@ -128,7 +128,7 @@
                             tools:text="Стаж: 40 лет"
                             android:ellipsize="end"
                             android:textColor="@color/user_experience_text_color"
-                            />
+                            tools:ignore="SmallSp" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
