@@ -1,15 +1,11 @@
 package com.flower_tech.main.doctor.profile
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.flower_tech.R
 import com.flower_tech.databinding.FragmentEventsBinding
 import com.flower_tech.structures.Event
 

@@ -8,7 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
 import com.flower_tech.structures.Education
 
-class ProfileInformationAdapter(private val education: List<Education>) : RecyclerView.Adapter<ProfileInformationAdapter.EducationViewHolder>() {
+class ProfileInformationAdapter(private val education: List<Education>) :
+    RecyclerView.Adapter<ProfileInformationAdapter.EducationViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = EducationViewHolder(
         LayoutInflater.from(parent.context).inflate(R.layout.education_item, null)
     )

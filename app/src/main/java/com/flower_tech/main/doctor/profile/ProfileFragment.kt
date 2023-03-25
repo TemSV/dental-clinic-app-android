@@ -2,8 +2,6 @@ package com.flower_tech.main.doctor.profile
 
 import android.content.Context
 import android.os.Bundle
-import android.text.SpannableString
-import android.text.style.UnderlineSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
