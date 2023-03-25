@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="home_bg_color">#CDCDCD</color>
     <color name="bottom_nav_bg_color">#FFFFFF</color>
+    <color name="splash_bg_color">#FFFFFF</color>
 </resources>

@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
-    android:width="120dp"
-    android:height="120dp"
-    android:viewportWidth="120"
-    android:viewportHeight="120"
-    >
-    <group>
-        <clip-path
-            android:pathData="M0 0H120V120H0V0Z"
-            />
-        <path
-            android:pathData="M0 0V120H120V0"
-            android:fillColor="#0D000000"
-            />
-    </group>
-</vector>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/splash_bg_color"/>
+    <item>
+        <bitmap android:src="@drawable/logo"
+            android:gravity="center"></bitmap>
+    </item>
+</layer-list>
