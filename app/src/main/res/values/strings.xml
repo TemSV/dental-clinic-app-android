@@ -15,4 +15,35 @@
     <string name="map_marker_description">Icon with map marker</string>
     <string name="profile_education_label">Образование</string>
     <string name="go_to_events_btn">Смотреть больше</string>
+    <string name="profile_edit_app_bar_name">Редактировать</string>
+    <string name="personal_data_text">Личные данные</string>
+    <string name="name_data_text">Имя</string>
+    <string name="surname_data_text">Фамилия</string>
+    <string name="patronymic_data_text">Отчество</string>
+    <string name="city_data_text">Город</string>
+    <string name="district_data_text">Район</string>
+    <string name="clinic_address_data_text">Адрес клиники</string>
+    <string name="education_address_data_text">Образование</string>
+    <string name="educational_institution_data_text">Учебное заведение</string>
+    <string name="specialization_data_text">Специализация</string>
+    <string name="education_document_data_text">Документ об образовании</string>
+    <string name="document_type_data_text">Вид документа</string>
+    <string name="passport_series_data_text">Серия</string>
+    <string name="passport_number_data_text">Номер</string>
+    <string name="documents_data_text">Документы</string>
+    <string name="date_of_issue_data_text">Дата выдачи</string>
+    <string name="division_code_data_text">Код подразделения</string>
+    <string name="issued_by_whom_data_text">Кем выдан</string>
+    <string name="residence_address_data_text">Адрес прописки</string>
+    <string name="residential_address_data_text">Адрес проживания</string>
+    <string name="snils_data_text">Снилс</string>
+    <string name="polis_data_text">Полис</string>
+    <string name="add_document_btn_text">Добавить</string>
+    <string name="save_all_btn_text">Сохранить</string>
+    <string-array name="catNames">
+        <item>Барсик</item>
+        <item>Мурзик</item>
+        <item>Васька</item>
+        <item>Рыжик</item>
+    </string-array>
 </resources>
