@@ -1,4 +1,4 @@
-package com.flower_tech.main.doctor.profile
+package com.flower_tech.main.doctor.profile.information
 
 import android.view.LayoutInflater
 import android.view.View
