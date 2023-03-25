@@ -54,8 +54,7 @@ class EventsFragment : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() =
-            EventsFragment()
+        fun newInstance() = EventsFragment()
     }
 
     private fun getTodayEvents() = arrayListOf(
