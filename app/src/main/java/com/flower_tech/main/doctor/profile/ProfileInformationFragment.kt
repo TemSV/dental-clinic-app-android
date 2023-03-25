@@ -35,8 +35,11 @@ class ProfileInformationFragment : Fragment() {
     }
 
     private fun setUpRecyclerView(recyclerView: RecyclerView) {
-        val manager = LinearLayoutManager(context)
-        manager.orientation = RecyclerView.VERTICAL
+        val manager = object : LinearLayoutManager(context) {
+            override fun canScrollVertically(): Boolean {
+                return false
+            }
+        }
         recyclerView.apply {
             adapter = ProfileInformationAdapter(getEducation())
             layoutManager = manager

@@ -39,14 +39,12 @@ class ProfileFragment : Fragment() {
         fun newInstance() = ProfileFragment()
     }
 
-    private fun underLineText(text: CharSequence): SpannableString {
-        val underlinedText = SpannableString(text)
-        underlinedText.setSpan(UnderlineSpan(), 0, underlinedText.length, 0)
-        return underlinedText
-    }
-
     private fun setUpRecyclerView(eventsList: RecyclerView) {
-        val manager = LinearLayoutManager(context)
+        val manager = object : LinearLayoutManager(context) {
+            override fun canScrollVertically(): Boolean {
+                return false
+            }
+        }
         manager.orientation = RecyclerView.VERTICAL
         eventsList.apply {
             adapter = ProfileAdapter(getEvents())
