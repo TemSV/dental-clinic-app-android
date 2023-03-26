@@ -13,14 +13,10 @@ import com.flower_tech.structures.Education
 class ProfileInformationFragment : Fragment() {
     private lateinit var binding: FragmentProfileInformationBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentProfileInformationBinding.inflate(inflater)
         return binding.root
     }
@@ -49,37 +45,44 @@ class ProfileInformationFragment : Fragment() {
             Education(
                 degree = "Бакалавриат",
                 educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010"
+                date = "2000-2010",
+                specialization = "Bac"
             ),
             Education(
                 degree = "Бакалавриат",
                 educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010"
+                date = "2000-2010",
+                specialization = "Bac"
             ),
             Education(
                 degree = "Бакалавриат",
                 educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010"
+                date = "2000-2010",
+                specialization = "Bac"
             ),
             Education(
                 degree = "Бакалавриат",
                 educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010"
+                date = "2000-2010",
+                specialization = "Bac"
             ),
             Education(
                 degree = "Бакалавриат",
                 educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010"
+                date = "2000-2010",
+                specialization = "Bac"
             ),
             Education(
                 degree = "Бакалавриат",
                 educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010"
+                date = "2000-2010",
+                specialization = "Bac"
             ),
             Education(
                 degree = "Бакалавриат",
                 educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010"
+                date = "2000-2010",
+                specialization = "Bac"
             )
         )
     }
