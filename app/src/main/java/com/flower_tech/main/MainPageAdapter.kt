@@ -3,10 +3,14 @@ package com.flower_tech.main
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.flower_tech.main.doctor.appointment.AppointmentInformationFragment
+import com.flower_tech.main.doctor.appointment.presentation.AppointmentsFragment
 import com.flower_tech.main.doctor.chats.ChatListFragment
-import com.flower_tech.main.doctor.patients.PacientListFragment
+
 import com.flower_tech.main.doctor.profile.edit.EditProfileFragment
+
+import com.flower_tech.main.doctor.patients.PatientListFragment
+import com.flower_tech.main.doctor.profile.ProfileFragment
+
 import com.flower_tech.structures.MainNavigation
 
 class MainPageAdapter(
@@ -18,11 +22,11 @@ class MainPageAdapter(
     override fun createFragment(position: Int): Fragment {
         return when (position) {
             MainNavigation.PATIENTS.position -> {
-                PacientListFragment.newInstance()
+                PatientListFragment.newInstance()
             }
 
             MainNavigation.TIMETABLE.position -> {
-                AppointmentInformationFragment.newInstance()
+                AppointmentsFragment.newInstance()
             }
 
             MainNavigation.CHATS.position -> {
