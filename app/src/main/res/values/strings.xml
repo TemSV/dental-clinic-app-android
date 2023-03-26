@@ -6,4 +6,5 @@
     <string name="actual">Актуальные</string>
     <string name="completed">Завершенные</string>
     <string name="cancel_appointment">Отменить запись</string>
+    <string name="patients">Пациенты</string>
 </resources>
