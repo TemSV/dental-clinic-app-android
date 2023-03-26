@@ -41,10 +41,15 @@
     <string name="add_document_btn_text">Добавить</string>
     <string name="save_all_btn_text">Сохранить</string>
     <string name="download_file_icon_desc">Download file button</string>
-
     <string-array name="document_types">
         <item>Паспорт</item>
         <item>Паспорт1</item>
         <item>Паспорт2</item>
     </string-array>
+    <string name="appointments">Записи</string>
+    <string name="actual">Актуальные</string>
+    <string name="completed">Завершенные</string>
+    <string name="cancel_appointment">Отменить запись</string>
+    <string name="patients">Пациенты</string>
+
 </resources>
