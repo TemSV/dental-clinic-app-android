@@ -2,5 +2,9 @@
     <string name="app_name">android</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appointments">Записи</string>
+    <string name="actual">Актуальные</string>
+    <string name="completed">Завершенные</string>
+    <string name="cancel_appointment">Отменить запись</string>
     <string name="patients">Пациенты</string>
 </resources>
