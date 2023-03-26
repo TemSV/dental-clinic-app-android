@@ -5,4 +5,5 @@
     <string name="appointments">Записи</string>
     <string name="actual">Актуальные</string>
     <string name="completed">Завершенные</string>
+    <string name="cancel_appointment">Отменить запись</string>
 </resources>
