@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/educational_institution_data_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/educational_institution_data_text"
+        android:textColor="@color/educational_institution_data_color"
+        android:textSize="12sp"
+        android:labelFor="@id/educational_institution_input"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/educational_institution_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/educational_institution_input_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/educational_institution_data_label"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/specialization_data_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/specialization_data_text"
+        android:textColor="@color/specialization_data_color"
+        android:textSize="12sp"
+        android:labelFor="@id/specialization_input"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/educational_institution_input"
+        app:layout_constraintTop_toBottomOf="@id/educational_institution_input" />
+
+    <EditText
+        android:id="@+id/specialization_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:inputType="textPersonName"
+        android:maxEms="25"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="@color/specialization_input_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specialization_data_label"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/education_document_data_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/education_document_data_text"
+        android:textColor="@color/education_document_data_color"
+        android:textSize="12sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/specialization_input"
+        app:layout_constraintTop_toBottomOf="@id/specialization_input" />
+
+        <TextView
+            android:id="@+id/education_document_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="12dp"
+            android:maxLines="1"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constrainedWidth="true"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@id/download_file_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/education_document_name_text_color"
+            app:layout_constraintTop_toBottomOf="@id/education_document_data_label" />
+
+        <ImageButton
+            android:id="@+id/download_file_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@null"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/education_document_name"
+            app:layout_constraintBottom_toBottomOf="@id/education_document_name"
+            android:src="@drawable/ic_download"
+            android:contentDescription="@string/download_file_icon_desc" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/edit_profile_information_line_color_unfocused"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/education_document_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

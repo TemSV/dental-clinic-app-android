@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
             }
             mainBottomNavView.itemIconTintList = null // use active and inactive icon
             mainBottomNavView.setOnItemSelectedListener {
-
                 when (it.itemId) {
                     R.id.home_nav -> {
                         mainContent.currentItem = MainNavigation.PROFILE.position
