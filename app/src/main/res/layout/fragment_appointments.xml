@@ -7,53 +7,57 @@
     android:background="@color/home_bg_color"
     tools:context=".main.doctor.appointment.presentation.AppointmentsFragment">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/event_bar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/appointments"
-        android:textColor="@color/black"
-        android:textSize="18sp"
+        android:background="@color/home_bg_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <com.google.android.material.chip.ChipGroup
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/event_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/home_bg_color"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/appointments"
+            app:titleCentered="true" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RadioGroup
         android:id="@+id/chipGroup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:chipSpacingHorizontal="0dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:singleLine="true"
-        app:singleSelection="true">
+        app:layout_constraintTop_toBottomOf="@+id/event_bar"
+        android:orientation="horizontal"
+        android:background="@drawable/appointment_switch_background">
 
-        <com.google.android.material.chip.Chip
-            style="@style/Widget.MaterialComponents.Chip.Choice"
-            app:chipBackgroundColor="@color/white"
-            android:layout_width="164dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:checked="true"
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
             android:text="@string/actual"
-            android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="12sp" />
+            android:background="@drawable/appointment_switch_selector"/>
 
-        <com.google.android.material.chip.Chip
-            style="@style/Widget.MaterialComponents.Chip.Choice"
-            android:layout_width="164dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
             android:text="@string/completed"
-            android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="12sp" />
-    </com.google.android.material.chip.ChipGroup>
+            android:background="@drawable/appointment_switch_selector"/>
+    </RadioGroup>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="0dp"
@@ -64,7 +68,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chipGroup2"
-        tools:listitem="@layout/appointment_date_item" />
+        tools:itemCount="1"
+        tools:listitem="@layout/appointment_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
