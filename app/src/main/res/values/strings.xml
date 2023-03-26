@@ -40,10 +40,11 @@
     <string name="polis_data_text">Полис</string>
     <string name="add_document_btn_text">Добавить</string>
     <string name="save_all_btn_text">Сохранить</string>
-    <string-array name="catNames">
-        <item>Барсик</item>
-        <item>Мурзик</item>
-        <item>Васька</item>
-        <item>Рыжик</item>
+    <string name="download_file_icon_desc">Download file button</string>
+
+    <string-array name="document_types">
+        <item>Паспорт</item>
+        <item>Паспорт1</item>
+        <item>Паспорт2</item>
     </string-array>
 </resources>

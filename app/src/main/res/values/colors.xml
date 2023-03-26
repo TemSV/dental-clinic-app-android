@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="home_bg_color">#CDCDCD</color>
+    <color name="edit_profile_information_line_color_focused">#2E62C8</color>
     <color name="bottom_nav_bg_color">#FFFFFF</color>
     <color name="save_all_btn_text_color">#FFFFFF</color>
     <color name="profile_bg_color">#CDCDCD</color>
@@ -34,7 +35,9 @@
     <color name="patronymic_data_color">#818181</color>
     <color name="city_data_color">#818181</color>
     <color name="education_address_data_color">#000000</color>
+    <color name="edit_profile_information_line_color_unfocused">#818181</color>
     <color name="educational_institution_data_color">#818181</color>
+    <color name="education_document_name_text_color">#818181</color>
     <color name="clinic_address_data_color">#818181</color>
     <color name="specialization_data_color">#818181</color>
     <color name="education_document_data_color">#818181</color>
