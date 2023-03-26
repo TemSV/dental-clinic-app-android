@@ -44,7 +44,7 @@ class EventsAdapter(
         return holder.bind(currentList[relativePosition])
     }
 
-    class EventsViewHolder(private val itemView: View, private val type: Int) :
+    class EventsViewHolder(itemView: View, private val type: Int) :
         RecyclerView.ViewHolder(itemView) {
 
         fun bind(event: Event) {
