@@ -1,0 +1,33 @@
+package com.flower_tech.main.doctor.appointment.presentation
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.flower_tech.R
+import com.flower_tech.main.doctor.appointment.viewmodel.AppointmentsViewModel
+
+class AppointmentListFragment : Fragment() {
+
+    companion object {
+        fun newInstance() = AppointmentListFragment()
+    }
+
+    private lateinit var viewModel: AppointmentsViewModel
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_appointment_list, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel = ViewModelProvider(this)[AppointmentsViewModel::class.java]
+        // TODO: Use the ViewModel
+    }
+
+}
