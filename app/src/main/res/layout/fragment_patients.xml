@@ -26,22 +26,22 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="16dp"
+        android:background="@drawable/search_view_background"
         android:gravity="center"
+        android:iconifiedByDefault="false"
+        android:queryHint="Поиск"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/patient_text_view"
-        android:background="@drawable/search_view_background"
-        android:queryHint="Поиск"
-        android:iconifiedByDefault="false" />
+        app:layout_constraintTop_toBottomOf="@id/patient_text_view" />
 
     <androidx.recyclerview.widget.RecyclerView
-        app:layoutManager="LinearLayoutManager"
         android:id="@+id/patient_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
+        app:layoutManager="LinearLayoutManager"
         app:layout_constraintTop_toBottomOf="@id/patient_search_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

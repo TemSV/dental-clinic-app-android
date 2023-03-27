@@ -54,12 +54,12 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:labelFor="@id/name_input"
                 android:id="@+id/name_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:ellipsize="end"
+                android:labelFor="@id/name_input"
                 android:maxLines="1"
                 android:text="@string/name_data_text"
                 android:textColor="@color/name_data_color"
@@ -90,11 +90,11 @@
 
             <TextView
                 android:id="@+id/surname_data_label"
-                android:labelFor="@id/surname_input"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
+                android:labelFor="@id/surname_input"
                 android:maxLines="1"
                 android:text="@string/surname_data_text"
                 android:textColor="@color/surname_data_color"
@@ -110,9 +110,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:autofillHints=""
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bg"
                 android:ems="15"
                 android:inputType="textPersonName"
@@ -146,8 +146,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
-                android:autofillHints=""
                 android:layout_marginEnd="16dp"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bg"
                 android:ems="15"
                 android:inputType="textPersonName"
@@ -164,8 +164,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
-                android:maxLines="1"
                 android:labelFor="@id/city_input"
+                android:maxLines="1"
                 android:text="@string/city_data_text"
                 android:textColor="@color/city_data_color"
                 android:textSize="12sp"
@@ -182,6 +182,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bg"
                 android:ems="15"
                 android:inputType="textPersonName"
@@ -190,8 +191,7 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/city_data_label"
-                android:autofillHints="" />
+                app:layout_constraintTop_toBottomOf="@id/city_data_label" />
 
             <TextView
                 android:id="@+id/district_data_label"
@@ -217,11 +217,11 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/edit_text_bg"
+                android:entries="@array/document_types"
                 android:textColor="@color/district_input_text_color"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/district_data_label"
-                android:entries="@array/document_types" />
+                app:layout_constraintTop_toBottomOf="@id/district_data_label" />
 
             <TextView
                 android:id="@+id/clinic_address_data_label"
@@ -229,11 +229,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
+                android:labelFor="@id/clinic_address_input"
                 android:maxLines="1"
                 android:text="@string/clinic_address_data_text"
                 android:textColor="@color/clinic_address_data_color"
                 android:textSize="12sp"
-                android:labelFor="@id/clinic_address_input"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -247,6 +247,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bg"
                 android:ems="15"
                 android:inputType="textPersonName"
@@ -255,8 +256,7 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/clinic_address_data_label"
-                android:autofillHints="" />
+                app:layout_constraintTop_toBottomOf="@id/clinic_address_data_label" />
 
 
             <TextView
@@ -279,27 +279,26 @@
                 android:id="@+id/education_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:listitem="@layout/edit_education_item"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="16dp"
                 app:layout_constrainedHeight="true"
                 app:layout_constraintBottom_toBottomOf="@id/add_document_btn"
-                app:layout_constraintVertical_bias="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/education_data_label"
-                />
+                app:layout_constraintVertical_bias="0"
+                tools:listitem="@layout/edit_education_item" />
 
             <Button
                 android:id="@+id/add_document_btn"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableEnd="@drawable/ic_plus"
                 android:text="@string/add_document_btn_text"
                 android:textAllCaps="false"
-                android:drawableEnd="@drawable/ic_plus"
-                android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toEndOf="@id/education_list"
                 app:layout_constraintStart_toStartOf="@id/education_list"
                 app:layout_constraintTop_toBottomOf="@id/education_list" />
@@ -344,10 +343,10 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/edit_text_bg"
+                android:entries="@array/document_types"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/document_type_label"
-                android:entries="@array/document_types" />
+                app:layout_constraintTop_toBottomOf="@id/document_type_label" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/center_guideline"
@@ -364,9 +363,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
+                android:labelFor="@id/passport_series_input"
                 android:maxLines="1"
                 android:text="@string/passport_series_data_text"
-                android:labelFor="@id/passport_series_input"
                 android:textColor="@color/passport_series_data_color"
                 android:textSize="12sp"
                 app:layout_constrainedWidth="true"
@@ -382,6 +381,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="4dp"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bg"
                 android:ems="4"
                 android:inputType="number"
@@ -392,8 +392,7 @@
                 app:layout_constraintEnd_toEndOf="@id/center_guideline"
                 app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/passport_series_label"
-                android:autofillHints="" />
+                app:layout_constraintTop_toBottomOf="@id/passport_series_label" />
 
             <TextView
                 android:id="@+id/passport_number_label"
@@ -402,9 +401,9 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
+                android:labelFor="@id/passport_number_input"
                 android:maxLines="1"
                 android:text="@string/passport_number_data_text"
-                android:labelFor="@id/passport_number_input"
                 android:textColor="@color/passport_number_data_color"
                 android:textSize="12sp"
                 app:layout_constrainedWidth="true"
@@ -420,6 +419,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="4dp"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bg"
                 android:ems="6"
                 android:inputType="number"
@@ -430,8 +430,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toStartOf="@id/center_guideline"
-                app:layout_constraintTop_toBottomOf="@id/passport_series_label"
-                android:autofillHints="" />
+                app:layout_constraintTop_toBottomOf="@id/passport_series_label" />
 
             <TextView
                 android:id="@+id/date_of_issue_data_label"
@@ -439,8 +438,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
-                android:maxLines="1"
                 android:labelFor="@id/date_of_issue_input"
+                android:maxLines="1"
                 android:text="@string/date_of_issue_data_text"
                 android:textColor="@color/date_of_issue_data_color"
                 android:textSize="12sp"
@@ -457,6 +456,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bg"
                 android:ems="15"
                 android:inputType="date"
@@ -465,8 +465,7 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/date_of_issue_data_label"
-                android:autofillHints="" />
+                app:layout_constraintTop_toBottomOf="@id/date_of_issue_data_label" />
 
 
             <TextView
@@ -493,16 +492,16 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_bg"
                 android:inputType="date"
-                app:mask="___-___"
-                app:maskCharacter="_"
-                app:maskStyle="completable"
                 android:textColor="@color/date_of_issue_input_text_color"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/division_code_data_label"
-                android:background="@drawable/edit_text_bg"/>
+                app:mask="___-___"
+                app:maskCharacter="_"
+                app:maskStyle="completable" />
 
 
             <TextView
@@ -511,11 +510,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
+                android:labelFor="@id/issued_by_whom_input"
                 android:maxLines="1"
                 android:text="@string/issued_by_whom_data_text"
                 android:textColor="@color/issued_by_whom_data_color"
                 android:textSize="12sp"
-                android:labelFor="@id/issued_by_whom_input"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -529,6 +528,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bg"
                 android:ems="15"
                 android:inputType="textPersonName"
@@ -537,8 +537,7 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/issued_by_whom_data_label"
-                android:autofillHints="" />
+                app:layout_constraintTop_toBottomOf="@id/issued_by_whom_data_label" />
 
             <TextView
                 android:id="@+id/residence_address_data_label"
@@ -546,11 +545,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
+                android:labelFor="@id/residence_address_input"
                 android:maxLines="1"
                 android:text="@string/residence_address_data_text"
                 android:textColor="@color/residence_address_data_color"
                 android:textSize="12sp"
-                android:labelFor="@id/residence_address_input"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -564,6 +563,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bg"
                 android:ems="15"
                 android:inputType="textPersonName"
@@ -572,8 +572,7 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/residence_address_data_label"
-                android:autofillHints="" />
+                app:layout_constraintTop_toBottomOf="@id/residence_address_data_label" />
 
             <TextView
                 android:id="@+id/residential_address_data_label"
@@ -581,11 +580,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
+                android:labelFor="@id/residential_address_input"
                 android:maxLines="1"
                 android:text="@string/residential_address_data_text"
                 android:textColor="@color/residential_address_data_color"
                 android:textSize="12sp"
-                android:labelFor="@id/residential_address_input"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -599,6 +598,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
+                android:autofillHints=""
                 android:background="@drawable/edit_text_bg"
                 android:ems="15"
                 android:inputType="textPersonName"
@@ -607,8 +607,7 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/residential_address_data_label"
-                android:autofillHints="" />
+                app:layout_constraintTop_toBottomOf="@id/residential_address_data_label" />
 
             <TextView
                 android:id="@+id/snils_data_label"
@@ -634,14 +633,14 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
+                android:background="@drawable/edit_text_bg"
                 android:inputType="number"
-                app:mask="___ ___ ___ __"
                 android:textColor="@color/snils_input_text_color"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/snils_data_label"
-                android:background="@drawable/edit_text_bg"/>
+                app:mask="___ ___ ___ __" />
 
             <TextView
                 android:id="@+id/polis_data_label"
@@ -668,8 +667,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="32dp"
+                android:background="@drawable/edit_text_bg"
                 android:inputType="number"
-                app:mask="____ ____ ____ ____"
                 android:textColor="@color/polis_input_text_color"
                 android:textSize="18sp"
                 app:layout_constrainedHeight="true"
@@ -678,20 +677,20 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/polis_data_label"
                 app:layout_constraintVertical_bias="0"
-                android:background="@drawable/edit_text_bg"/>
+                app:mask="____ ____ ____ ____" />
 
             <Button
                 android:id="@+id/save_all_btn"
                 android:layout_width="178dp"
                 android:layout_height="50dp"
-                android:textSize="16sp"
-                android:letterSpacing=".0"
-                android:fontFamily="@font/ubuntu_regular"
                 android:layout_marginBottom="32dp"
                 android:background="@drawable/save_all_btn_background"
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:text="@string/save_all_btn_text"
                 android:textAllCaps="false"
                 android:textColor="@color/save_all_btn_text_color"
+                android:textSize="16sp"
                 app:backgroundTint="@color/save_all_btn_bg_color"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

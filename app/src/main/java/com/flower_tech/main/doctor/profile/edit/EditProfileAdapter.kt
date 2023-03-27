@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
 import com.flower_tech.structures.Education
 
-class EditProfileAdapter (private val educations: MutableList<Education>) :
-    RecyclerView.Adapter<EditProfileAdapter.EducationInfoItemViewHolder>()  {
+class EditProfileAdapter(private val educations: MutableList<Education>) :
+    RecyclerView.Adapter<EditProfileAdapter.EducationInfoItemViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -31,10 +31,11 @@ class EditProfileAdapter (private val educations: MutableList<Education>) :
 
     override fun getItemCount() = educations.size + 1
 
-    class EducationInfoItemViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    class EducationInfoItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val documentName = view.findViewById<TextView>(R.id.education_document_name)
         private val specialization = view.findViewById<TextView>(R.id.specialization_input)
-        private val educationalInstitution = view.findViewById<TextView>(R.id.educational_institution_input)
+        private val educationalInstitution =
+            view.findViewById<TextView>(R.id.educational_institution_input)
 
         fun bind(item: Education) {
             documentName.text = item.file

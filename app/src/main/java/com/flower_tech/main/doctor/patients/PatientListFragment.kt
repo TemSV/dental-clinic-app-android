@@ -16,7 +16,7 @@ class PatientListFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentPatientsBinding.inflate(layoutInflater)
         return binding.root
     }
