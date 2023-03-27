@@ -14,7 +14,7 @@ class EditProfileAdapter(private val educations: MutableList<Education>) :
         parent: ViewGroup,
         viewType: Int
     ) = EducationInfoItemViewHolder(
-        LayoutInflater.from(parent.context).inflate(R.layout.edit_education_item, null)
+        LayoutInflater.from(parent.context).inflate(R.layout.item_edit_education, null)
     )
 
     override fun onBindViewHolder(

@@ -9,10 +9,10 @@ import androidx.lifecycle.ViewModelProvider
 import com.flower_tech.R
 import com.flower_tech.main.doctor.appointment.viewmodel.AppointmentsViewModel
 
-class AppointmentsFragment : Fragment() {
+class AppointmentListFragment : Fragment() {
 
     companion object {
-        fun newInstance() = AppointmentsFragment()
+        fun newInstance() = AppointmentListFragment()
     }
 
     private lateinit var viewModel: AppointmentsViewModel
@@ -21,7 +21,7 @@ class AppointmentsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_appointments, container, false)
+        return inflater.inflate(R.layout.fragment_appointment_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

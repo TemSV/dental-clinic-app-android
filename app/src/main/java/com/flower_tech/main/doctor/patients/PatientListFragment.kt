@@ -33,43 +33,43 @@ class PatientListFragment : Fragment() {
     private fun getPatientCards(): ArrayList<PatientCard> {
         return arrayListOf(
             PatientCard(
-                R.drawable.search_view_background,
+                R.drawable.bg_search_view,
                 "Иван Иванович Ианов",
             ),
             PatientCard(
-                R.drawable.search_view_background,
+                R.drawable.bg_search_view,
                 "Иван Иванович Ианов",
             ),
             PatientCard(
-                R.drawable.search_view_background,
+                R.drawable.bg_search_view,
                 "Иван Иванович Ианов",
             ),
             PatientCard(
-                R.drawable.search_view_background,
+                R.drawable.bg_search_view,
                 "Иван Иванович Ианов",
             ),
             PatientCard(
-                R.drawable.search_view_background,
+                R.drawable.bg_search_view,
                 "Иван Иванович Ианов",
             ),
             PatientCard(
-                R.drawable.search_view_background,
+                R.drawable.bg_search_view,
                 "Иван Иванович Ианов",
             ),
             PatientCard(
-                R.drawable.search_view_background,
+                R.drawable.bg_search_view,
                 "Иван Иванович Ианов",
             ),
             PatientCard(
-                R.drawable.search_view_background,
+                R.drawable.bg_search_view,
                 "Иван Иванович Ианов",
             ),
             PatientCard(
-                R.drawable.search_view_background,
+                R.drawable.bg_search_view,
                 "Иван Иванович Ианов",
             ),
             PatientCard(
-                R.drawable.search_view_background,
+                R.drawable.bg_search_view,
                 "Иван Иванович Ианов",
             ),
         )

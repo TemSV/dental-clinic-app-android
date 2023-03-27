@@ -38,6 +38,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/event_bar"
         app:layout_constraintVertical_bias="0"
-        tools:listitem="@layout/events_item" />
+        tools:listitem="@layout/item_events" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,9 +16,9 @@ class EventsAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventsViewHolder {
         val layout = if (viewType == VIEW_TYPE_HEADER) {
-            R.layout.event_date
+            R.layout.item_event_date
         } else {
-            R.layout.events_item
+            R.layout.item_events
         }
         return EventsViewHolder(
             LayoutInflater.from(parent.context).inflate(layout, null),
