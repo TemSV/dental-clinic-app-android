@@ -30,13 +30,13 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             setUpRecyclerView(eventsList)
-            goToProfileBtn.setOnClickListener {
+            infoContainer.setOnClickListener {
                 findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_profile_information_container)
             }
             eventLabel.setOnClickListener{
                 findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_events_container)
             }
-            goToScheduleBtn.setOnClickListener{
+            calendarContainer.setOnClickListener{
                 findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_schedule_container)
             }
         }
