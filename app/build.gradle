@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.flower_tech"
-        minSdk 24
+        minSdk 26
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -46,4 +46,5 @@ dependencies {
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.fragment:fragment:1.5.5'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.kizitonwose.calendar:view:2.2.0'
 }
