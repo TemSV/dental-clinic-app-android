@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
+import com.flower_tech.structures.PatientCard
 
 class PatientRecyclerViewAdapter(
     private val patientCards: ArrayList<PatientCard>

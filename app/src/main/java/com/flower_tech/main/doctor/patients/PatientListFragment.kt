@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.flower_tech.R
 import com.flower_tech.databinding.FragmentPatientsBinding
+import com.flower_tech.structures.PatientCard
 
 class PatientListFragment : Fragment() {
 
@@ -23,8 +24,9 @@ class PatientListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.patientRecyclerView.adapter = PatientRecyclerViewAdapter(getPatientCards())
-        binding.patientRecyclerView.layoutManager = LinearLayoutManager(this.context)
+        val patientRecyclerView = binding.patientRecyclerView
+        patientRecyclerView.adapter = PatientRecyclerViewAdapter(getPatientCards())
+        patientRecyclerView.layoutManager = LinearLayoutManager(context)
     }
 
 
