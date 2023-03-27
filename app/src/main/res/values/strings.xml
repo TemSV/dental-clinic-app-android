@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">android</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="shedule">Расписание</string>
+    <string name="app_name">android</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="go_to_profile_btn_desc">Go to profile</string>
     <string name="edit_schedule_btn_desc">Edit schedule</string>

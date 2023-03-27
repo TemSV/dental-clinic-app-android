@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.flower_tech"
-        minSdk 24
+        minSdk 26
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -37,6 +37,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.kizitonwose.calendar:view:2.2.0'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.test.ext:junit-ktx:1.1.5'

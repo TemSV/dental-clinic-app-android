@@ -5,6 +5,7 @@
     <color name="home_bg_color">#CDCDCD</color>
     <color name="edit_profile_information_line_color_focused">#2E62C8</color>
     <color name="bottom_nav_bg_color">#FFFFFF</color>
+    <color name="blue">#2E62C8</color>
     <color name="save_all_btn_text_color">#FFFFFF</color>
     <color name="profile_bg_color">#CDCDCD</color>
     <color name="name_card_bg_color">#FFFFFF</color>
