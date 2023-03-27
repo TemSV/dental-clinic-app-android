@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.flower_tech.R
 import com.flower_tech.databinding.FragmentEditProfileBinding
 import com.flower_tech.structures.Education
 
@@ -29,6 +31,9 @@ class EditProfileFragment : Fragment() {
         with(binding) {
             setUpRecyclerView(educationList)
             setUpAddButton(addDocumentBtn)
+            profileEditAppBar.setNavigationOnClickListener {
+                findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_profile_information_container)
+            }
         }
 
     }
