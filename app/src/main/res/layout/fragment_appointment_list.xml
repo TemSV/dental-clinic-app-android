@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/home_bg_color"
-    tools:context=".main.doctor.appointment.presentation.AppointmentsFragment">
+    tools:context=".main.doctor.appointment.presentation.AppointmentListFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/event_bar"
