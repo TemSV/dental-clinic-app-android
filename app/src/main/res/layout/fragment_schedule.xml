@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".main.doctor.profile.schedule.ScheduleFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/schedule_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_edit_bar_bg_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/schedule_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/profile_edit_bar_bg_color"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/shedule"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:titleCentered="true" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/calendar_container_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_bar">
+
+        <include
+            android:id="@+id/titlesContainer"
+            layout="@layout/container_month_year" />
+
+        <com.kizitonwose.calendar.view.CalendarView
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            app:cv_dayViewResource="@layout/layout_calendar_day"
+            app:cv_monthHeaderResource="@layout/container_calendar_day_titles" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/toggle"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/switch_button_calendar_background"
+        android:checkedButton="@+id/offer"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calendar_container">
+
+        <RadioButton
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="@color/main_color" />
+
+        <RadioButton
+            android:id="@+id/offer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Offers"
+            android:textColor="@color/main_color" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

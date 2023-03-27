@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_fragment_profile_container_to_fragment_profile_information_container"
             app:destination="@id/fragment_profile_information_container" />
+        <action
+            android:id="@+id/action_fragment_profile_container_to_fragment_schedule_container"
+            app:destination="@id/fragment_schedule_container" />
     </fragment>
     <fragment
         android:id="@+id/fragment_appointment_list_container"
@@ -74,6 +77,15 @@
         <action
             android:id="@+id/action_appointmentFragment_to_fragment_appointment_container"
             app:destination="@id/fragment_appointment_list_container" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_schedule_container"
+        android:name="com.flower_tech.main.doctor.profile.schedule.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" >
+        <action
+            android:id="@+id/action_fragment_schedule_container_to_fragment_profile_container"
+            app:destination="@id/fragment_profile_container" />
     </fragment>
 
 </navigation>

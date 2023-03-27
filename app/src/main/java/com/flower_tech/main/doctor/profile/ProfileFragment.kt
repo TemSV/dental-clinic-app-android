@@ -36,6 +36,9 @@ class ProfileFragment : Fragment() {
             eventLabel.setOnClickListener{
                 findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_events_container)
             }
+            goToScheduleBtn.setOnClickListener{
+                findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_schedule_container)
+            }
         }
     }
 
