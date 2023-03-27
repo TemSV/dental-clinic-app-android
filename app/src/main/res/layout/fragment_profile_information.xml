@@ -248,7 +248,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/profile_education_label"
-                tools:listitem="@layout/education_item" />
+                tools:listitem="@layout/item_education" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
