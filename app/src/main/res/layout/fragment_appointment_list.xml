@@ -33,28 +33,31 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:checkedButton="@id/actual_appointment"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/appointment_switch_background"
+        android:background="@drawable/bg_appointment_switch"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/event_bar">
 
         <RadioButton
+            android:id="@+id/actual_appointment"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_weight="1"
-            android:background="@drawable/appointment_switch_selector"
+            android:background="@drawable/selector_appointment_switch"
             android:button="@null"
             android:gravity="center"
             android:text="@string/actual"
             android:textColor="@color/black" />
 
         <RadioButton
+            android:id="@+id/finished_appointment"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_weight="1"
-            android:background="@drawable/appointment_switch_selector"
+            android:background="@drawable/selector_appointment_switch"
             android:button="@null"
             android:gravity="center"
             android:text="@string/completed"
@@ -71,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chipGroup2"
         tools:itemCount="1"
-        tools:listitem="@layout/appointment_item" />
+        tools:listitem="@layout/item_appointment" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
