@@ -18,7 +18,7 @@
     <color name="profile_edit_bar_bg_color">#FFFFFF</color>
     <color name="schedule_label_text_color">#61A0EA</color>
     <color name="name_text_color">#FFFFFF</color>
-    <color name="event_description_text_color">#000000</color>
+    <color name="event_description_text_color">#303030</color>
     <color name="profile_username_text_color">#000000</color>
     <color name="user_profession_text_color">#000000</color>
     <color name="profile_city_text_color">#000000</color>
@@ -80,10 +80,11 @@
     <color name="degree_text_color">#818181</color>
     <color name="current_data_text_color">#303030</color>
     <color name="main_bar_bg_color">#FFFFFF</color>
-    <color name="event_action_text_color">#818181</color>
-    <color name="event_date_text_color">#818181</color>
-    <color name="event_date_list">#818181</color>
+    <color name="event_action_text_color">#61A0EA</color>
+    <color name="event_date_text_color">#61A0EA</color>
+    <color name="event_date_list">#303030</color>
     <color name="go_to_review_btn_color">#5A98E1</color>
+    <color name="main_nav_btns_color">#61A0EA</color>
     <color name="go_to_review_btn_bg_color">#FFFFFF</color>
     <color name="portfolio_label_text_color">#5A98E1</color>
     <color name="events_label_text_color">#000000</color>

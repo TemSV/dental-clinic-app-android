@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/main_bar_bg_color"
-            app:menu="@menu/menu_profile_main"
+            app:menu="@menu/profile_main_menu"
             app:title="@string/main_app_bar_name" />
     </com.google.android.material.appbar.AppBarLayout>
 
