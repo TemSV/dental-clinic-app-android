@@ -46,6 +46,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:id="@+id/info_container"
+                    android:background="@color/main_info_card"
                     android:layout_height="match_parent">
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -62,7 +63,9 @@
 
                     <TextView
                         android:id="@+id/name"
+                        android:letterSpacing=".0"
                         android:layout_width="180dp"
+                        android:fontFamily="@font/ubuntu_bold"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="36dp"
@@ -77,6 +80,8 @@
                     <TextView
                         android:id="@+id/information"
                         android:layout_width="180dp"
+                        android:letterSpacing=".0"
+                        android:fontFamily="@font/ubuntu_regular"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:ellipsize="end"
@@ -123,14 +128,16 @@
 
                     <TextView
                         android:id="@+id/schedule_label"
-                        android:layout_width="107dp"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:letterSpacing=".0"
+                        android:layout_width="wrap_content"
                         android:layout_height="21dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:ellipsize="end"
                         android:maxLines="1"
                         android:text="@string/schedule_label_text"
-                        android:textSize="18sp"
+                        android:textSize="22sp"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:textColor="@color/schedule_label_text_color" />
@@ -139,8 +146,10 @@
                         android:id="@+id/current_data"
                         android:layout_width="107dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:letterSpacing=".0"
+                        android:layout_marginTop="8dp"
                         android:ellipsize="end"
+                        android:fontFamily="@font/ubuntu_regular"
                         android:maxLines="1"
                         android:textSize="12sp"
                         app:layout_constraintLeft_toLeftOf="@id/schedule_label"
@@ -151,8 +160,8 @@
                     <ImageButton
                         android:clickable="false"
                         android:id="@+id/go_to_schedule_btn"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
                         android:layout_marginEnd="20dp"
                         android:background="@color/schedule_card_bg_color"
                         android:contentDescription="@string/edit_schedule_btn_desc"
@@ -183,10 +192,12 @@
                     <TextView
                         android:id="@+id/portfolio_label"
                         android:layout_width="90dp"
+                        android:letterSpacing=".0"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:ellipsize="end"
                         android:maxLines="1"
+                        android:fontFamily="@font/ubuntu_medium"
                         android:text="@string/portfolio_label_text"
                         android:textColor="@color/portfolio_label_text_color"
                         android:textSize="16sp"
@@ -199,8 +210,9 @@
                         android:id="@+id/go_to_portfolio_btn"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
+                        app:tint="@color/go_to_portfolio_btn_color"
                         android:layout_marginEnd="12dp"
-                        android:background="@color/name_card_bg_color"
+                        android:background="@color/go_to_portfolio_btn_bg_color"
                         android:contentDescription="@string/go_to_portfolio_btn_desc"
                         android:src="@drawable/ic_next"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -231,7 +243,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:ellipsize="end"
+                        android:letterSpacing=".0"
                         android:maxLines="1"
+                        android:fontFamily="@font/ubuntu_medium"
                         android:text="@string/review_label_text"
                         android:textColor="@color/portfolio_label_text_color"
                         android:textSize="16sp"
@@ -245,7 +259,8 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_marginEnd="12dp"
-                        android:background="@color/name_card_bg_color"
+                        app:tint="@color/go_to_review_btn_color"
+                        android:background="@color/go_to_review_btn_bg_color"
                         android:contentDescription="@string/go_to_portfolio_btn_desc"
                         android:src="@drawable/ic_next"
                         app:layout_constraintBottom_toBottomOf="parent"
