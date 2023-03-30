@@ -79,6 +79,7 @@
     <color name="go_to_portfolio_btn_bg_color">#FFFFFF</color>
     <color name="degree_text_color">#818181</color>
     <color name="current_data_text_color">#303030</color>
+    <color name="main_bar_bg_color">#FFFFFF</color>
     <color name="event_action_text_color">#818181</color>
     <color name="event_date_text_color">#818181</color>
     <color name="event_date_list">#818181</color>
