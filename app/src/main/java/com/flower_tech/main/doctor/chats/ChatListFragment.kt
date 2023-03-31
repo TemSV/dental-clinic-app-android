@@ -13,7 +13,7 @@ class ChatListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_chats, container, false)
+        return inflater.inflate(R.layout.fragment_chat_list, container, false)
     }
 
     companion object {

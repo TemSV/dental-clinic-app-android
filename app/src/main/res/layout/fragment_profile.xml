@@ -1,15 +1,284 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_width="wrap_content"
-        android:text="@string/hello_blank_fragment"
-        android:layout_height="wrap_content"/>
+    android:background="@color/profile_bg_color">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/center_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/name_card"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/name_card_bg_color"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/info_container"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginBottom="45dp"
+                        android:src="@drawable/ic_default_avatar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="36dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textColor="@color/name_text_color"
+                        android:textSize="18sp"
+                        app:layout_constraintLeft_toRightOf="@id/avatar"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Иванов Александр ДмитриевичИванов Александр ДмитриевичИванов Александр Дмитриевич" />
+
+                    <TextView
+                        android:id="@+id/information"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/information_text_color"
+                        android:textSize="14sp"
+                        app:layout_constraintLeft_toLeftOf="@id/name"
+                        app:layout_constraintTop_toBottomOf="@id/name"
+                        tools:text="Санкт-петербург, 37 лет" />
+
+                    <ImageButton
+                        android:clickable="false"
+                        android:id="@+id/go_to_profile_btn"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@color/name_card_bg_color"
+                        android:contentDescription="@string/go_to_profile_btn_desc"
+                        android:src="@drawable/ic_next"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/schedule_card"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/schedule_card_bg_color"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name_card">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/calendar_container"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/schedule_label"
+                        android:layout_width="107dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/schedule_label_text"
+                        android:textSize="18sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:textColor="@color/schedule_label_text_color" />
+
+                    <TextView
+                        android:id="@+id/current_data"
+                        android:layout_width="107dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        app:layout_constraintLeft_toLeftOf="@id/schedule_label"
+                        app:layout_constraintTop_toBottomOf="@id/schedule_label"
+                        tools:text="Март 2023"
+                        tools:textColor="@color/current_data_text_color" />
+
+                    <ImageButton
+                        android:clickable="false"
+                        android:id="@+id/go_to_schedule_btn"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@color/schedule_card_bg_color"
+                        android:contentDescription="@string/edit_schedule_btn_desc"
+                        android:src="@drawable/ic_calendar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/portfolio_card"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@color/portfolio_card_bg_color"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintLeft_toLeftOf="@id/schedule_card"
+                app:layout_constraintRight_toRightOf="@id/center_guideline"
+                app:layout_constraintTop_toBottomOf="@id/schedule_card">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/portfolio_container"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/portfolio_label"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/portfolio_label_text"
+                        android:textColor="@color/portfolio_label_text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:clickable="false"
+                        android:id="@+id/go_to_portfolio_btn"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@color/name_card_bg_color"
+                        android:contentDescription="@string/go_to_portfolio_btn_desc"
+                        android:src="@drawable/ic_next"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/review_card"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="4dp"
+                android:background="@color/review_card_bg_color"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintLeft_toRightOf="@id/center_guideline"
+                app:layout_constraintRight_toRightOf="@id/schedule_card"
+                app:layout_constraintTop_toTopOf="@id/portfolio_card">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/review_container"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/review_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/review_label_text"
+                        android:textColor="@color/portfolio_label_text_color"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:clickable="false"
+                        android:id="@+id/go_to_review_btn"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@color/name_card_bg_color"
+                        android:contentDescription="@string/go_to_portfolio_btn_desc"
+                        android:src="@drawable/ic_next"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/event_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClick"
+                android:text="@string/events_label_text"
+                android:textColor="@color/events_label_text_color"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="@id/portfolio_card"
+                app:layout_constraintTop_toBottomOf="@id/portfolio_card" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/events_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintLeft_toLeftOf="@id/schedule_card"
+                app:layout_constraintRight_toRightOf="@id/schedule_card"
+                app:layout_constraintTop_toBottomOf="@id/event_label"
+                app:layout_constraintVertical_bias="0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

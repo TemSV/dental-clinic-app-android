@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/fragment_profile_container"
+        android:icon="@drawable/selector_nav_home"
+        android:title="@null" />
+    <item
+        android:id="@id/fragment_appointment_container"
+        android:icon="@drawable/selector_nav_record"
+        android:title="@null" />
+    <item
+        android:id="@id/fragment_patient_list_container"
+        android:icon="@drawable/selector_nav_patients"
+        android:title="@null" />
+    <item
+        android:id="@id/fragment_chat_list_container"
+        android:icon="@drawable/selector_nav_chats"
+        android:title="@null" />
+</menu>
