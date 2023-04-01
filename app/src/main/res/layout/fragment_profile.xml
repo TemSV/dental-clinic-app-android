@@ -36,18 +36,18 @@
                     />
                 <androidx.cardview.widget.CardView
                     app:layout_constraintEnd_toEndOf="@id/notification_icon"
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
                     app:cardCornerRadius="50dp"
                     app:cardBackgroundColor="@color/notification_counter_bg_color"
                     app:layout_constraintTop_toTopOf="@id/notification_icon"
                     >
-
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         >
                         <TextView
+                            android:id="@+id/notification_counter"
                             android:fontFamily="@font/ubuntu_regular"
                             android:textSize="10sp"
                             android:textColor="@color/notifications_counter_color"
