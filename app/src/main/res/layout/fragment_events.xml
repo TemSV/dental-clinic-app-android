@@ -36,9 +36,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/event_app_bar_name"
                     />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
