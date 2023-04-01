@@ -13,6 +13,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/education_list_counter"
         android:fontFamily="@font/ubuntu_regular"
+        android:gravity="center"
         android:letterSpacing=".0"
         android:textColor="@color/education_list_counter_text_color"
         />
