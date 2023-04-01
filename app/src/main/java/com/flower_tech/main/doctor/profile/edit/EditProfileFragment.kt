@@ -16,7 +16,7 @@ import com.flower_tech.structures.Education
 
 class EditProfileFragment : Fragment() {
     private lateinit var binding: FragmentEditProfileBinding
-    private val data: MutableList<Education> = getEducation();
+    private val data: MutableList<Education> = ArrayList<Education>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,7 +43,7 @@ class EditProfileFragment : Fragment() {
         button.setOnClickListener {
             if (allIsRight()) {
                 data.add(Education())
-                binding.educationList.adapter?.notifyItemInserted(data.size - 1)
+                binding.educationList.adapter?.notifyDataSetChanged()
             }
         }
     }
@@ -66,7 +66,7 @@ class EditProfileFragment : Fragment() {
 
     private fun setUpRecyclerView(recyclerView: RecyclerView) {
         recyclerView.apply {
-            setHasFixedSize(false)
+            setHasFixedSize(true)
             isNestedScrollingEnabled = false
             adapter = EditProfileAdapter(data)
             layoutManager = LinearLayoutManager(context)

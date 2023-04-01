@@ -1,6 +1,7 @@
 package com.flower_tech.main.doctor.profile.edit
 
 import android.annotation.SuppressLint
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,6 +23,9 @@ class EditProfileAdapter(private val educations: MutableList<Education>) :
         holder: EducationInfoItemViewHolder,
         position: Int
     ) {
+        for ((id, name) in educations.withIndex()) {
+            Log.d("hehe", id.toString())
+        }
         val currentItem = if (educations.size > position) {
             educations[position]
         } else {
@@ -36,8 +40,7 @@ class EditProfileAdapter(private val educations: MutableList<Education>) :
         private val counter = view.findViewById<TextView>(R.id.education_list_counter)
         private val documentName = view.findViewById<TextView>(R.id.education_document_name)
         private val specialization = view.findViewById<TextView>(R.id.specialization_input)
-        private val educationalInstitution =
-            view.findViewById<TextView>(R.id.educational_institution_input)
+        private val educationalInstitution = view.findViewById<TextView>(R.id.educational_institution_input)
 
         @SuppressLint("SetTextI18n")
         fun bind(item: Education, position: Int) {
