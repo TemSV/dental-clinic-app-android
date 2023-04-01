@@ -28,6 +28,7 @@
     <color name="educational_institution_text_color">#303030</color>
     <color name="profile_address_text_color">#818181</color>
     <color name="years_text_color">#303030</color>
+    <color name="profile_information_bg_color">#FFFFFF</color>
     <color name="personal_data_color">#000000</color>
     <color name="name_data_color">#818181</color>
     <color name="surname_data_color">#818181</color>
