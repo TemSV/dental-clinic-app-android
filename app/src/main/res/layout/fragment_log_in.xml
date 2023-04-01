@@ -15,7 +15,6 @@
         android:background="@drawable/item_button"
         android:text="@string/invitation_to_entry"
         android:textAppearance="@style/button_text"
-        android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,11 +44,11 @@
         android:layout_marginEnd="28dp"
         android:background="@drawable/ic_small_logo"
         android:gravity="center_horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/LogoText"
+        app:layout_constraintEnd_toStartOf="@+id/LogoTextRegistration"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/LogoText"
+        android:id="@+id/LogoTextRegistration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -77,7 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LogoText" />
+        app:layout_constraintTop_toBottomOf="@+id/LogoTextRegistration" />
 
     <TextView
         android:id="@+id/phoneText"

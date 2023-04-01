@@ -14,6 +14,9 @@
     <string name="doctor">Врач</string>
     <string name="phone_enter">Телефон</string>
     <string name="password_enter">Пароль</string>
+    <string name="checkbox_text">Нажимая на кнопку «Зарегистрироваться», я даю\n согласие на обработку персональных данных</string>
+    <string name="new_password_enter2">Подтвердите пароль</string>
+    <string name="new_password_enter">Придумайте пароль</string>
     <string name="go_to_profile_btn_desc">Go to profile</string>
     <string name="edit_schedule_btn_desc">Edit schedule</string>
     <string name="go_to_portfolio_btn_desc">Go to profile</string>

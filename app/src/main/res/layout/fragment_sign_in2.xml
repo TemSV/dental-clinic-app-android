@@ -1,14 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.SignIn2Fragment">
+    tools:context=".auth.LogInFragment"
+    android:background="@color/background_blue">
 
-    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/EntryButtonToMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/item_button"
+        android:text="@string/invitation_to_registration"
+        android:textAppearance="@style/button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/PasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/new_password_enter"
+        android:textAppearance="@style/small_text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintVertical_bias="0.0" />
 
-</FrameLayout>
+    <View
+        android:id="@+id/union2"
+        android:layout_width="50dp"
+        android:layout_height="28.66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/ic_small_logo"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/LogoTextRegistration"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LogoTextRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="152dp"
+        android:fontFeatureSettings="pnum, lnum"
+        android:gravity="center_vertical"
+        android:text="@string/registration"
+        android:textAppearance="@style/label_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp"
+        android:ems="12"
+        android:inputType="phone"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoTextRegistration" />
+
+    <TextView
+        android:id="@+id/phoneText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/phone_enter"
+        android:textAppearance="@style/small_text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPasswordReg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:drawableEnd="@drawable/ic_password"
+        android:drawableTint="@color/white"
+        android:inputType="textPassword"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:drawableEnd="@drawable/ic_password"
+        android:drawableTint="@color/white"
+        app:backgroundTint="@color/white"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordReg" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_password_enter2"
+        android:textAppearance="@style/small_text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordReg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/checkbox_text"
+        android:textAppearance="@style/small_text"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

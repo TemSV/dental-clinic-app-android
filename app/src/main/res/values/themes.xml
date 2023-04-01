@@ -8,7 +8,7 @@
 
     <style name="button_text">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/blue</item>
+        <item name="android:textColor">@color/background_blue</item>
     </style>
 
     <style name="simple_text">
