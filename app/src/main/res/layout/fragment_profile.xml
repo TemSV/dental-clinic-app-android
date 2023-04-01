@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:background="@color/main_bar_bg_color"
         app:layout_constraintEnd_toEndOf="parent"
-        android:theme="@style/ProfileToolbarTheme"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <androidx.appcompat.widget.Toolbar
