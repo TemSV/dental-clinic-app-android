@@ -9,6 +9,7 @@
     <color name="blue">#2E62C8</color>
     <color name="save_all_btn_text_color">#FFFFFF</color>
     <color name="events_bg_color">#FFFFFF</color>
+    <color name="map_marker_color">#FF896E</color>
     <color name="profile_bg_color">#F7F7F7</color>
     <color name="name_card_bg_color">#61A0EA</color>
     <color name="main_info_card">#61A0EA</color>

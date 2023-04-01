@@ -198,6 +198,7 @@
                 android:id="@+id/map_marker"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                app:tint="@color/map_marker_color"
                 android:layout_marginTop="8dp"
                 android:contentDescription="@string/map_marker_description"
                 android:src="@drawable/ic_map_marker"
