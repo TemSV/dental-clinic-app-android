@@ -29,12 +29,12 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
+            binding.root.findViewById<View>(R.id.notification_icon).setOnClickListener {
+                findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_events_container)
+            }
             infoContainer.setOnClickListener {
                 findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_profile_information_container)
             }
-//            eventLabel.setOnClickListener{
-//                findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_events_container)
-//            }
             calendarContainer.setOnClickListener{
                 findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_schedule_container)
             }
