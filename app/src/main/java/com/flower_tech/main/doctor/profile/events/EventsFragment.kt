@@ -16,9 +16,7 @@ class EventsFragment : Fragment() {
     private val sectionNamesList: ArrayList<String> = ArrayList()
     private val itemList: HashMap<String, List<Event>> = HashMap()
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    init {
         sectionNamesList.add("Сегодня")
         sectionNamesList.add("Вчера")
         sectionNamesList.add("На этой неделе")
@@ -30,7 +28,6 @@ class EventsFragment : Fragment() {
         itemList[sectionNamesList[2]] = getWeekEvents()
         itemList[sectionNamesList[2]] = getMonthEvents()
         itemList[sectionNamesList[4]] = getLastEvents()
-
     }
 
     override fun onCreateView(
