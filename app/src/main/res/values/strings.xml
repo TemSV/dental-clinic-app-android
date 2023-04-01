@@ -28,7 +28,8 @@
     <string name="clinic_address_data_text">Адрес клиники</string>
     <string name="education_address_data_text">Образование</string>
     <string name="educational_institution_data_text">Учебное заведение</string>
-    <string name="specialization_data_text">Специализация</string>
+    <string name="specialization_data_text">Специальность</string>
+    <string name="years_of_education_data_text">Годы обучения</string>
     <string name="education_document_data_text">Документ об образовании</string>
     <string name="document_type_data_text">Вид документа</string>
     <string name="passport_series_data_text">Серия</string>

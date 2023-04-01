@@ -5,12 +5,25 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_education_list_counter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/education_list_counter"
+        android:fontFamily="@font/ubuntu_regular"
+        android:letterSpacing=".0"
+        android:textColor="@color/education_list_counter_text_color"
+        />
+
+    <TextView
         android:fontFamily="@font/ubuntu_regular"
         android:letterSpacing=".0"
         android:id="@+id/educational_institution_data_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ellipsize="end"
         android:labelFor="@id/educational_institution_input"
         android:maxLines="1"
@@ -21,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/education_list_counter" />
 
     <EditText
         android:id="@+id/educational_institution_input"
@@ -62,6 +75,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_edit_text"
         android:entries="@array/document_types"
+        app:layout_constraintHorizontal_bias="0"
         android:textColor="@color/district_input_text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,6 +118,40 @@
     <TextView
         android:fontFamily="@font/ubuntu_regular"
         android:letterSpacing=".0"
+        android:id="@+id/years_of_education_data_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:labelFor="@id/years_of_education_input"
+        android:maxLines="1"
+        android:text="@string/years_of_education_data_text"
+        android:textColor="@color/years_of_education_data_color"
+        android:textSize="12sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/specialization_input"
+        app:layout_constraintTop_toBottomOf="@id/specialization_input" />
+
+    <EditText
+        android:id="@+id/years_of_education_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:background="@drawable/bg_edit_text"
+        android:inputType="textPersonName"
+        android:maxEms="25"
+        android:textColor="@color/specialization_input_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/years_of_education_data_label" />
+
+    <TextView
+        android:fontFamily="@font/ubuntu_regular"
+        android:letterSpacing=".0"
         android:id="@+id/education_document_data_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,8 +164,8 @@
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="@id/specialization_input"
-        app:layout_constraintTop_toBottomOf="@id/specialization_input" />
+        app:layout_constraintStart_toStartOf="@id/years_of_education_input"
+        app:layout_constraintTop_toBottomOf="@id/years_of_education_input" />
 
     <TextView
         android:fontFamily="@font/ubuntu_regular"
@@ -148,7 +196,6 @@
         app:layout_constraintBottom_toBottomOf="@id/education_document_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/education_document_name" />
-
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
