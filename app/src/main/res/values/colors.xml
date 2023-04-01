@@ -72,8 +72,10 @@
     <color name="city_input_text_color">#818181</color>
     <color name="edit_profile_bg_color">#CDCDCD</color>
     <color name="information_text_color">#FFFFFF</color>
+    <color name="notifications_counter_color">#FFFFFF</color>
     <color name="user_experience_text_color">#FF896E</color>
     <color name="user_rating_text_color">#FF896E</color>
+    <color name="notification_counter_bg_color">#FF896E</color>
     <color name="edit_information_btn_text_color">#61A0EA</color>
     <color name="divider_color">#818181</color>
     <color name="go_to_portfolio_btn_color">#5A98E1</color>
