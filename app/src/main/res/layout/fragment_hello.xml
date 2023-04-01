@@ -1,38 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/HelloFragment"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_blue"
     tools:context=".auth.HelloFragment">
 
     <TextView
         android:id="@+id/HelloText"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:fontFeatureSettings="pnum, lnum"
+        android:gravity="center_horizontal|center_vertical"
         android:text="@string/hello_to_user"
-        android:textColor="@color/black"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAppearance="@style/label_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235" />
+        app:layout_constraintTop_toBottomOf="@+id/union" />
 
     <TextView
         android:id="@+id/HelloText2"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:fontFeatureSettings="pnum, lnum"
+        android:gravity="center_horizontal|center_vertical"
         android:text="@string/message_to_user"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textAppearance="@style/simple_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HelloText" />
+
 
     <Button
         android:id="@+id/EntryButton"
@@ -41,14 +49,10 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="40dp"
-        android:background="@color/grey"
-        android:clickable="true"
-        android:contextClickable="true"
-        android:fadingEdge="horizontal|vertical"
+        android:background="@drawable/item_button"
         android:text="@string/entry"
-        android:textColor="@color/white"
+        android:textColor="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HelloText2" />
 
@@ -59,23 +63,27 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="30dp"
+        android:background="@drawable/item_additional_button"
         android:text="@string/registration"
-        android:textColor="@color/grey"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EntryButton" />
 
-    <ImageView
-        android:id="@+id/SignInLogo"
+    <View
+        android:id="@+id/union"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="28.66dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="155dp"
-        android:layout_marginTop="98dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="155dp"
-        android:src="@drawable/ic_logo"
+        android:background="@drawable/ic_small_logo"
+        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
