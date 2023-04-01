@@ -24,6 +24,7 @@
     <string name="patronymic_data_text">Отчество</string>
     <string name="city_data_text">Город</string>
     <string name="district_data_text">Район</string>
+    <string name="degree_data_text">Уровень образования</string>
     <string name="clinic_address_data_text">Адрес клиники</string>
     <string name="education_address_data_text">Образование</string>
     <string name="educational_institution_data_text">Учебное заведение</string>

@@ -5,6 +5,8 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:fontFamily="@font/ubuntu_regular"
+        android:letterSpacing=".0"
         android:id="@+id/educational_institution_data_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,6 +38,38 @@
         app:layout_constraintTop_toBottomOf="@id/educational_institution_data_label" />
 
     <TextView
+        android:fontFamily="@font/ubuntu_regular"
+        android:letterSpacing=".0"
+        android:id="@+id/degree_data_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/degree_data_text"
+        android:textColor="@color/degree_data_color"
+        android:textSize="12sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/educational_institution_input"
+        app:layout_constraintTop_toBottomOf="@id/educational_institution_input" />
+
+    <Spinner
+        android:id="@+id/degree_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:entries="@array/document_types"
+        android:textColor="@color/district_input_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/degree_data_label" />
+
+    <TextView
+        android:fontFamily="@font/ubuntu_regular"
+        android:letterSpacing=".0"
         android:id="@+id/specialization_data_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,8 +83,8 @@
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="@id/educational_institution_input"
-        app:layout_constraintTop_toBottomOf="@id/educational_institution_input" />
+        app:layout_constraintStart_toStartOf="@id/degree_list"
+        app:layout_constraintTop_toBottomOf="@id/degree_list" />
 
     <EditText
         android:id="@+id/specialization_input"
@@ -68,6 +102,8 @@
         app:layout_constraintTop_toBottomOf="@id/specialization_data_label" />
 
     <TextView
+        android:fontFamily="@font/ubuntu_regular"
+        android:letterSpacing=".0"
         android:id="@+id/education_document_data_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,6 +120,8 @@
         app:layout_constraintTop_toBottomOf="@id/specialization_input" />
 
     <TextView
+        android:fontFamily="@font/ubuntu_regular"
+        android:letterSpacing=".0"
         android:id="@+id/education_document_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

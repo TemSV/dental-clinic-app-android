@@ -15,15 +15,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.appbar.MaterialToolbar
+        <androidx.appcompat.widget.Toolbar
+            android:theme="@style/ProfileInformationToolbarTheme"
             android:id="@+id/profile_edit_app_bar"
             android:layout_width="match_parent"
+            app:menu="@menu/profile_information_app_bar"
+            app:navigationIcon="@drawable/ic_back"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/profile_edit_bar_bg_color"
-            app:navigationIcon="@drawable/ic_back"
-            app:title="@string/profile_edit_app_bar_name"
-            app:titleCentered="true" />
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_edit_app_bar_name"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -43,6 +59,8 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:ellipsize="end"
+                android:fontFamily="@font/ubuntu_medium"
+                android:letterSpacing=".0"
                 android:maxLines="1"
                 android:text="@string/personal_data_text"
                 android:textColor="@color/personal_data_color"
@@ -57,6 +75,8 @@
                 android:id="@+id/name_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:layout_marginTop="20dp"
                 android:ellipsize="end"
                 android:labelFor="@id/name_input"
@@ -89,6 +109,8 @@
                 app:layout_constraintTop_toBottomOf="@id/name_data_label" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/surname_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -124,6 +146,8 @@
                 app:layout_constraintTop_toBottomOf="@id/surname_data_label" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/patronymic_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -159,6 +183,8 @@
                 app:layout_constraintTop_toBottomOf="@id/patronymic_data_label" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/city_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -194,6 +220,8 @@
                 app:layout_constraintTop_toBottomOf="@id/city_data_label" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/district_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -228,6 +256,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:ellipsize="end"
                 android:labelFor="@id/clinic_address_input"
                 android:maxLines="1"
@@ -260,6 +290,8 @@
 
 
             <TextView
+                android:fontFamily="@font/ubuntu_medium"
+                android:letterSpacing=".0"
                 android:id="@+id/education_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -296,8 +328,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:letterSpacing=".0"
                 android:drawableEnd="@drawable/ic_plus"
                 android:text="@string/add_document_btn_text"
+                android:drawableTint="@color/add_education_btn_color"
+                android:textColor="@color/add_education_btn_color"
                 android:textAllCaps="false"
                 app:layout_constraintEnd_toEndOf="@id/education_list"
                 app:layout_constraintStart_toStartOf="@id/education_list"
@@ -307,6 +344,8 @@
                 android:id="@+id/documents_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_medium"
+                android:letterSpacing=".0"
                 android:layout_marginTop="20dp"
                 android:ellipsize="end"
                 android:maxLines="1"
@@ -320,6 +359,8 @@
                 app:layout_constraintTop_toBottomOf="@id/add_document_btn" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/document_type_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -358,6 +399,8 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/passport_series_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -395,6 +438,8 @@
                 app:layout_constraintTop_toBottomOf="@id/passport_series_label" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/passport_number_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -433,6 +478,8 @@
                 app:layout_constraintTop_toBottomOf="@id/passport_series_label" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/date_of_issue_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -469,6 +516,8 @@
 
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/division_code_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -505,6 +554,8 @@
 
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/issued_by_whom_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -540,6 +591,8 @@
                 app:layout_constraintTop_toBottomOf="@id/issued_by_whom_data_label" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/residence_address_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -575,6 +628,8 @@
                 app:layout_constraintTop_toBottomOf="@id/residence_address_data_label" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/residential_address_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -610,6 +665,8 @@
                 app:layout_constraintTop_toBottomOf="@id/residential_address_data_label" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/snils_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -643,6 +700,8 @@
                 app:mask="___ ___ ___ __" />
 
             <TextView
+                android:fontFamily="@font/ubuntu_regular"
+                android:letterSpacing=".0"
                 android:id="@+id/polis_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -685,7 +744,7 @@
                 android:layout_height="50dp"
                 android:layout_marginBottom="32dp"
                 android:background="@drawable/bg_save_all_btn"
-                android:fontFamily="@font/ubuntu_regular"
+                android:fontFamily="@font/ubuntu_medium"
                 android:letterSpacing=".0"
                 android:text="@string/save_all_btn_text"
                 android:textAllCaps="false"
