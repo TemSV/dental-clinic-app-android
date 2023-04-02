@@ -22,7 +22,6 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/profile_edit_bar_bg_color"
             android:theme="@style/ProfileInformationToolbarTheme"
-            app:menu="@menu/profile_information_app_bar"
             app:navigationIcon="@drawable/ic_back">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,6 +29,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    app:layout_constraintHorizontal_bias="0.3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/profile_edit_app_bar_name"
