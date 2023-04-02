@@ -8,31 +8,141 @@
     android:background="@color/background_blue">
 
 
+    <View
+        android:id="@+id/union2"
+        android:layout_width="50dp"
+        android:layout_height="28.66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/ic_small_logo"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/LogoTextRegistration"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LogoTextRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:fontFeatureSettings="pnum, lnum"
+        android:gravity="center_vertical"
+        android:text="@string/registration"
+        android:textAppearance="@style/label_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/surnameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/surname_enter"
-        android:textAppearance="@style/small_text" />
+        android:textAppearance="@style/small_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="125dp" />
 
     <EditText
         android:id="@+id/editTextSurname"
-        app:backgroundTint="@color/white"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:inputType="phone" />
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="phone"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
 
     <TextView
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/name_enter"
-        android:textAppearance="@style/small_text" />
+        android:textAppearance="@style/small_text"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_name"
+        tools:layout_editor_absoluteX="56dp" />
 
     <EditText
-        android:id="@+id/editTextName"
-        app:backgroundTint="@color/white"
+        android:id="@+id/edit_text_name"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:inputType="phone" />
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="phone"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameText" />
+
+    <TextView
+        android:id="@+id/second_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_name_enter"
+        android:textAppearance="@style/small_text"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSurname"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <EditText
+        android:id="@+id/edit_text_second_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="phone"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_name_text" />
+
+    <TextView
+        android:id="@+id/city_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city_enter"
+        android:textAppearance="@style/small_text"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <EditText
+        android:id="@+id/edit_text_city"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="30dp"
+        android:text="Button"
+        android:background=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        tools:layout_editor_absoluteY="341dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
