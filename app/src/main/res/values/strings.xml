@@ -46,9 +46,18 @@
     <string name="save_all_btn_text">Сохранить</string>
     <string name="download_file_icon_desc">Download file button</string>
     <string-array name="document_types">
+        <item>Не выбрано</item>
         <item>Паспорт</item>
         <item>Паспорт1</item>
         <item>Паспорт2</item>
+    </string-array>
+
+    <string-array name="degree_types">
+        <item>Не выбрано</item>
+        <item>Бакалавриат</item>
+        <item>Магистратура</item>
+        <item>Аспирантура</item>
+        <item>Интернатура</item>
     </string-array>
     <string name="appointments">Записи</string>
     <string name="actual">Актуальные</string>

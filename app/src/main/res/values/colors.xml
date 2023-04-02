@@ -37,8 +37,9 @@
     <color name="surname_input">#818181</color>
     <color name="patronymic_data_color">#61A0EA</color>
     <color name="city_data_color">#61A0EA</color>
+    <color name="autocomplete_text_color">#61A0EA</color>
     <color name="education_address_data_color">#000000</color>
-    <color name="edit_profile_information_line_color_unfocused">#818181</color>
+    <color name="edit_profile_information_line_color_unfocused">#61A0EA</color>
     <color name="educational_institution_data_color">#61A0EA</color>
     <color name="education_document_name_text_color">#818181</color>
     <color name="clinic_address_data_color">#61A0EA</color>
@@ -99,6 +100,7 @@
     <color name="go_to_review_btn_bg_color">#FFFFFF</color>
     <color name="portfolio_label_text_color">#5A98E1</color>
     <color name="events_label_text_color">#000000</color>
+    <color name="years_of_education_input_text_color">#000000</color>
     <color name="main_color">#818181</color>
     <color name="light_grey">#D9D9D9</color>
 </resources>
