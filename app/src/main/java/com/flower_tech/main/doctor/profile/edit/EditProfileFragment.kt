@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Button
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -40,6 +41,18 @@ class EditProfileFragment : Fragment() {
                 cityInput.setAdapter(ArrayAdapter(it, R.layout.item_autocomplete_list, R.id.text_view_list_item, getCountries()))
                 districtList.setAdapter(ArrayAdapter(it, R.layout.item_autocomplete_list, R.id.text_view_list_item, getSaintPetersburgCountries()))
                 clinicAddressInput.setAdapter(ArrayAdapter(it, R.layout.item_autocomplete_list, R.id.text_view_list_item, getAddresses()))
+            }
+            personalDataBtn.setOnClickListener{
+                val isShown = personalDataContainer.isVisible
+                personalDataContainer.visibility = if (isShown) View.GONE else View.VISIBLE
+            }
+            educationDataBtn.setOnClickListener{
+                val isShown = educationContainer.isVisible
+                educationContainer.visibility = if (isShown) View.GONE else View.VISIBLE
+            }
+            documentsDataBtn.setOnClickListener{
+                val isShown = documentsContainer.isVisible
+                documentsContainer.visibility = if (isShown) View.GONE else View.VISIBLE
             }
         }
 

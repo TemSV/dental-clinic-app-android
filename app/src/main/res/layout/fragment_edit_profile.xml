@@ -337,42 +337,52 @@
                 app:layout_constraintBottom_toBottomOf="@id/education_data_btn"
                 app:layout_constraintEnd_toStartOf="@id/education_data_btn"
                 app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="@id/personal_data_container"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/education_data_btn" />
 
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/education_list"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/education_container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                app:layout_constrainedHeight="true"
-                app:layout_constraintBottom_toBottomOf="@id/add_document_btn"
+                android:layout_marginTop="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/education_data_label"
-                app:layout_constraintVertical_bias="0"
-                tools:listitem="@layout/item_edit_education" />
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/education_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constrainedHeight="true"
+                    app:layout_constraintBottom_toBottomOf="@id/add_document_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    tools:listitem="@layout/item_edit_education" />
 
-            <Button
-                android:id="@+id/add_document_btn"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:drawableEnd="@drawable/ic_plus"
-                android:drawableTint="@color/add_education_btn_color"
-                android:fontFamily="@font/ubuntu_medium"
-                android:letterSpacing=".0"
-                android:text="@string/add_document_btn_text"
-                android:textAllCaps="false"
-                android:textColor="@color/add_education_btn_color"
-                android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="@id/education_list"
-                app:layout_constraintStart_toStartOf="@id/education_list"
-                app:layout_constraintTop_toBottomOf="@id/education_list" />
+                <Button
+                    android:id="@+id/add_document_btn"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableEnd="@drawable/ic_plus"
+                    android:drawableTint="@color/add_education_btn_color"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:letterSpacing=".0"
+                    android:text="@string/add_document_btn_text"
+                    android:textAllCaps="false"
+                    android:textColor="@color/add_education_btn_color"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/education_list"
+                    app:layout_constraintStart_toStartOf="@id/education_list"
+                    app:layout_constraintTop_toBottomOf="@id/education_list" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             <ImageButton
                 android:id="@+id/documents_data_btn"
@@ -383,7 +393,7 @@
                 android:background="@color/edit_profile_bg_color"
                 android:src="@drawable/ic_select_btn"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/add_document_btn" />
+                app:layout_constraintTop_toBottomOf="@id/education_container" />
 
             <TextView
                 android:id="@+id/documents_label"
@@ -401,11 +411,12 @@
                 app:layout_constraintBottom_toBottomOf="@id/documents_data_btn"
                 app:layout_constraintEnd_toStartOf="@id/documents_data_btn"
                 app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="@id/education_list"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/documents_data_btn" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/education_container"
+                android:id="@+id/documents_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -801,7 +812,6 @@
                 android:background="@drawable/bg_save_all_btn"
                 android:fontFamily="@font/ubuntu_medium"
                 android:letterSpacing=".0"
-                android:padding="20dp"
                 android:text="@string/save_all_btn_text"
                 android:textAllCaps="false"
                 android:textColor="@color/save_all_btn_text_color"
@@ -809,7 +819,7 @@
                 app:backgroundTint="@color/save_all_btn_bg_color"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/education_container" />
+                app:layout_constraintTop_toBottomOf="@id/documents_container" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>
