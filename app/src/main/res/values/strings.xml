@@ -17,6 +17,13 @@
     <string name="checkbox_text">Нажимая на кнопку «Зарегистрироваться», я даю\n согласие на обработку персональных данных</string>
     <string name="new_password_enter2">Подтвердите пароль</string>
     <string name="new_password_enter">Придумайте пароль</string>
+    <string name="surname_enter">Фамилия</string>
+    <string name="name_enter">Имя</string>
+    <string name="second_name_enter">Отчество</string>
+    <string name="gender_enter">Пол</string>
+    <string name="city_enter">Город</string>
+    <string name="male_gender">Мужской</string>
+    <string name="female_gender">Женский</string>
     <string name="go_to_profile_btn_desc">Go to profile</string>
     <string name="edit_schedule_btn_desc">Edit schedule</string>
     <string name="go_to_portfolio_btn_desc">Go to profile</string>

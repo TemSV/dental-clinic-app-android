@@ -15,7 +15,7 @@ class SignIn2Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_log_in, container, false)
+        val view = inflater.inflate(R.layout.fragment_sign_in2, container, false)
         val entryButton = view.findViewById<Button>(R.id.EntryButtonToMainMenu)
         entryButton.setOnClickListener{
             findNavController().navigate(R.id.action_signIn2Fragment_to_mainActivity)
