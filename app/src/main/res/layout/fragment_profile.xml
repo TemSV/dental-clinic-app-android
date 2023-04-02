@@ -14,63 +14,65 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <androidx.appcompat.widget.Toolbar
-            android:theme="@style/ProfileToolbarTheme"
             android:id="@+id/main_app_bar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/main_bar_bg_color"
-            >
+            android:theme="@style/ProfileToolbarTheme">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
+
                 <TextView
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/main_app_bar_name"
-                    />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <androidx.cardview.widget.CardView
-                    app:layout_constraintEnd_toEndOf="@id/notification_icon"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    app:cardCornerRadius="50dp"
                     app:cardBackgroundColor="@color/notification_counter_bg_color"
-                    app:layout_constraintTop_toTopOf="@id/notification_icon"
-                    >
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintEnd_toEndOf="@id/notification_icon"
+                    app:layout_constraintTop_toTopOf="@id/notification_icon">
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        >
+                        android:layout_height="match_parent">
+
                         <TextView
                             android:id="@+id/notification_counter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:fontFamily="@font/ubuntu_regular"
-                            android:textSize="10sp"
+                            android:text="@string/default_notifications_counter"
                             android:textColor="@color/notifications_counter_color"
-                            app:layout_constraintTop_toTopOf="parent"
+                            android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:text="@string/default_notifications_counter"
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"
-                            tools:ignore="SmallSp"/>
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="SmallSp" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
+
                 <ImageView
                     android:id="@+id/notification_icon"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_width="34dp"
                     android:layout_height="34dp"
-                    android:src="@drawable/ic_notification"
                     android:layout_marginEnd="16dp"
+                    android:contentDescription="@string/show_notifications_text"
                     android:focusable="true"
-                    android:contentDescription="@string/show_notifications_text" />
+                    android:src="@drawable/ic_notification"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.appcompat.widget.Toolbar>
@@ -127,11 +129,11 @@
                 android:fontFamily="@font/ubuntu_bold"
                 android:letterSpacing=".0"
                 android:maxLines="3"
+                android:text="Иванов Александр Дмитриевич"
                 android:textColor="@color/name_text_color"
                 android:textSize="18sp"
                 app:layout_constraintLeft_toRightOf="@id/avatar"
-                app:layout_constraintTop_toTopOf="parent"
-                android:text="Иванов Александр Дмитриевич" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/information"
@@ -193,10 +195,10 @@
                 android:letterSpacing=".0"
                 android:maxLines="1"
                 android:text="@string/schedule_label_text"
+                android:textColor="@color/schedule_label_text_color"
                 android:textSize="22sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:textColor="@color/schedule_label_text_color" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/current_data"
@@ -207,11 +209,11 @@
                 android:fontFamily="@font/ubuntu_regular"
                 android:letterSpacing=".0"
                 android:maxLines="1"
+                android:text="Март 2023"
+                android:textColor="@color/current_data_text_color"
                 android:textSize="12sp"
                 app:layout_constraintLeft_toLeftOf="@id/schedule_label"
-                app:layout_constraintTop_toBottomOf="@id/schedule_label"
-                android:text="Март 2023"
-                android:textColor="@color/current_data_text_color" />
+                app:layout_constraintTop_toBottomOf="@id/schedule_label" />
 
             <ImageButton
                 android:id="@+id/go_to_schedule_btn"

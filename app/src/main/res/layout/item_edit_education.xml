@@ -111,14 +111,14 @@
             app:layout_constraintTop_toBottomOf="@id/degree_list" />
 
         <AutoCompleteTextView
-            android:imeOptions="flagNoExtractUi"
             android:id="@+id/specialization_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:background="@drawable/bg_edit_text"
             android:completionThreshold="1"
-            android:layout_marginTop="10dp"
             android:fontFamily="@font/ubuntu_regular"
+            android:imeOptions="flagNoExtractUi"
             android:letterSpacing=".0"
             android:maxLines="1"
             android:textColor="@color/specialization_input_text_color"
@@ -210,6 +210,7 @@
             app:layout_constraintBottom_toBottomOf="@id/education_document_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/education_document_name" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

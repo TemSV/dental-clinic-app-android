@@ -21,9 +21,9 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_bottom_nav_view"
         android:layout_width="match_parent"
-        app:itemIconTint="@color/main_nav_btn_color"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_main_nav_view"
+        app:itemIconTint="@color/main_nav_btn_color"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
