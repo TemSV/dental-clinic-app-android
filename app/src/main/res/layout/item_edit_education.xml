@@ -29,8 +29,8 @@
             android:layout_marginTop="10dp"
             android:ellipsize="end"
             android:fontFamily="@font/ubuntu_regular"
-            android:labelFor="@id/educational_institution_input"
             android:letterSpacing=".0"
+            android:labelFor="@id/educational_institution_input"
             android:maxLines="1"
             android:text="@string/educational_institution_data_text"
             android:textColor="@color/educational_institution_data_color"
@@ -80,6 +80,9 @@
 
         <Spinner
             android:id="@+id/degree_list"
+            android:fontFamily="@font/ubuntu_regular"
+            android:letterSpacing=".0"
+            android:textSize="18sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -148,6 +151,8 @@
             app:layout_constraintTop_toBottomOf="@id/specialization_input" />
 
         <com.santalu.maskara.widget.MaskEditText
+            android:fontFamily="@font/ubuntu_regular"
+            android:letterSpacing=".0"
             android:id="@+id/years_of_education_input"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -191,6 +196,7 @@
             android:ellipsize="end"
             android:fontFamily="@font/ubuntu_regular"
             android:letterSpacing=".0"
+            android:textSize="18sp"
             android:maxLines="1"
             android:textColor="@color/education_document_name_text_color"
             app:layout_constrainedWidth="true"
@@ -203,13 +209,14 @@
             android:id="@+id/download_file_icon"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            app:tint="@color/download_file_icon_color"
             android:layout_marginEnd="16dp"
             android:background="@null"
             android:contentDescription="@string/download_file_icon_desc"
             android:src="@drawable/ic_download"
             app:layout_constraintBottom_toBottomOf="@id/education_document_name"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/education_document_name" />
+            app:layout_constraintTop_toTopOf="@id/education_document_data_label" />
 
         <View
             android:layout_width="match_parent"
