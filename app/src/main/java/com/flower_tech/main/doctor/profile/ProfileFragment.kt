@@ -35,7 +35,7 @@ class ProfileFragment : Fragment() {
             infoContainer.setOnClickListener {
                 findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_profile_information_container)
             }
-            calendarContainer.setOnClickListener{
+            calendarContainer.setOnClickListener {
                 findNavController().navigate(R.id.action_fragment_profile_container_to_fragment_schedule_container)
             }
         }

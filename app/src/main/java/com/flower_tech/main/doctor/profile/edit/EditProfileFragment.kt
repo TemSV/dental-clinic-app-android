@@ -38,33 +38,56 @@ class EditProfileFragment : Fragment() {
                 findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_profile_information_container)
             }
             context?.let {
-                cityInput.setAdapter(ArrayAdapter(it, R.layout.item_autocomplete_list, R.id.text_view_list_item, getCountries()))
-                districtList.setAdapter(ArrayAdapter(it, R.layout.item_autocomplete_list, R.id.text_view_list_item, getSaintPetersburgCountries()))
-                clinicAddressInput.setAdapter(ArrayAdapter(it, R.layout.item_autocomplete_list, R.id.text_view_list_item, getAddresses()))
+                cityInput.setAdapter(
+                    ArrayAdapter(
+                        it,
+                        R.layout.item_autocomplete_list,
+                        R.id.text_view_list_item,
+                        getCountries()
+                    )
+                )
+                districtList.setAdapter(
+                    ArrayAdapter(
+                        it,
+                        R.layout.item_autocomplete_list,
+                        R.id.text_view_list_item,
+                        getSaintPetersburgCountries()
+                    )
+                )
+                clinicAddressInput.setAdapter(
+                    ArrayAdapter(
+                        it,
+                        R.layout.item_autocomplete_list,
+                        R.id.text_view_list_item,
+                        getAddresses()
+                    )
+                )
             }
-            personalDataBtn.setOnClickListener{
+            personalDataBtn.setOnClickListener {
                 val isShown = personalDataContainer.isVisible
                 personalDataContainer.visibility = if (isShown) View.GONE else View.VISIBLE
-                val rotateDegree = if (isShown) personalDataBtn.rotation - 90 else personalDataBtn.rotation + 90
+                val rotateDegree =
+                    if (isShown) personalDataBtn.rotation - 90 else personalDataBtn.rotation + 90
                 personalDataBtn.animate().rotation(rotateDegree).start()
             }
-            educationDataBtn.setOnClickListener{
+            educationDataBtn.setOnClickListener {
                 val isShown = educationContainer.isVisible
                 educationContainer.visibility = if (isShown) View.GONE else View.VISIBLE
-                val rotateDegree = if (isShown) educationDataBtn.rotation - 90 else educationDataBtn.rotation + 90
+                val rotateDegree =
+                    if (isShown) educationDataBtn.rotation - 90 else educationDataBtn.rotation + 90
                 educationDataBtn.animate().rotation(rotateDegree).start()
             }
-            documentsDataBtn.setOnClickListener{
+            documentsDataBtn.setOnClickListener {
                 val isShown = documentsContainer.isVisible
                 documentsContainer.visibility = if (isShown) View.GONE else View.VISIBLE
-                val rotateDegree = if (isShown) documentsDataBtn.rotation - 90 else documentsDataBtn.rotation + 90
+                val rotateDegree =
+                    if (isShown) documentsDataBtn.rotation - 90 else documentsDataBtn.rotation + 90
                 documentsDataBtn.animate().rotation(rotateDegree).start()
             }
             root.findViewById<View>(R.id.settings).setOnClickListener {
                 findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_settings_container)
             }
         }
-
     }
 
     @SuppressLint("NotifyDataSetChanged")
@@ -107,7 +130,7 @@ class EditProfileFragment : Fragment() {
         fun newInstance() = EditProfileFragment()
     }
 
-    private fun getAddresses() : MutableList<String> {
+    private fun getAddresses(): MutableList<String> {
         return arrayListOf(
             "Политехническая 29",
             "Большой проспект Васильевского острова, 15",
@@ -116,7 +139,7 @@ class EditProfileFragment : Fragment() {
         )
     }
 
-    private fun getCountries(): MutableList<String>{
+    private fun getCountries(): MutableList<String> {
         return arrayListOf(
             "Санкт-Петербург",
             "Абакан",
@@ -130,7 +153,8 @@ class EditProfileFragment : Fragment() {
             "Комсомольск-на-Амуре",
         )
     }
-    private fun getSaintPetersburgCountries(): MutableList<String>{
+
+    private fun getSaintPetersburgCountries(): MutableList<String> {
         return arrayListOf(
             "Адмиралтейский район",
             "Василеостровский район",

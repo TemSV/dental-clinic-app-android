@@ -120,17 +120,17 @@
             <LinearLayout
                 android:id="@+id/labels_container"
                 android:layout_width="wrap_content"
-                app:layout_constraintHorizontal_bias="0"
                 android:layout_height="wrap_content"
-                app:layout_constrainedWidth="true"
+                android:layout_marginStart="16dp"
                 android:layout_marginEnd="8dp"
                 android:orientation="vertical"
-                android:layout_marginStart="16dp"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constrainedWidth="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/go_to_profile_btn"
+                app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toEndOf="@id/avatar"
-                >
+                app:layout_constraintTop_toTopOf="parent">
+
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
@@ -142,8 +142,8 @@
                     android:text="Иванов Александр Дмитриевич"
                     android:textColor="@color/name_text_color"
                     android:textSize="22sp"
-                    app:layout_constraintHorizontal_bias="0"
-                    app:layout_constrainedWidth="true" />
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintHorizontal_bias="0" />
 
                 <TextView
                     android:id="@+id/information"
@@ -154,13 +154,14 @@
                     android:fontFamily="@font/ubuntu_regular"
                     android:letterSpacing=".0"
                     android:maxLines="1"
-                    app:layout_constraintHorizontal_bias="0"
-                    app:layout_constrainedWidth="true"
                     android:text="Санкт-петербург, 37 лет"
                     android:textColor="@color/information_text_color"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintHorizontal_bias="0" />
 
             </LinearLayout>
+
             <ImageButton
                 android:id="@+id/go_to_profile_btn"
                 android:layout_width="24dp"

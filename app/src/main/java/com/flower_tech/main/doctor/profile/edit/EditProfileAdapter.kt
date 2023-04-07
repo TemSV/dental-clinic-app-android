@@ -14,7 +14,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
 import com.flower_tech.structures.Education
 
-class EditProfileAdapter(private val educations: MutableList<Education>, private val context: Context) :
+class EditProfileAdapter(
+    private val educations: MutableList<Education>,
+    private val context: Context
+) :
     RecyclerView.Adapter<EditProfileAdapter.EducationInfoItemViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -38,11 +41,14 @@ class EditProfileAdapter(private val educations: MutableList<Education>, private
 
     override fun getItemCount() = educations.size + 1
 
-    class EducationInfoItemViewHolder(view: View, private val context: Context) : RecyclerView.ViewHolder(view) {
+    class EducationInfoItemViewHolder(view: View, private val context: Context) :
+        RecyclerView.ViewHolder(view) {
         private val counter = view.findViewById<TextView>(R.id.education_list_counter)
         private val documentName = view.findViewById<TextView>(R.id.education_document_name)
-        private val specialization = view.findViewById<AutoCompleteTextView>(R.id.specialization_input)
-        private val educationalInstitution = view.findViewById<AutoCompleteTextView>(R.id.educational_institution_input)
+        private val specialization =
+            view.findViewById<AutoCompleteTextView>(R.id.specialization_input)
+        private val educationalInstitution =
+            view.findViewById<AutoCompleteTextView>(R.id.educational_institution_input)
         private val yearsOfEducation = view.findViewById<EditText>(R.id.years_of_education_input)
 
         @SuppressLint("SetTextI18n")
@@ -52,8 +58,22 @@ class EditProfileAdapter(private val educations: MutableList<Education>, private
             documentName.text = item.file
             educationalInstitution.setText(item.educationalInstitution)
             specialization.setText(item.specialization)
-            specialization.setAdapter(ArrayAdapter(context, R.layout.item_autocomplete_list, R.id.text_view_list_item, getSpecializations()))
-            educationalInstitution.setAdapter(ArrayAdapter(context, R.layout.item_autocomplete_list, R.id.text_view_list_item, getEducationalInstitutions()))
+            specialization.setAdapter(
+                ArrayAdapter(
+                    context,
+                    R.layout.item_autocomplete_list,
+                    R.id.text_view_list_item,
+                    getSpecializations()
+                )
+            )
+            educationalInstitution.setAdapter(
+                ArrayAdapter(
+                    context,
+                    R.layout.item_autocomplete_list,
+                    R.id.text_view_list_item,
+                    getEducationalInstitutions()
+                )
+            )
         }
 
         private fun getSpecializations(): MutableList<String> {
@@ -66,7 +86,7 @@ class EditProfileAdapter(private val educations: MutableList<Education>, private
             )
         }
 
-        private fun getEducationalInstitutions():List<String> {
+        private fun getEducationalInstitutions(): List<String> {
             return arrayListOf(
                 "Северо-Западный институт управления РАНХиГС",
                 "Санкт-Петербургский государственный электротехнический университет «ЛЭТИ» им. В.И. Ульянова (Ленина)",
