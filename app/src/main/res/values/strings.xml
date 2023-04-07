@@ -10,7 +10,8 @@
     <string name="review_label_text">Отзывы</string>
     <string name="schedule_label_text">Расписание</string>
     <string name="events_label_text">События</string>
-    <string name="edit_information_btn">Редактировать личную информацию</string>
+    <string name="edit_information_btn"><u>Редактировать личную информацию</u></string>
+    <string name="delete_account_btn"><u>Удалить аккаунт</u></string>
     <string name="event_app_bar_name">События</string>
     <string name="profile_information_app_bar_name">Профиль</string>
     <string name="main_app_bar_name">Главная</string>
@@ -21,9 +22,17 @@
     <string name="personal_data_text">Личные данные</string>
     <string name="name_data_text">Имя</string>
     <string name="surname_data_text">Фамилия</string>
+    <string name="feedback_label">Обратная связь</string>
+    <string name="user_agreement_label">Пользовательское соглашение</string>
+    <string name="message_label">Сообщения</string>
     <string name="patronymic_data_text">Отчество</string>
+    <string name="record_label">Новая запись</string>
+    <string name="version_label">Версия</string>
+    <string name="info_label">О приложении</string>
     <string name="city_data_text">Город</string>
+    <string name="notification_label">Уведомления</string>
     <string name="district_data_text">Район</string>
+    <string name="profile_settings_app_bar_name">Ещё</string>
     <string name="degree_data_text">Уровень образования</string>
     <string name="clinic_address_data_text">Адрес клиники</string>
     <string name="education_address_data_text">Образование</string>
@@ -44,6 +53,7 @@
     <string name="polis_data_text">Полис</string>
     <string name="add_document_btn_text">Добавить</string>
     <string name="save_all_btn_text">Сохранить</string>
+    <string name="logout_btn_text">Выйти</string>
     <string name="download_file_icon_desc">Download file button</string>
     <string-array name="document_types">
         <item>Не выбрано</item>
@@ -65,5 +75,7 @@
     <string name="cancel_appointment">Отменить запись</string>
     <string name="patients">Пациенты</string>
     <string name="show_notifications_text">Show notifications</string>
+    <string name="security_label">Безопастность</string>
+    <string name="change_password_label">Сменить пароль</string>
 
 </resources>
