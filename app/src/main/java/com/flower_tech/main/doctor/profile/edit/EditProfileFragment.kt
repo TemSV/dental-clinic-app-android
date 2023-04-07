@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageButton
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -34,9 +36,36 @@ class EditProfileFragment : Fragment() {
         with(binding) {
             setUpRecyclerView(educationList)
             setUpAddButton(addDocumentBtn)
-            profileEditAppBar.setNavigationOnClickListener {
-                findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_profile_information_container)
+        }
+        setUpNavigation()
+        setUpAutoCompleteText()
+        setUpSectionButtons()
+    }
+
+    private fun setUpSectionButtons() {
+        with(binding) {
+            personalDataBtn.setOnClickListener {
+                setUpDropDownBtn(btn = personalDataBtn, layout = personalDataContainer)
             }
+            educationDataBtn.setOnClickListener {
+                setUpDropDownBtn(btn = educationDataBtn, layout = educationContainer)
+            }
+            documentsDataBtn.setOnClickListener {
+                setUpDropDownBtn(btn = documentsDataBtn, layout = documentsContainer)
+            }
+        }
+    }
+
+    private fun setUpDropDownBtn(btn: ImageButton, layout: ConstraintLayout) {
+        val isShown = layout.isVisible
+        layout.visibility = if (isShown) View.GONE else View.VISIBLE
+        val rotateDegree =
+            if (isShown) btn.rotation - 90 else btn.rotation + 90
+        btn.animate().rotation(rotateDegree).start()
+    }
+
+    private fun setUpAutoCompleteText() {
+        with(binding) {
             context?.let {
                 cityInput.setAdapter(
                     ArrayAdapter(
@@ -63,29 +92,16 @@ class EditProfileFragment : Fragment() {
                     )
                 )
             }
-            personalDataBtn.setOnClickListener {
-                val isShown = personalDataContainer.isVisible
-                personalDataContainer.visibility = if (isShown) View.GONE else View.VISIBLE
-                val rotateDegree =
-                    if (isShown) personalDataBtn.rotation - 90 else personalDataBtn.rotation + 90
-                personalDataBtn.animate().rotation(rotateDegree).start()
-            }
-            educationDataBtn.setOnClickListener {
-                val isShown = educationContainer.isVisible
-                educationContainer.visibility = if (isShown) View.GONE else View.VISIBLE
-                val rotateDegree =
-                    if (isShown) educationDataBtn.rotation - 90 else educationDataBtn.rotation + 90
-                educationDataBtn.animate().rotation(rotateDegree).start()
-            }
-            documentsDataBtn.setOnClickListener {
-                val isShown = documentsContainer.isVisible
-                documentsContainer.visibility = if (isShown) View.GONE else View.VISIBLE
-                val rotateDegree =
-                    if (isShown) documentsDataBtn.rotation - 90 else documentsDataBtn.rotation + 90
-                documentsDataBtn.animate().rotation(rotateDegree).start()
-            }
+        }
+    }
+
+    private fun setUpNavigation() {
+        with(binding) {
             root.findViewById<View>(R.id.settings).setOnClickListener {
                 findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_settings_container)
+            }
+            profileEditAppBar.setNavigationOnClickListener {
+                findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_profile_information_container)
             }
         }
     }

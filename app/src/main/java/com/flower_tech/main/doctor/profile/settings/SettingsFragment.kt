@@ -23,6 +23,10 @@ class SettingsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setUpNavigation()
+    }
+
+    private fun setUpNavigation() {
         with(binding) {
             profileSettingsAppBar.setNavigationOnClickListener {
                 findNavController().navigate(R.id.action_fragment_settings_container_to_fragment_edit_profile_container)

@@ -40,14 +40,18 @@ class EventsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setUpNavigation()
+        binding.allEventsContainer.apply {
+            layoutManager = LinearLayoutManager(context)
+            adapter = EventsAdapter(itemList, sectionNamesList)
+        }
+    }
+
+    private fun setUpNavigation() {
         with(binding) {
             eventAppBar.setNavigationOnClickListener {
                 findNavController().navigate(R.id.action_fragment_events_container_to_fragment_profile_container)
             }
-        }
-        binding.allEventsContainer.apply {
-            layoutManager = LinearLayoutManager(context)
-            adapter = EventsAdapter(itemList, sectionNamesList)
         }
     }
 
