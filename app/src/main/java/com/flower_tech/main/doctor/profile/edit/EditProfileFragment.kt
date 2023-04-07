@@ -45,14 +45,23 @@ class EditProfileFragment : Fragment() {
             personalDataBtn.setOnClickListener{
                 val isShown = personalDataContainer.isVisible
                 personalDataContainer.visibility = if (isShown) View.GONE else View.VISIBLE
+                val rotateDegree = if (isShown) personalDataBtn.rotation - 90 else personalDataBtn.rotation + 90
+                personalDataBtn.animate().rotation(rotateDegree).start()
             }
             educationDataBtn.setOnClickListener{
                 val isShown = educationContainer.isVisible
                 educationContainer.visibility = if (isShown) View.GONE else View.VISIBLE
+                val rotateDegree = if (isShown) educationDataBtn.rotation - 90 else educationDataBtn.rotation + 90
+                educationDataBtn.animate().rotation(rotateDegree).start()
             }
             documentsDataBtn.setOnClickListener{
                 val isShown = documentsContainer.isVisible
                 documentsContainer.visibility = if (isShown) View.GONE else View.VISIBLE
+                val rotateDegree = if (isShown) documentsDataBtn.rotation - 90 else documentsDataBtn.rotation + 90
+                documentsDataBtn.animate().rotation(rotateDegree).start()
+            }
+            root.findViewById<View>(R.id.settings).setOnClickListener {
+                findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_settings_container)
             }
         }
 
