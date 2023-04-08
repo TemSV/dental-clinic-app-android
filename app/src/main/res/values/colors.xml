@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="home_bg_color">#F7F7F7</color>
@@ -70,6 +69,7 @@
     <color name="document_type_data_color">#61A0EA</color>
     <color name="document_type_list_text_color">#818181</color>
     <color name="passport_series_input_text_color">#303030</color>
+    <color name="document_list_text_color">#303030</color>
     <color name="passport_number_input_text_color">#303030</color>
     <color name="passport_series_data_color">#61A0EA</color>
     <color name="passport_number_data_color">#61A0EA</color>
@@ -87,6 +87,7 @@
     <color name="feedback_label_text_color">#303030</color>
     <color name="user_agreement_text_color">#303030</color>
     <color name="edit_profile_bg_color">#FFFFFF</color>
+    <color name="document_type_list_btn_bg_color">#FFFFFF</color>
     <color name="years_of_education_data_color">#61A0EA</color>
     <color name="information_text_color">#FFFFFF</color>
     <color name="notifications_counter_color">#FFFFFF</color>
@@ -97,6 +98,7 @@
     <color name="education_list_divider_color">#FF896E</color>
     <color name="edit_information_btn_text_color">#61A0EA</color>
     <color name="delete_account_btn_text_color">#61A0EA</color>
+    <color name="document_type_list_btn_color">#61A0EA</color>
     <color name="divider_color">#D9D9D9</color>
     <color name="go_to_portfolio_btn_color">#5A98E1</color>
     <color name="go_to_portfolio_btn_bg_color">#FFFFFF</color>
