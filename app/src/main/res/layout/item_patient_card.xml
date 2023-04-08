@@ -37,9 +37,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/patient_icon_image_view"
         app:layout_constraintBottom_toBottomOf="@id/patient_icon_image_view"
-        app:layout_constraintLeft_toRightOf="@id/patient_name_text_view"
+        app:layout_constraintStart_toEndOf="@id/patient_name_text_view"
         android:layout_marginStart="144dp"
-        app:srcCompat="@drawable/ic_message"
+        android:src="@drawable/ic_message"
         android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
