@@ -57,7 +57,7 @@
         android:fontFamily="@font/ubuntu_regular"
         tools:text="текст текст текст текст текст текс текст текст текст текст текст текст тектс текст текс тек сткетк тнкотктекьтеулокетуко "/>
 
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
