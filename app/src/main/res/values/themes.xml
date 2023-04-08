@@ -1,28 +1,28 @@
 <resources>
     <style name="Theme.Android" parent="Theme.AppCompat.Light.NoActionBar"/>
     <style name="label_text">
-        <item name="android:textSize">26sp</item>
+        <item name="android:textSize">30sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="button_text">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/background_blue</item>
     </style>
 
     <style name="small_button_text">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/background_blue</item>
     </style>
 
     <style name="simple_text">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="small_text">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/white</item>
     </style>
 

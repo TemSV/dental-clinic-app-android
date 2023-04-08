@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_blue"
     tools:context=".auth.ChooseRoleFragment">
 
     <TextView
@@ -20,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32999998"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="22sp"/>
 
     <Button
@@ -30,7 +31,9 @@
         android:layout_marginStart="70dp"
         android:layout_marginTop="64dp"
         android:layout_marginBottom="265dp"
+        android:background="@drawable/ic_square_button"
         android:text="@string/doctor"
+        android:textAppearance="@style/button_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
@@ -44,7 +47,9 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="265dp"
+        android:background="@drawable/ic_square_button"
         android:text="@string/patient"
+        android:textAppearance="@style/button_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

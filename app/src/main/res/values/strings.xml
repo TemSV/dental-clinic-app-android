@@ -9,9 +9,10 @@
     <string name="choose_role">Выберите ваш профиль</string>
     <string name="invitation_to_entry">Войти</string>
     <string name="invitation_to_registration">Зарегистрироваться</string>
+    <string name="invitation_to_registration_underline"><u>Зарегистрироваться</u></string>
     <string name="forgot_password">Забыли пароль?</string>
-    <string name="patient">Пациент</string>
-    <string name="doctor">Врач</string>
+    <string name="patient">пациент</string>
+    <string name="doctor">врач</string>
     <string name="phone_enter">Телефон</string>
     <string name="password_enter">Пароль</string>
     <string name="checkbox_text">Нажимая на кнопку «Зарегистрироваться», я даю\n согласие на обработку персональных данных</string>
@@ -24,6 +25,7 @@
     <string name="city_enter">Город</string>
     <string name="male_gender">Мужской</string>
     <string name="female_gender">Женский</string>
+    <string name="date_enter">Дата рождения</string>
     <string name="go_to_profile_btn_desc">Go to profile</string>
     <string name="edit_schedule_btn_desc">Edit schedule</string>
     <string name="go_to_portfolio_btn_desc">Go to profile</string>

@@ -16,7 +16,7 @@
         android:text="@string/invitation_to_entry"
         android:textAppearance="@style/button_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
@@ -29,7 +29,7 @@
         android:textAppearance="@style/small_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
         app:layout_constraintVertical_bias="1.0" />
@@ -40,11 +40,11 @@
         android:layout_height="28.66dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/ic_small_logo"
         android:gravity="center_horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/LogoTextRegistration"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -53,23 +53,23 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="252dp"
         android:fontFeatureSettings="pnum, lnum"
         android:gravity="center_vertical"
         android:text="@string/entry"
         android:textAppearance="@style/label_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.383"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="40dp"
         android:ems="12"
+        android:textColor="@color/white"
         android:inputType="phone"
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
@@ -82,21 +82,25 @@
         android:id="@+id/phoneText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:text="@string/phone_enter"
         android:textAppearance="@style/small_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoTextRegistration" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="300dp"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:drawableEnd="@drawable/ic_password"
+        android:gravity="top"
         android:drawableTint="@color/white"
         android:ems="10"
+        android:textColor="@color/white"
         android:inputType="textPassword"
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,14 +126,14 @@
 
     <TextView
         android:id="@+id/invitation_to_registration"
-        android:layout_width="116dp"
-        android:layout_height="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="12dp"
         android:fontFeatureSettings="pnum, lnum"
         android:gravity="end|top"
-        android:text="@string/invitation_to_registration"
+        android:text="@string/invitation_to_registration_underline"
         android:textAppearance="@style/small_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"

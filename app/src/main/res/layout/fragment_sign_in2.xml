@@ -9,12 +9,14 @@
 
     <Button
         android:id="@+id/EntryButtonToMainMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="81dp"
         android:background="@drawable/ic_button"
         android:text="@string/invitation_to_registration"
         android:textAppearance="@style/button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,10 +31,10 @@
         android:textAppearance="@style/small_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextPasswordReg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <View
         android:id="@+id/union2"
@@ -40,11 +42,13 @@
         android:layout_height="28.66dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/ic_small_logo"
         android:gravity="center_horizontal"
         app:layout_constraintEnd_toStartOf="@+id/LogoTextRegistration"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -53,24 +57,25 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="60dp"
         android:fontFeatureSettings="pnum, lnum"
         android:gravity="center_vertical"
         android:text="@string/registration"
         android:textAppearance="@style/label_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="300dp"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:layout_marginBottom="40dp"
         android:ems="12"
         android:inputType="phone"
+        android:textColor="@color/white"
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/editTextPasswordReg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,22 +86,22 @@
         android:id="@+id/phoneText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
         android:text="@string/phone_enter"
         android:textAppearance="@style/small_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextPasswordReg"
-        android:layout_width="300dp"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:drawableEnd="@drawable/ic_password"
         android:drawableTint="@color/white"
         android:inputType="textPassword"
+        android:textColor="@color/white"
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,15 +109,16 @@
 
     <EditText
         android:id="@+id/editTextTextPassword3"
-        android:layout_width="300dp"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="30dp"
         android:drawableEnd="@drawable/ic_password"
         android:drawableTint="@color/white"
-        app:backgroundTint="@color/white"
         android:inputType="textPassword"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,22 +132,23 @@
         android:textAppearance="@style/small_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPasswordReg"
         app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
         android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:buttonTint="@color/white"
         android:text="@string/checkbox_text"
         android:textAppearance="@style/small_text"
+        android:textSize="14sp"
         android:textColor="@color/white"
-        android:buttonTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
 
