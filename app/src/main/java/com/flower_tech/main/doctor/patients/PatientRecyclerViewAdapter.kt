@@ -32,7 +32,7 @@ class PatientRecyclerViewAdapter(
         private val patientName : TextView = itemView.findViewById(R.id.patient_name_text_view)
 
         fun bindPatientCard(patientCard: PatientCard) {
-            patientIcon.setImageResource(patientCard.patientIcon)
+            patientIcon.setImageResource(patientCard.icon)
             patientName.text = patientCard.name
         }
     }
