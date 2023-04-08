@@ -14,7 +14,7 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
-
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -34,10 +34,10 @@ android {
     buildFeatures {
         viewBinding true
     }
+    buildToolsVersion '33.0.2'
 }
 
 dependencies {
-
     implementation 'com.kizitonwose.calendar:view:2.2.0'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
