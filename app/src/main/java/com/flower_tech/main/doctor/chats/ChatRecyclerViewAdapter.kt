@@ -18,9 +18,8 @@ class ChatRecyclerViewAdapter(
         )
     }
 
-    override fun getItemCount(): Int {
-        return chatCards.size
-    }
+    override fun getItemCount() = chatCards.size
+
 
     override fun onBindViewHolder(holder: ChatRecyclerViewHolder, position: Int) {
         holder.bindChatCard(chatCards[position])
