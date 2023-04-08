@@ -97,7 +97,7 @@
                 android:entries="@array/degree_types"
                 android:fontFamily="@font/ubuntu_regular"
                 android:letterSpacing=".0"
-                android:textColor="@color/district_input_text_color"
+                android:textColor="?attr/text_color_secondary"
                 android:textSize="18sp"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintHorizontal_bias="0"
