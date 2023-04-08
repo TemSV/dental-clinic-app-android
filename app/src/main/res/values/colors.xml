@@ -67,9 +67,11 @@
     <color name="education_document_input_text_color">#818181</color>
     <color name="documents_data_color">#000000</color>
     <color name="document_type_data_color">#61A0EA</color>
-    <color name="document_type_list_text_color">#818181</color>
+    <color name="degree_list_btn_bg_color">#FFFFFF</color>
     <color name="passport_series_input_text_color">#303030</color>
     <color name="document_list_text_color">#303030</color>
+    <color name="document_type_list_text_color">#303030</color>
+    <color name="degree_list_btn_color">#61A0EA</color>
     <color name="passport_number_input_text_color">#303030</color>
     <color name="passport_series_data_color">#61A0EA</color>
     <color name="passport_number_data_color">#61A0EA</color>
