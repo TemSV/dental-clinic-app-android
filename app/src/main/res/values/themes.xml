@@ -1,5 +1,17 @@
 <resources>
-    <style name="Theme.Android" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+    <style name="Theme.Android" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="background_color_primary">@color/white</item>
+        <item name="background_color_tertiary">@color/light_blue</item>
+
+        <item name="text_color_primary">@color/white</item>
+        <item name="text_color_secondary">@color/signal_black</item>
+        <item name="text_color_tertiary">@color/light_blue</item>
+        <item name="text_color_quaternary">@color/orange</item>
+
+        <item name="icon_tint_color_primary">@color/light_blue</item>
+        <item name="icon_tint_color_secondary">@color/signal_black</item>
+        <item name="icon_tint_color_tertiary">@color/orange</item>
+    </style>
     
     <style name="ProfileToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily">@font/ubuntu_bold</item>
