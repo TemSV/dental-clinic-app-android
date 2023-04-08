@@ -40,6 +40,19 @@ class EditProfileFragment : Fragment() {
         setUpNavigation()
         setUpAutoCompleteText()
         setUpSectionButtons()
+        setUpSpinner()
+    }
+
+    private fun setUpSpinner() {
+        with(binding) {
+            documentTypeCard.setOnClickListener {
+                binding.documentTypeList.performClick()
+            }
+            context?.let {
+                documentTypeList.adapter =
+                    ArrayAdapter(it, R.layout.item_spinner_profile, R.id.document_type, resources.getStringArray(R.array.document_types))
+            }
+        }
     }
 
     private fun setUpSectionButtons() {
