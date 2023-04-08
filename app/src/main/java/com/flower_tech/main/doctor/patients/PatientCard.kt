@@ -1,6 +1,8 @@
 package com.flower_tech.main.doctor.patients
 
+import androidx.annotation.DrawableRes
+
 data class PatientCard (
-    val patientIcon: Int,
-    val patientName: String,
+    @DrawableRes val icon: Int,
+    val name: String,
 )

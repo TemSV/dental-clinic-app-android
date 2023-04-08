@@ -33,7 +33,7 @@ class PatientRecyclerViewAdapter(
 
         fun bindPatientCard(patientCard: PatientCard) {
             patientIcon.setImageResource(patientCard.patientIcon)
-            patientName.text = patientCard.patientName
+            patientName.text = patientCard.name
         }
     }
 
