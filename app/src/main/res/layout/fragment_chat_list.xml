@@ -44,7 +44,7 @@
         android:background="@drawable/search_view_background"
         android:gravity="center"
         android:iconifiedByDefault="false"
-        android:queryHint="Поиск"
+        android:queryHint="@string/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/chats_app_bar" />
