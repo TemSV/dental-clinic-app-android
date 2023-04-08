@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
 
 class ChatRecyclerViewAdapter(
-    private val chatCards: ArrayList<ChatCard>
+    private val chatCards: MutableList<ChatCard>
 ): RecyclerView.Adapter<ChatRecyclerViewAdapter.ChatRecyclerViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatRecyclerViewHolder {
