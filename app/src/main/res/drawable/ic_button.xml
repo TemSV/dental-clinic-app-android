@@ -15,4 +15,5 @@
             android:fillColor="@color/white"
             />
     </group>
+    <corners android:radius="10dp"/>
 </vector>

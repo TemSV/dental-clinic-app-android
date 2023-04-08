@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.SignInFragment"
+    tools:context=".auth.UserDataFragment"
     android:background="@color/background_blue">
 
 
@@ -12,8 +12,6 @@
         android:id="@+id/union2"
         android:layout_width="50dp"
         android:layout_height="28.66dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="48dp"
         android:background="@drawable/ic_small_logo"
@@ -25,8 +23,6 @@
         android:id="@+id/LogoTextRegistration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="60dp"
         android:fontFeatureSettings="pnum, lnum"
         android:gravity="center_vertical"
@@ -44,23 +40,17 @@
         android:layout_marginTop="48dp"
         android:text="@string/surname_enter"
         android:textAppearance="@style/small_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_name"
         app:layout_constraintTop_toBottomOf="@+id/LogoTextRegistration" />
 
     <EditText
         android:id="@+id/editTextSurname"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:inputType="text"
-        app:backgroundTint="@color/white"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
+        app:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/nameText"
         app:layout_constraintTop_toBottomOf="@+id/nameText" />
 
     <TextView
@@ -69,9 +59,7 @@
         android:layout_height="wrap_content"
         android:text="@string/name_enter"
         android:textAppearance="@style/small_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_name"
         app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
 
     <EditText
@@ -94,23 +82,17 @@
         android:layout_height="wrap_content"
         android:text="@string/second_name_enter"
         android:textAppearance="@style/small_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextSurname"
         app:layout_constraintTop_toBottomOf="@+id/editTextSurname" />
 
     <EditText
         android:id="@+id/edit_text_second_name"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:inputType="text"
-        app:backgroundTint="@color/white"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
+        app:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/second_name_text"
         app:layout_constraintTop_toBottomOf="@+id/second_name_text" />
 
     <TextView
@@ -120,9 +102,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/city_enter"
         android:textAppearance="@style/small_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/male_button"
         app:layout_constraintTop_toBottomOf="@+id/female_button" />
 
     <EditText
@@ -130,11 +110,9 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:inputType="text"
-        app:backgroundTint="@color/white"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
+        app:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/city_text"
         app:layout_constraintTop_toBottomOf="@+id/city_text" />
 
     <Button
@@ -145,23 +123,18 @@
         android:background="@drawable/ic_small_button"
         android:text="@string/male_gender"
         android:textAppearance="@style/small_button_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gender_text"
         app:layout_constraintTop_toBottomOf="@+id/gender_text" />
 
     <Button
         android:id="@+id/female_button"
         android:layout_width="170dp"
         android:layout_height="35dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/ic_small_additional_button"
         android:text="@string/female_gender"
         android:textAppearance="@style/small_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.324"
-        app:layout_constraintStart_toEndOf="@+id/male_button"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_date"
         app:layout_constraintTop_toBottomOf="@+id/gender_text" />
 
     <TextView
@@ -170,9 +143,7 @@
         android:layout_height="wrap_content"
         android:text="@string/gender_enter"
         android:textAppearance="@style/small_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_date"
         app:layout_constraintTop_toBottomOf="@+id/edit_text_date" />
 
     <Button
@@ -191,9 +162,7 @@
         android:layout_height="wrap_content"
         android:text="@string/date_enter"
         android:textAppearance="@style/small_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_second_name"
         app:layout_constraintTop_toBottomOf="@+id/edit_text_second_name" />
 
     <EditText
@@ -204,7 +173,6 @@
         android:inputType="date"
         android:textColor="@color/white"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/date_text"
         app:layout_constraintTop_toBottomOf="@+id/date_text" />
 </androidx.constraintlayout.widget.ConstraintLayout>

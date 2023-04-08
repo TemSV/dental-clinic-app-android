@@ -3,64 +3,64 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/auth_nav_graph"
-    app:startDestination="@id/helloFragment">
+    app:startDestination="@id/fragment_hello_container">
 
     <fragment
-        android:id="@+id/helloFragment"
+        android:id="@+id/fragment_hello_container"
         android:name="com.flower_tech.auth.HelloFragment"
         android:label="fragment_hello"
         tools:layout="@layout/fragment_hello" >
         <action
-            android:id="@+id/action_helloFragment_to_chooseRoleFragment"
-            app:destination="@id/chooseRoleFragment" />
+            android:id="@+id/action_fragment_hello_container_to_fragment_choose_role_container"
+            app:destination="@id/fragment_choose_role_container" />
         <action
-            android:id="@+id/action_helloFragment_to_logInFragment"
-            app:destination="@id/logInFragment" />
+            android:id="@+id/action_fragment_hello_container_to_fragment_enter_container"
+            app:destination="@id/fragment_enter_container" />
     </fragment>
     <fragment
-        android:id="@+id/chooseRoleFragment"
+        android:id="@+id/fragment_choose_role_container"
         android:name="com.flower_tech.auth.ChooseRoleFragment"
         android:label="fragment_choose_role"
         tools:layout="@layout/fragment_choose_role" >
         <action
-            android:id="@+id/action_chooseRoleFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
+            android:id="@+id/action_fragment_choose_role_container_to_fragment_user_data_container"
+            app:destination="@id/fragment_user_data_container" />
     </fragment>
     <fragment
-        android:id="@+id/logInFragment"
-        android:name="com.flower_tech.auth.LogInFragment"
+        android:id="@+id/fragment_enter_container"
+        android:name="com.flower_tech.auth.EnterFragment"
         android:label="fragment_log_in"
-        tools:layout="@layout/fragment_log_in" >
+        tools:layout="@layout/fragment_enter" >
         <action
-            android:id="@+id/action_logInFragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_fragment_enter_container_to_mainActivity"
+            app:destination="@id/main_activity" />
         <action
-            android:id="@+id/action_logInFragment_to_helloFragment"
-            app:destination="@id/helloFragment" />
+            android:id="@+id/action_fragment_user_data_container_to_fragment_hello_container"
+            app:destination="@id/fragment_hello_container" />
     </fragment>
     <fragment
-        android:id="@+id/signInFragment"
-        android:name="com.flower_tech.auth.SignInFragment"
+        android:id="@+id/fragment_user_data_container"
+        android:name="com.flower_tech.auth.UserDataFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" >
+        tools:layout="@layout/fragment_user_data" >
         <action
-            android:id="@+id/action_signInFragment_to_signIn2Fragment"
-            app:destination="@id/signIn2Fragment" />
+            android:id="@+id/action_fragment_user_data_container_to_fragment_account_registration_container"
+            app:destination="@id/fragment_account_registration_container" />
         <action
-            android:id="@+id/action_signInFragment_to_helloFragment"
-            app:destination="@id/helloFragment" />
+            android:id="@+id/action_fragment_user_data_container_to_fragment_hello_container"
+            app:destination="@id/fragment_hello_container" />
     </fragment>
     <fragment
-        android:id="@+id/signIn2Fragment"
-        android:name="com.flower_tech.auth.SignIn2Fragment"
+        android:id="@+id/fragment_account_registration_container"
+        android:name="com.flower_tech.auth.AccountRegistrationFragment"
         android:label="fragment_sign_in2"
-        tools:layout="@layout/fragment_sign_in2" >
+        tools:layout="@layout/fragment_account_registration" >
         <action
-            android:id="@+id/action_signIn2Fragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_fragment_account_registration_container_to_main_activity"
+            app:destination="@id/main_activity" />
     </fragment>
     <activity
-        android:id="@+id/mainActivity"
+        android:id="@+id/main_activity"
         android:name="com.flower_tech.main.MainActivity"
         android:label="MainActivity" />
 </navigation>

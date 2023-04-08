@@ -8,52 +8,44 @@
     tools:context=".auth.ChooseRoleFragment">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/choose_profile_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="429dp"
+        android:layout_marginBottom="375dp"
         android:text="@string/choose_role"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32999998"
-        android:textColor="@color/white"
-        android:textSize="22sp"/>
+        app:layout_constraintVertical_bias="0.31" />
 
     <Button
-        android:id="@+id/doctorButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="265dp"
-        android:background="@drawable/ic_square_button"
+        android:id="@+id/doctor_btn"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_button"
         android:text="@string/doctor"
         android:textAppearance="@style/button_text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.504" />
+        app:layout_constraintTop_toBottomOf="@+id/choose_profile_text" />
 
     <Button
-        android:id="@+id/patientButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="265dp"
-        android:background="@drawable/ic_square_button"
+        android:id="@+id/patient_btn"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_button"
         android:text="@string/patient"
         android:textAppearance="@style/button_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/doctorButton"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.504" />
+        app:layout_constraintStart_toStartOf="@+id/doctor_btn"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

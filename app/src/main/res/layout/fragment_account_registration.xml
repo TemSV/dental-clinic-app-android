@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.LogInFragment"
+    tools:context=".auth.EnterFragment"
     android:background="@color/background_blue">
 
     <Button
@@ -30,9 +30,7 @@
         android:text="@string/new_password_enter"
         android:textAppearance="@style/small_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextPasswordReg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextPasswordReg"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -72,12 +70,10 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:layout_marginBottom="40dp"
         android:ems="12"
         android:inputType="phone"
         android:textColor="@color/white"
         app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordReg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LogoTextRegistration" />
@@ -89,15 +85,13 @@
         android:text="@string/phone_enter"
         android:textAppearance="@style/small_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone" />
 
     <EditText
         android:id="@+id/editTextPasswordReg"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:drawableEnd="@drawable/ic_password"
         android:drawableTint="@color/white"
         android:inputType="textPassword"
@@ -128,12 +122,11 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="@string/new_password_enter2"
         android:textAppearance="@style/small_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword3"
         app:layout_constraintTop_toBottomOf="@+id/editTextPasswordReg"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -145,11 +138,9 @@
         android:buttonTint="@color/white"
         android:text="@string/checkbox_text"
         android:textAppearance="@style/small_text"
-        android:textSize="14sp"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword3"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

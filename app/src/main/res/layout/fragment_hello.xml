@@ -36,9 +36,7 @@
         android:text="@string/message_to_user"
         android:textAlignment="center"
         android:textAppearance="@style/simple_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/HelloText"
         app:layout_constraintTop_toBottomOf="@+id/HelloText" />
 
 
@@ -52,8 +50,7 @@
         android:background="@drawable/ic_button"
         android:text="@string/entry"
         android:textAppearance="@style/button_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/HelloText2"
         app:layout_constraintTop_toBottomOf="@+id/HelloText2" />
 
     <Button
@@ -62,16 +59,12 @@
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/ic_additional_button"
         android:text="@string/registration"
         android:textAppearance="@style/button_text"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/EntryButton"
         app:layout_constraintTop_toBottomOf="@+id/EntryButton" />
 
     <View

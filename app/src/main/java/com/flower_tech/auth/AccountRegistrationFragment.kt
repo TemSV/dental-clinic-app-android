@@ -5,29 +5,27 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.flower_tech.R
-import com.flower_tech.databinding.FragmentHelloBinding
+import com.flower_tech.databinding.FragmentAccountRegistrationBinding
 
-class HelloFragment : Fragment() {
-    private lateinit var binding: FragmentHelloBinding
+class AccountRegistrationFragment : Fragment() {
+    private lateinit var binding: FragmentAccountRegistrationBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentHelloBinding.inflate(inflater)
+    ): View? {
+        binding = FragmentAccountRegistrationBinding.inflate(inflater)
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
-            EntryButton.setOnClickListener{
-                findNavController().navigate(R.id.action_fragment_hello_container_to_fragment_enter_container)
-            }
-            RegistrationButton.setOnClickListener{
-                findNavController().navigate(R.id.action_fragment_hello_container_to_fragment_choose_role_container)
+            EntryButtonToMainMenu.setOnClickListener{
+                findNavController().navigate(R.id.action_fragment_account_registration_container_to_main_activity)
             }
         }
     }
 }
-
