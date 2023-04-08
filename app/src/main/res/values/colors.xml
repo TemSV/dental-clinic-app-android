@@ -30,7 +30,6 @@
     <color name="education_document_data_color">#61A0EA</color>
     <color name="edit_information_btn_text_color">#61A0EA</color>
     <color name="delete_account_btn_text_color">#61A0EA</color>
-    <color name="document_type_list_btn_color">#61A0EA</color>
     <color name="edit_profile_information_line_color_unfocused">#61A0EA</color>
     <color name="educational_institution_data_color">#61A0EA</color>
     <color name="autocomplete_text_color">#61A0EA</color>
@@ -64,7 +63,6 @@
     <color name="education_list_counter_text_color">#FFFFFF</color>
     <color name="degree_list_btn_bg_color">#FFFFFF</color>
     <color name="settings_profile_bg_color">#FFFFFF</color>
-    <color name="document_type_list_btn_bg_color">#FFFFFF</color>
     <color name="go_to_review_btn_bg_color">#FFFFFF</color>
 
     <color name="home_bg_color">#F7F7F7</color>
