@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
 
 class PatientRecyclerViewAdapter(
-    private val patientCards: ArrayList<PatientCard>
+    private val patientCards: MutableList<PatientCard>
 ) : RecyclerView.Adapter<PatientRecyclerViewAdapter.PatientRecyclerViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PatientRecyclerViewHolder {

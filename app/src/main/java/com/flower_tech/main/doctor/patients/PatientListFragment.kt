@@ -31,54 +31,44 @@ class PatientListFragment : Fragment() {
     private fun getPatientCards(): ArrayList<PatientCard> {
         return arrayListOf(
             PatientCard(
-                R.drawable.ic_empty_profile_pic,
-                "Юлия Сергеевна\n" +
-                        "Иванова",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.ic_empty_profile_pic,
-                "Юлия Сергеевна\n" +
-                        "Иванова",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.ic_empty_profile_pic,
-                "Юлия Сергеевна\n" +
-                        "Иванова",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.ic_empty_profile_pic,
-                "Юлия Сергеевна\n" +
-                        "Иванова",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.ic_empty_profile_pic,
-                "Юлия Сергеевна\n" +
-                        "Иванова",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.ic_empty_profile_pic,
-                "Юлия Сергеевна\n" +
-                        "Иванова",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.ic_empty_profile_pic,
-                "Юлия Сергеевна\n" +
-                        "Иванова",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.ic_empty_profile_pic,
-                "Юлия Сергеевна\n" +
-                        "Иванова",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.ic_empty_profile_pic,
-                "Юлия Сергеевна\n" +
-                        "Иванова",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.ic_empty_profile_pic,
-                "Юлия Сергеевна\n" +
-                        "Иванова",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
         )
     }
