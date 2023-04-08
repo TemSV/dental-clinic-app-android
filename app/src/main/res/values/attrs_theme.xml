@@ -3,6 +3,9 @@
     <attr name="color_primary" format="reference" />
     <attr name="color_secondary" format="reference" />
     <attr name="color_tertiary" format="reference" />
+    <attr name="color_divider" format="reference" />
+    <attr name="color_quaternary" format="reference" />
+    <attr name="color_fivefold" format="reference" />
 
     <attr name="background_color_primary" format="reference" />
     <attr name="background_color_secondary" format="reference" />
@@ -13,6 +16,7 @@
     <attr name="text_color_tertiary" format="reference" />
     <attr name="text_color_quaternary" format="reference" />
     <attr name="text_color_fivefold" format="reference" />
+    <attr name="text_color_hexadecimal" format="reference" />
 
     <attr name="icon_tint_color_primary" format="reference" />
     <attr name="icon_tint_color_secondary" format="reference" />
