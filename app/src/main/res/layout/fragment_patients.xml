@@ -49,7 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/patient_app_bar"
         android:background="@drawable/search_view_background"
-        android:queryHint="Поиск"
+        android:queryHint="@string/search"
         android:iconifiedByDefault="false" />
 
     <androidx.recyclerview.widget.RecyclerView

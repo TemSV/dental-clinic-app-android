@@ -51,5 +51,6 @@
     <string name="completed">Завершенные</string>
     <string name="cancel_appointment">Отменить запись</string>
     <string name="patients">Пациенты</string>
+    <string name="search">Поиск</string>
 
 </resources>
