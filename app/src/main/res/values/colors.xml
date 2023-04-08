@@ -26,17 +26,12 @@
     <color name="name_card_bg_color">#61A0EA</color>
     <color name="main_info_card">#61A0EA</color>
     <color name="schedule_label_text_color">#61A0EA</color>
-    <color name="specialization_data_color">#61A0EA</color>
-    <color name="education_document_data_color">#61A0EA</color>
     <color name="edit_information_btn_text_color">#61A0EA</color>
     <color name="delete_account_btn_text_color">#61A0EA</color>
     <color name="edit_profile_information_line_color_unfocused">#61A0EA</color>
-    <color name="educational_institution_data_color">#61A0EA</color>
     <color name="autocomplete_text_color">#61A0EA</color>
-    <color name="degree_data_color">#61A0EA</color>
     <color name="logout_btn_bg_color">#61A0EA</color>
     <color name="degree_list_btn_color">#61A0EA</color>
-    <color name="years_of_education_data_color">#61A0EA</color>
     <color name="event_action_text_color">#61A0EA</color>
     <color name="event_date_text_color">#61A0EA</color>
     <color name="notification_label_text_color">#61A0EA</color>
@@ -60,7 +55,6 @@
     <color name="go_to_portfolio_btn_bg_color">#FFFFFF</color>
     <color name="information_text_color">#FFFFFF</color>
     <color name="notifications_counter_color">#FFFFFF</color>
-    <color name="education_list_counter_text_color">#FFFFFF</color>
     <color name="degree_list_btn_bg_color">#FFFFFF</color>
     <color name="settings_profile_bg_color">#FFFFFF</color>
     <color name="go_to_review_btn_bg_color">#FFFFFF</color>
@@ -68,9 +62,7 @@
     <color name="home_bg_color">#F7F7F7</color>
     <color name="profile_bg_color">#F7F7F7</color>
 
-
     <color name="document_list_text_color">#303030</color>
-    <color name="education_document_name_text_color">#303030</color>
     <color name="years_text_color">#303030</color>
     <color name="event_description_text_color">#303030</color>
     <color name="profile_username_text_color">#303030</color>
@@ -78,8 +70,6 @@
     <color name="profile_city_text_color">#303030</color>
     <color name="profile_education_label_text_color">#303030</color>
     <color name="educational_institution_text_color">#303030</color>
-    <color name="educational_institution_input_text_color">#303030</color>
-    <color name="specialization_input_text_color">#303030</color>
     <color name="change_password_label_text_color">#303030</color>
     <color name="message_label_text_color">#303030</color>
     <color name="record_label_text_color">#303030</color>
@@ -88,7 +78,6 @@
     <color name="user_agreement_text_color">#303030</color>
     <color name="current_data_text_color">#303030</color>
     <color name="event_date_list">#303030</color>
-    <color name="years_of_education_input_text_color">#303030</color>
 
     <color name="profile_address_text_color">#818181</color>
     <color name="main_color">#818181</color>
