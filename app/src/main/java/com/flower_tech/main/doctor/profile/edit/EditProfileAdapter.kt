@@ -6,10 +6,8 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.AutoCompleteTextView
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.*
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
 import com.flower_tech.structures.Education
@@ -41,7 +39,7 @@ class EditProfileAdapter(
 
     override fun getItemCount() = educations.size + 1
 
-    class EducationInfoItemViewHolder(view: View, private val context: Context) :
+    class EducationInfoItemViewHolder(private val view: View, private val context: Context) :
         RecyclerView.ViewHolder(view) {
         private val counter = view.findViewById<TextView>(R.id.education_list_counter)
         private val documentName = view.findViewById<TextView>(R.id.education_document_name)
@@ -50,6 +48,7 @@ class EditProfileAdapter(
         private val educationalInstitution =
             view.findViewById<AutoCompleteTextView>(R.id.educational_institution_input)
         private val yearsOfEducation = view.findViewById<EditText>(R.id.years_of_education_input)
+        private val degreeList = view.findViewById<Spinner>(R.id.degree_list)
 
         @SuppressLint("SetTextI18n")
         fun bind(item: Education, position: Int) {
@@ -74,6 +73,17 @@ class EditProfileAdapter(
                     getEducationalInstitutions()
                 )
             )
+
+            setUpSpinner()
+        }
+
+        private fun setUpSpinner() {
+            view.findViewById<ConstraintLayout>(R.id.degree_card).setOnClickListener {
+                degreeList.performClick()
+            }
+            degreeList.adapter =
+                ArrayAdapter(context, R.layout.item_spinner_profile, R.id.document_type, view.resources.getStringArray(
+                    R.array.degree_types))
         }
 
         private fun getSpecializations(): MutableList<String> {
