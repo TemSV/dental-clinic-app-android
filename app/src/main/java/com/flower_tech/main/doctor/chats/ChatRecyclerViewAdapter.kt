@@ -34,10 +34,10 @@ class ChatRecyclerViewAdapter(
         private val chatDate : TextView = itemView.findViewById(R.id.chat_date_text_view)
 
         fun bindChatCard(chatCard: ChatCard) {
-            chatPatientIcon.setImageResource(chatCard.chatPatientIcon)
-            chatPatientName.text = chatCard.chatPatientName
-            chatText.text = chatCard.chatText
-            chatDate.text = chatCard.chatDate
+            chatPatientIcon.setImageResource(chatCard.patientIcon)
+            chatPatientName.text = chatCard.patientName
+            chatText.text = chatCard.text
+            chatDate.text = chatCard.date
         }
     }
 }

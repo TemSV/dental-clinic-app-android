@@ -1,8 +1,8 @@
 package com.flower_tech.main.doctor.chats
 
 data class ChatCard (
-    val chatPatientIcon: Int,
-    val chatPatientName: String,
-    val chatText: String,
-    val chatDate: String,
+    val patientIcon: Int,
+    val patientName: String,
+    val text: String,
+    val date: String,
 )
