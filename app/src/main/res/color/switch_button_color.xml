@@ -13,7 +13,7 @@
 
     <item
         android:state_enabled="false"
-        android:color="@color/schedule_label_text_color" />
+        android:color="?attr/color_primary" />
 
-    <item android:color="@color/schedule_label_text_color" />
+    <item android:color="?attr/color_primary" />
 </selector>

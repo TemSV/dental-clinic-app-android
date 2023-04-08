@@ -64,8 +64,6 @@
     <color name="division_code_input_text_color">#818181</color>
     <color name="education_document_input_text_color">#818181</color>
 
-    <color name="edit_profile_information_line_color_focused">#5A98E1</color>
-
     <color name="feedback_btn_color">#979797</color>
     <color name="user_agreement_btn_color">#979797</color>
     <color name="message_btn_color">#979797</color>

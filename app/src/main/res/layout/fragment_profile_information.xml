@@ -11,7 +11,7 @@
         android:id="@+id/profile_information_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/main_bar_bg_color"
+        android:background="?attr/background_color_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,7 +20,7 @@
             android:id="@+id/profile_information_app_bar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/main_bar_bg_color"
+            android:background="?attr/background_color_primary"
             android:theme="@style/ProfileInformationToolbarTheme"
             app:menu="@menu/profile_information_app_bar"
             app:navigationIcon="@drawable/ic_back">
@@ -180,7 +180,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="36dp"
                 android:layout_marginEnd="16dp"
-                android:background="@color/divider_color"
+                android:background="?attr/color_divider"
                 app:layout_constraintEnd_toEndOf="@id/user_info_card"
                 app:layout_constraintStart_toStartOf="@id/user_info_card"
                 app:layout_constraintTop_toBottomOf="@id/user_info_card" />
@@ -263,7 +263,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
-                android:background="@color/divider_color"
+                android:background="?attr/color_divider"
                 app:layout_constraintEnd_toEndOf="@id/mapWithClinics"
                 app:layout_constraintStart_toStartOf="@id/mapWithClinics"
                 app:layout_constraintTop_toBottomOf="@id/mapWithClinics" />
