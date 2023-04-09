@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/chat_list_bg_color">
+    android:background="@color/smoky_white">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/chat_patient_icon_image_view"
