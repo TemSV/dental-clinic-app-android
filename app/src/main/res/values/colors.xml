@@ -16,37 +16,17 @@
 
     <color name="events_label_text_color">#000000</color>
 
-    <color name="security_label_text_color">#61A0EA</color>
-    <color name="delete_account_btn_text_color">#61A0EA</color>
     <color name="autocomplete_text_color">#61A0EA</color>
-    <color name="logout_btn_bg_color">#61A0EA</color>
-    <color name="notification_label_text_color">#61A0EA</color>
     <color name="main_nav_btn_color">#61A0EA</color>
 
-    <color name="logout_btn_text_color">#FFFFFF</color>
     <color name="bottom_nav_bg_color">#FFFFFF</color>
-    <color name="user_agreement_btn_bg_color">#FFFFFF</color>
-    <color name="profile_settings_bar_bg_color">#FFFFFF</color>
-    <color name="change_password_btn_bg_color">#FFFFFF</color>
     <color name="message_btn_bg_color">#FFFFFF</color>
-    <color name="feedback_btn_bg_color">#FFFFFF</color>
-    <color name="settings_profile_bg_color">#FFFFFF</color>
 
     <color name="home_bg_color">#F7F7F7</color>
-
-    <color name="change_password_label_text_color">#303030</color>
-    <color name="message_label_text_color">#303030</color>
-    <color name="record_label_text_color">#303030</color>
-    <color name="version_label_text_color">#303030</color>
-    <color name="feedback_label_text_color">#303030</color>
-    <color name="user_agreement_text_color">#303030</color>
 
     <color name="main_color">#818181</color>
     <color name="division_code_input_text_color">#818181</color>
     <color name="education_document_input_text_color">#818181</color>
 
-    <color name="feedback_btn_color">#979797</color>
-    <color name="user_agreement_btn_color">#979797</color>
     <color name="message_btn_color">#979797</color>
-    <color name="change_password_btn_color">#979797</color>
 </resources>

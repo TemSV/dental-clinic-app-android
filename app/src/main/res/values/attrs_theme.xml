@@ -6,6 +6,7 @@
     <attr name="color_divider" format="reference" />
     <attr name="color_quaternary" format="reference" />
     <attr name="color_fivefold" format="reference" />
+    <attr name="color_octal" format="reference" />
 
     <attr name="background_color_primary" format="reference" />
     <attr name="background_color_secondary" format="reference" />

@@ -5,6 +5,7 @@
         <item name="color_tertiary">@color/signal_black</item>
         <item name="color_quaternary">@color/orange</item>
         <item name="color_fivefold">@color/dark_blue</item>
+        <item name="color_octal">@color/light_grey</item>
         <item name="color_divider">@color/grey</item>
 
         <item name="background_color_primary">@color/white</item>
