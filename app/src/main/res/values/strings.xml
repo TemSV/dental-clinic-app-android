@@ -16,7 +16,7 @@
     <string name="doctor">врач</string>
     <string name="phone_enter">Телефон</string>
     <string name="password_enter">Пароль</string>
-    <string name="checkbox_text">Нажимая на кнопку «Зарегистрироваться», я даю\n согласие на обработку персональных данных</string>
+    <string name="checkbox_text">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных</string>
     <string name="new_password_enter2">Подтвердите пароль</string>
     <string name="new_password_enter">Придумайте пароль</string>
     <string name="surname_enter">Фамилия</string>
