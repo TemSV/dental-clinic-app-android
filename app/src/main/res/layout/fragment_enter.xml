@@ -45,12 +45,14 @@
             app:layout_constraintStart_toStartOf="@id/edit_phone_entry"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
+        <com.github.pinball83.maskededittext.MaskedEditText
             android:id="@+id/edit_phone_entry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
+            app:mask="+7(***) ***-**-**"
+            app:notMaskedSymbol="*"
             android:layout_marginBottom="40dp"
-            android:inputType="phone"
             android:textColor="?attr/text_color_primary"
             app:backgroundTint="?attr/background_color_primary"
             app:layout_constraintBottom_toTopOf="@id/edit_password_entry"
