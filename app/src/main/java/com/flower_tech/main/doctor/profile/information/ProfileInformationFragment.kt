@@ -27,10 +27,19 @@ class ProfileInformationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             setUpRecyclerView(educationContainer)
+        }
+        setUpNavigation()
+    }
+
+    private fun setUpNavigation() {
+        with(binding) {
             profileInformationAppBar.setNavigationOnClickListener {
                 findNavController().navigate(R.id.action_fragment_profile_information_container_to_fragment_profile_container)
             }
             root.findViewById<View>(R.id.chatSettings).setOnClickListener {
+                findNavController().navigate(R.id.action_fragment_profile_information_container_to_fragment_settings_container)
+            }
+            editInformationBtn.setOnClickListener {
                 findNavController().navigate(R.id.action_fragment_profile_information_container_to_fragment_edit_profile_container)
             }
         }

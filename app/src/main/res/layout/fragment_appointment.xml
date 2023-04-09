@@ -4,25 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/home_bg_color"
+    android:background="@color/smoky_white"
     tools:context=".main.doctor.appointment.presentation.AppointmentFragment">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/event_bar"
+        android:id="@+id/appointment_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/home_bg_color"
+        android:background="@color/profile_edit_bar_bg_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/event_app_bar"
+            android:id="@+id/appointment_app_bar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/home_bg_color"
+            android:background="@color/profile_edit_bar_bg_color"
             app:navigationIcon="@drawable/ic_back"
-            app:title="7 марта 15:00"
+            app:title="Запись"
+            android:textColor="@color/light_blue"
+            android:textSize="18sp"
             app:titleCentered="true" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -33,12 +35,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:textSize="12sp"
+        android:textColor="@color/light_blue"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/event_bar"
-        tools:text="Время" />
+        app:layout_constraintTop_toBottomOf="@+id/appointment_bar"
+        android:text="@string/time" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/appointment_time_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -55,13 +58,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
+        android:textColor="@color/light_blue"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        tools:text="Пациент" />
+        app:layout_constraintTop_toBottomOf="@+id/appointment_time_text"
+        android:text="@string/patient" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/appointment_name_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -73,7 +77,7 @@
         tools:text="Иванова Юлия Сергеевна" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/patient_chart"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -82,7 +86,7 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10">
+        app:layout_constraintTop_toBottomOf="@+id/appointment_name_text">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -93,13 +97,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:textColor="@color/black"
+                android:textColor="@color/light_blue"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:text="@string/patient_card"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="Карта пациента" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -115,7 +119,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView1"
+        android:id="@+id/dental_formula"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -124,7 +128,7 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
+        app:layout_constraintTop_toBottomOf="@+id/patient_chart">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -135,13 +139,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:textColor="@color/black"
+                android:textColor="@color/light_blue"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Зубная формула" />
+                android:text="@string/dental_formula" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -164,7 +168,8 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/selector_appointment_cancel_button"
         android:text="@string/cancel_appointment"
-        android:textColor="@color/home_bg_color"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -177,8 +182,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/selector_appointment_button"
-        android:text="@string/cancel_appointment"
-        android:textColor="@color/main_color"
+        android:textAllCaps="false"
+        android:text="@string/complete_appointment"
+        android:textColor="@color/light_blue"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -190,9 +196,9 @@
         android:layout_height="0dp"
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_chats_active"
-        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintBottom_toBottomOf="@+id/appointment_name_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView10" />
+        app:layout_constraintTop_toTopOf="@+id/appointment_name_text" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -200,8 +206,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:src="@drawable/ic_patients_active"
-        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintBottom_toBottomOf="@+id/appointment_name_text"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/textView10" />
+        app:layout_constraintTop_toTopOf="@+id/appointment_name_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

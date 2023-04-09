@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/home_bg_color"
+    android:background="@color/smoky_white"
     tools:context=".main.doctor.appointment.presentation.AppointmentListFragment">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/event_bar"
+        android:id="@+id/appointment_list_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/home_bg_color"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,8 +20,8 @@
             android:id="@+id/event_app_bar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/home_bg_color"
-            app:navigationIcon="@drawable/ic_back"
+            android:background="@color/white"
+            app:titleTextColor="@color/black"
             app:title="@string/appointments"
             app:titleCentered="true" />
     </com.google.android.material.appbar.AppBarLayout>
@@ -33,35 +33,35 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:checkedButton="@id/actual_appointment"
         android:layout_marginEnd="16dp"
         android:background="@drawable/bg_appointment_switch"
+        android:checkedButton="@id/actual_appointment"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/event_bar">
+        app:layout_constraintTop_toBottomOf="@+id/appointment_list_bar">
 
         <RadioButton
             android:id="@+id/actual_appointment"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_weight="1"
-            android:background="@drawable/selector_appointment_switch"
+            android:background="@drawable/selector_appointment_switch_background"
             android:button="@null"
             android:gravity="center"
             android:text="@string/actual"
-            android:textColor="@color/black" />
+            android:textColor="@drawable/selector_appointment_switch_text" />
 
         <RadioButton
             android:id="@+id/finished_appointment"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_weight="1"
-            android:background="@drawable/selector_appointment_switch"
+            android:background="@drawable/selector_appointment_switch_background"
             android:button="@null"
             android:gravity="center"
             android:text="@string/completed"
-            android:textColor="@color/black" />
+            android:textColor="@drawable/selector_appointment_switch_text" />
     </RadioGroup>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -70,11 +70,12 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chipGroup2"
-        tools:itemCount="1"
+        tools:itemCount="5"
         tools:listitem="@layout/item_appointment" />
 
 
