@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_blue"
+    android:background="@color/light_blue"
     tools:context=".auth.ChooseRoleFragment">
 
     <TextView
@@ -26,24 +26,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.31" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/doctor_btn"
         android:layout_width="240dp"
         android:layout_height="70dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/ic_button"
+        android:background="@drawable/selector_enter_button_main"
         android:text="@string/doctor"
         android:textAppearance="@style/button_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/choose_profile_text" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/patient_btn"
         android:layout_width="240dp"
         android:layout_height="70dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/ic_button"
+        android:background="@drawable/selector_enter_button_main"
         android:text="@string/patient"
         android:textAppearance="@style/button_text"
         app:layout_constraintStart_toStartOf="@+id/doctor_btn"
