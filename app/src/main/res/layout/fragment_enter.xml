@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.EnterFragment"
+    android:background="?attr/background_color_tertiary">
+
+    <ImageView
+        android:id="@+id/logo_acc_entry"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/ic_logo_small"
+        app:layout_constraintStart_toStartOf="@id/hello_container"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logo_text_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/entry"
+        android:textAppearance="@style/label_text"
+        app:layout_constraintBottom_toBottomOf="@id/logo_acc_entry"
+        app:layout_constraintStart_toEndOf="@id/logo_acc_entry" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hello_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="30dp">
+
+        <TextView
+            android:id="@+id/text_phone_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_enter"
+            android:textAppearance="@style/small_text"
+            app:layout_constraintStart_toStartOf="@id/edit_phone_entry"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_phone_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:inputType="phone"
+            android:textColor="?attr/text_color_primary"
+            app:backgroundTint="?attr/background_color_primary"
+            app:layout_constraintBottom_toTopOf="@id/edit_password_entry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_phone_entry" />
+
+        <TextView
+            android:id="@+id/text_password_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/password_enter"
+            android:textAppearance="@style/small_text"
+            app:layout_constraintBottom_toTopOf="@id/edit_password_entry"
+            app:layout_constraintStart_toStartOf="@id/edit_password_entry"
+            app:layout_constraintTop_toBottomOf="@id/edit_phone_entry" />
+
+        <EditText
+            android:id="@+id/edit_password_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:drawableEnd="@drawable/ic_password"
+            android:inputType="textPassword"
+            android:textColor="?attr/text_color_primary"
+            app:backgroundTint="?attr/background_color_primary"
+            app:layout_constraintStart_toStartOf="@id/edit_phone_entry"
+            app:layout_constraintTop_toBottomOf="@id/edit_phone_entry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/entry_button_to_main_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/selector_enter_button_main"
+            android:text="@string/invitation_to_entry"
+            android:textAppearance="@style/button_text"
+            app:layout_constraintStart_toStartOf="@id/edit_password_entry"
+            app:layout_constraintTop_toBottomOf="@id/edit_password_entry"
+            />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/forgot_password"
+            android:textAppearance="@style/small_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/entry_button_to_main_menu" />
+
+        <TextView
+            android:id="@+id/invitation_to_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/invitation_to_registration_underline"
+            android:textAppearance="@style/small_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/forgot_password" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
