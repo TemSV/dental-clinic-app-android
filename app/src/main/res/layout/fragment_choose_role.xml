@@ -8,7 +8,7 @@
     tools:context=".auth.ChooseRoleFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/hello_container"
+        android:id="@+id/role_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
