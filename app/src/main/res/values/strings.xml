@@ -51,5 +51,10 @@
     <string name="completed">Завершенные</string>
     <string name="cancel_appointment">Отменить запись</string>
     <string name="patients">Пациенты</string>
+    <string name="patient_card">Карта пациента</string>
+    <string name="time">Время</string>
+    <string name="patient">Пациент</string>
+    <string name="dental_formula">Зубная формула</string>
+    <string name="complete_appointment">Завершить запись</string>
 
 </resources>

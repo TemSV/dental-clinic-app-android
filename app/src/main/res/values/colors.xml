@@ -3,6 +3,9 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="smoky_white">#F7F7F7</color>
+    <color name="light_blue">#61A0EA</color>
+    <color name="orange">#FF896E</color>
     <color name="home_bg_color">#CDCDCD</color>
     <color name="edit_profile_information_line_color_focused">#2E62C8</color>
     <color name="bottom_nav_bg_color">#FFFFFF</color>
