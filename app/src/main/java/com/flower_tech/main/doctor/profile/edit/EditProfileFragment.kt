@@ -2,10 +2,15 @@ package com.flower_tech.main.doctor.profile.edit
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageButton
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,7 +21,7 @@ import com.flower_tech.structures.Education
 
 class EditProfileFragment : Fragment() {
     private lateinit var binding: FragmentEditProfileBinding
-    private val data: MutableList<Education> = getEducation();
+    private val data: MutableList<Education> = getEducation()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,11 +36,84 @@ class EditProfileFragment : Fragment() {
         with(binding) {
             setUpRecyclerView(educationList)
             setUpAddButton(addDocumentBtn)
+        }
+        setUpNavigation()
+        setUpAutoCompleteText()
+        setUpSectionButtons()
+        setUpSpinner()
+    }
+
+    private fun setUpSpinner() {
+        with(binding) {
+            documentTypeCard.setOnClickListener {
+                binding.documentTypeList.performClick()
+            }
+            context?.let {
+                documentTypeList.adapter =
+                    ArrayAdapter(it, R.layout.item_spinner_profile, R.id.document_type, resources.getStringArray(R.array.document_types))
+            }
+        }
+    }
+
+    private fun setUpSectionButtons() {
+        with(binding) {
+            personalDataBtn.setOnClickListener {
+                setUpDropDownBtn(btn = personalDataBtn, layout = personalDataContainer)
+            }
+            educationDataBtn.setOnClickListener {
+                setUpDropDownBtn(btn = educationDataBtn, layout = educationContainer)
+            }
+            documentsDataBtn.setOnClickListener {
+                setUpDropDownBtn(btn = documentsDataBtn, layout = documentsContainer)
+            }
+        }
+    }
+
+    private fun setUpDropDownBtn(btn: ImageButton, layout: ConstraintLayout) {
+        val isShown = layout.isVisible
+        layout.visibility = if (isShown) View.GONE else View.VISIBLE
+        val rotateDegree =
+            if (isShown) btn.rotation - 90 else btn.rotation + 90
+        btn.animate().rotation(rotateDegree).start()
+    }
+
+    private fun setUpAutoCompleteText() {
+        with(binding) {
+            context?.let {
+                cityInput.setAdapter(
+                    ArrayAdapter(
+                        it,
+                        R.layout.item_autocomplete_list,
+                        R.id.text_view_list_item,
+                        getCountries()
+                    )
+                )
+                districtList.setAdapter(
+                    ArrayAdapter(
+                        it,
+                        R.layout.item_autocomplete_list,
+                        R.id.text_view_list_item,
+                        getSaintPetersburgCountries()
+                    )
+                )
+                clinicAddressInput.setAdapter(
+                    ArrayAdapter(
+                        it,
+                        R.layout.item_autocomplete_list,
+                        R.id.text_view_list_item,
+                        getAddresses()
+                    )
+                )
+            }
+        }
+    }
+
+    private fun setUpNavigation() {
+        with(binding) {
             profileEditAppBar.setNavigationOnClickListener {
                 findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_profile_information_container)
             }
         }
-
     }
 
     @SuppressLint("NotifyDataSetChanged")
@@ -43,7 +121,7 @@ class EditProfileFragment : Fragment() {
         button.setOnClickListener {
             if (allIsRight()) {
                 data.add(Education())
-                binding.educationList.adapter?.notifyItemInserted(data.size - 1)
+                binding.educationList.adapter?.notifyDataSetChanged()
             }
         }
     }
@@ -66,9 +144,9 @@ class EditProfileFragment : Fragment() {
 
     private fun setUpRecyclerView(recyclerView: RecyclerView) {
         recyclerView.apply {
-            setHasFixedSize(false)
+            setHasFixedSize(true)
             isNestedScrollingEnabled = false
-            adapter = EditProfileAdapter(data)
+            adapter = EditProfileAdapter(data, context)
             layoutManager = LinearLayoutManager(context)
         }
     }
@@ -76,6 +154,53 @@ class EditProfileFragment : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = EditProfileFragment()
+    }
+
+    private fun getAddresses(): MutableList<String> {
+        return arrayListOf(
+            "Политехническая 29",
+            "Большой проспект Васильевского острова, 15",
+            "улица Лизы Чайкиной, 19",
+            "улица Ленина, 48"
+        )
+    }
+
+    private fun getCountries(): MutableList<String> {
+        return arrayListOf(
+            "Санкт-Петербург",
+            "Абакан",
+            "Брянск",
+            "Вологда",
+            "Грозный",
+            "Екатеринбург",
+            "Ейск",
+            "Кемерово",
+            "Курск",
+            "Комсомольск-на-Амуре",
+        )
+    }
+
+    private fun getSaintPetersburgCountries(): MutableList<String> {
+        return arrayListOf(
+            "Адмиралтейский район",
+            "Василеостровский район",
+            "Выборгский район",
+            "Калининский район",
+            "Кировский район",
+            "Колпинский район",
+            "Колпинский район",
+            "Красносельский район",
+            "Кронштадтский район",
+            "Курортный район",
+            "Московский район",
+            "Московский район",
+            "Петроградский район",
+            "Петродворцовый район",
+            "Приморский район",
+            "Пушкинский район",
+            "Фрунзенский район",
+            "Центральный район"
+        )
     }
 
     private fun getEducation(): MutableList<Education> {

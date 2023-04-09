@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.flower_tech.R
 import com.flower_tech.databinding.FragmentEventsBinding
 import com.flower_tech.structures.Event
 
@@ -14,9 +16,7 @@ class EventsFragment : Fragment() {
     private val sectionNamesList: ArrayList<String> = ArrayList()
     private val itemList: HashMap<String, List<Event>> = HashMap()
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    init {
         sectionNamesList.add("Сегодня")
         sectionNamesList.add("Вчера")
         sectionNamesList.add("На этой неделе")
@@ -28,7 +28,6 @@ class EventsFragment : Fragment() {
         itemList[sectionNamesList[2]] = getWeekEvents()
         itemList[sectionNamesList[2]] = getMonthEvents()
         itemList[sectionNamesList[4]] = getLastEvents()
-
     }
 
     override fun onCreateView(
@@ -36,15 +35,23 @@ class EventsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentEventsBinding.inflate(inflater)
-        // Inflate the layout for this fragment
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setUpNavigation()
         binding.allEventsContainer.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = EventsAdapter(itemList, sectionNamesList)
+        }
+    }
+
+    private fun setUpNavigation() {
+        with(binding) {
+            eventAppBar.setNavigationOnClickListener {
+                findNavController().navigate(R.id.action_fragment_events_container_to_fragment_profile_container)
+            }
         }
     }
 

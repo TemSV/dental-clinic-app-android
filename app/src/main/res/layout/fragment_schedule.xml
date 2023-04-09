@@ -4,28 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_grey"
+    android:background="@color/home_bg_color"
     tools:context=".main.doctor.profile.schedule.ScheduleFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/schedule_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/profile_edit_bar_bg_color"
+        android:background="?attr/background_color_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.appbar.MaterialToolbar
+        <Toolbar
             android:id="@+id/schedule_app_bar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/profile_edit_bar_bg_color"
-            app:navigationIcon="@drawable/ic_back"
-            app:title="@string/shedule"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:titleCentered="true" />
+            android:layout_height="wrap_content"
+            android:theme="@style/ScheduleToolbarTheme"
+            android:navigationIcon="@drawable/ic_back"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedule_label_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
@@ -59,8 +73,8 @@
         android:id="@+id/toggle"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginTop="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/switch_button_calendar_background"
         android:checkedButton="@+id/offer"
@@ -80,8 +94,8 @@
             android:background="@drawable/toggle_widget_background"
             android:button="@null"
             android:gravity="center"
-            android:text="Search"
-            android:textColor="@color/main_color" />
+            android:text="Рабочий"
+            android:textColor="@color/switch_button_color" />
 
         <RadioButton
             android:id="@+id/offer"
@@ -94,8 +108,8 @@
             android:background="@drawable/toggle_widget_background"
             android:button="@null"
             android:gravity="center"
-            android:text="Offers"
-            android:textColor="@color/main_color" />
+            android:text="Нерабочий"
+            android:textColor="@color/switch_button_color" />
     </RadioGroup>
 
 
