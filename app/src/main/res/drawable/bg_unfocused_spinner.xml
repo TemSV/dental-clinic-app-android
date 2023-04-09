@@ -3,7 +3,7 @@
     <item>
         <shape android:shape="rectangle">
             <stroke
-                android:color="@color/edit_profile_information_line_color_unfocused"
+                android:color="?attr/color_primary"
                 android:width="1dp"
                 />
         </shape>

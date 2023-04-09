@@ -17,6 +17,7 @@
     <attr name="text_color_quaternary" format="reference" />
     <attr name="text_color_fivefold" format="reference" />
     <attr name="text_color_hexadecimal" format="reference" />
+    <attr name="text_color_sevenfold" format="reference" />
 
     <attr name="icon_tint_color_primary" format="reference" />
     <attr name="icon_tint_color_secondary" format="reference" />
