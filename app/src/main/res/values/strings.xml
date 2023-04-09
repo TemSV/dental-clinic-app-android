@@ -27,6 +27,7 @@
     <string name="male_gender">Мужской</string>
     <string name="female_gender">Женский</string>
     <string name="date_enter">Дата рождения</string>
+    <string name="logo_description">Лого</string>
     <string name="go_to_profile_btn_desc">Go to profile</string>
     <string name="edit_schedule_btn_desc">Edit schedule</string>
     <string name="go_to_portfolio_btn_desc">Go to profile</string>
