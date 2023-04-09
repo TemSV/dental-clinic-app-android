@@ -90,7 +90,8 @@
             android:text="@string/invitation_to_entry"
             android:textAppearance="@style/button_text"
             app:layout_constraintStart_toStartOf="@id/edit_password_entry"
-            app:layout_constraintTop_toBottomOf="@id/edit_password_entry" />
+            app:layout_constraintTop_toBottomOf="@id/edit_password_entry"
+            />
 
         <TextView
             android:id="@+id/forgot_password"
