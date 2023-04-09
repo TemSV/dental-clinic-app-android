@@ -1,7 +1,32 @@
 <resources>
     <string name="app_name">android</string>
+    <string name="default_notifications_counter">0</string>
     <string name="shedule">Расписание</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_to_user">Здравствуйте!</string>
+    <string name="message_to_user">Войдите или зарегистрируйтесь,\n чтобы получить доступ</string>
+    <string name="entry">Вход</string>
+    <string name="registration">Регистрация</string>
+    <string name="choose_role">Выберите\n ваш профиль</string>
+    <string name="invitation_to_entry">Войти</string>
+    <string name="invitation_to_registration">Зарегистрироваться</string>
+    <string name="invitation_to_registration_underline"><u>Зарегистрироваться</u></string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="doctor">врач</string>
+    <string name="phone_enter">Телефон</string>
+    <string name="password_enter">Пароль</string>
+    <string name="checkbox_text">Нажимая на кнопку «Зарегистрироваться», я даю\n согласие на обработку персональных данных</string>
+    <string name="new_password_enter2">Подтвердите пароль</string>
+    <string name="new_password_enter">Придумайте пароль</string>
+    <string name="surname_enter">Фамилия</string>
+    <string name="name_enter">Имя</string>
+    <string name="second_name_enter">Отчество</string>
+    <string name="gender_enter">Пол</string>
+    <string name="city_enter">Город</string>
+    <string name="male_gender">Мужской</string>
+    <string name="female_gender">Женский</string>
+    <string name="date_enter">Дата рождения</string>
+    <string name="logo_description">Лого</string>
     <string name="go_to_profile_btn_desc">Go to profile</string>
     <string name="edit_schedule_btn_desc">Edit schedule</string>
     <string name="go_to_portfolio_btn_desc">Go to profile</string>
@@ -9,9 +34,11 @@
     <string name="review_label_text">Отзывы</string>
     <string name="schedule_label_text">Расписание</string>
     <string name="events_label_text">События</string>
-    <string name="edit_information_btn">Редактировать личную информацию</string>
+    <string name="edit_information_btn"><u>Редактировать личную информацию</u></string>
+    <string name="delete_account_btn"><u>Удалить аккаунт</u></string>
     <string name="event_app_bar_name">События</string>
     <string name="profile_information_app_bar_name">Профиль</string>
+    <string name="main_app_bar_name">Главная</string>
     <string name="map_marker_description">Icon with map marker</string>
     <string name="profile_education_label">Образование</string>
     <string name="go_to_events_btn">Смотреть больше</string>
@@ -19,13 +46,23 @@
     <string name="personal_data_text">Личные данные</string>
     <string name="name_data_text">Имя</string>
     <string name="surname_data_text">Фамилия</string>
+    <string name="feedback_label">Обратная связь</string>
+    <string name="user_agreement_label">Пользовательское соглашение</string>
+    <string name="message_label">Сообщения</string>
     <string name="patronymic_data_text">Отчество</string>
+    <string name="record_label">Новая запись</string>
+    <string name="version_label">Версия</string>
+    <string name="info_label">О приложении</string>
     <string name="city_data_text">Город</string>
+    <string name="notification_label">Уведомления</string>
     <string name="district_data_text">Район</string>
+    <string name="profile_settings_app_bar_name">Ещё</string>
+    <string name="degree_data_text">Уровень образования</string>
     <string name="clinic_address_data_text">Адрес клиники</string>
     <string name="education_address_data_text">Образование</string>
     <string name="educational_institution_data_text">Учебное заведение</string>
-    <string name="specialization_data_text">Специализация</string>
+    <string name="specialization_data_text">Специальность</string>
+    <string name="years_of_education_data_text">Годы обучения</string>
     <string name="education_document_data_text">Документ об образовании</string>
     <string name="document_type_data_text">Вид документа</string>
     <string name="passport_series_data_text">Серия</string>
@@ -40,17 +77,41 @@
     <string name="polis_data_text">Полис</string>
     <string name="add_document_btn_text">Добавить</string>
     <string name="save_all_btn_text">Сохранить</string>
+    <string name="logout_btn_text">Выйти</string>
     <string name="download_file_icon_desc">Download file button</string>
     <string-array name="document_types">
+        <item>Не выбрано</item>
         <item>Паспорт</item>
         <item>Паспорт1</item>
         <item>Паспорт2</item>
+    </string-array>
+
+    <string-array name="degree_types">
+        <item>Не выбрано</item>
+        <item>Бакалавриат</item>
+        <item>Магистратура</item>
+        <item>Аспирантура</item>
+        <item>Интернатура</item>
     </string-array>
     <string name="appointments">Записи</string>
     <string name="actual">Актуальные</string>
     <string name="completed">Завершенные</string>
     <string name="cancel_appointment">Отменить запись</string>
     <string name="patients">Пациенты</string>
+    <string name="chats">Чаты</string>
     <string name="search">Поиск</string>
-
+    <string name="patient_card">Карта пациента</string>
+    <string name="time">Время</string>
+    <string name="patient">Пациент</string>
+    <string name="dental_formula">Зубная формула</string>
+    <string name="complete_appointment">Завершить запись</string>
+    <string name="show_notifications_text">Show notifications</string>
+    <string name="security_label">Безопастность</string>
+    <string name="change_password_label">Сменить пароль</string>
+    <string name="default_profile_username">Иванов Александр Дмитриевич</string>
+    <string name="default_user_profession">Стоматолог</string>
+    <string name="default_user_rating">Рейтинг: 4,5</string>
+    <string name="default_user_experience">Стаж: 40 лет</string>
+    <string name="default_profile_city">Санкт-Петербург</string>
+    <string name="default_clinic_address">Клиника “Название” ул. Политехническая д. 29</string>
 </resources>
