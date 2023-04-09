@@ -29,7 +29,7 @@ class SettingsFragment : Fragment() {
     private fun setUpNavigation() {
         with(binding) {
             profileSettingsAppBar.setNavigationOnClickListener {
-                findNavController().navigate(R.id.action_fragment_settings_container_to_fragment_edit_profile_container)
+                findNavController().navigate(R.id.action_fragment_settings_container_to_fragment_profile_information_container)
             }
         }
     }

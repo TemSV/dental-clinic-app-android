@@ -1,16 +1,30 @@
 <resources>
     <style name="Theme.Android" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="color_primary">@color/light_blue</item>
+        <item name="color_secondary">@color/white</item>
+        <item name="color_tertiary">@color/signal_black</item>
+        <item name="color_quaternary">@color/orange</item>
+        <item name="color_fivefold">@color/dark_blue</item>
+        <item name="color_octal">@color/light_grey</item>
+        <item name="color_divider">@color/grey</item>
+
         <item name="background_color_primary">@color/white</item>
+        <item name="background_color_secondary">@color/smoky_white</item>
         <item name="background_color_tertiary">@color/light_blue</item>
 
         <item name="text_color_primary">@color/white</item>
         <item name="text_color_secondary">@color/signal_black</item>
         <item name="text_color_tertiary">@color/light_blue</item>
         <item name="text_color_quaternary">@color/orange</item>
+        <item name="text_color_fivefold">@color/black</item>
+        <item name="text_color_hexadecimal">@color/dark_blue</item>
+        <item name="text_color_sevenfold">@color/dark_grey</item>
 
         <item name="icon_tint_color_primary">@color/light_blue</item>
         <item name="icon_tint_color_secondary">@color/signal_black</item>
         <item name="icon_tint_color_tertiary">@color/orange</item>
+
+
     </style>
     
     <style name="ProfileToolbarTheme" parent="ThemeOverlay.AppCompat.Light">

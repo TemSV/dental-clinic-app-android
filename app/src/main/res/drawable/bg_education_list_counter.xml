@@ -5,5 +5,5 @@
         android:bottomRightRadius="10dp"
         android:topRightRadius="10dp" />
 
-    <solid android:color="@color/education_list_divider_color" />
+    <solid android:color="?attr/color_quaternary" />
 </shape>

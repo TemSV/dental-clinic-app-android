@@ -77,5 +77,11 @@
     <string name="show_notifications_text">Show notifications</string>
     <string name="security_label">Безопастность</string>
     <string name="change_password_label">Сменить пароль</string>
+    <string name="default_profile_username">Иванов Александр Дмитриевич</string>
+    <string name="default_user_profession">Стоматолог</string>
+    <string name="default_user_rating">Рейтинг: 4,5</string>
+    <string name="default_user_experience">Стаж: 40 лет</string>
+    <string name="default_profile_city">Санкт-Петербург</string>
+    <string name="default_clinic_address">Клиника “Название” ул. Политехническая д. 29</string>
 
 </resources>

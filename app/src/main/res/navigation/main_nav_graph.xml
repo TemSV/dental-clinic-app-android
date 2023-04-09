@@ -59,6 +59,9 @@
         <action
             android:id="@+id/action_fragment_profile_information_container_to_fragment_profile_container"
             app:destination="@id/fragment_profile_container" />
+        <action
+            android:id="@+id/action_fragment_profile_information_container_to_fragment_settings_container"
+            app:destination="@id/fragment_settings_container" />
     </fragment>
     <fragment
         android:id="@+id/fragment_edit_profile_container"
@@ -68,9 +71,6 @@
         <action
             android:id="@+id/action_fragment_edit_profile_container_to_fragment_profile_information_container"
             app:destination="@id/fragment_profile_information_container" />
-        <action
-            android:id="@+id/action_fragment_edit_profile_container_to_fragment_settings_container"
-            app:destination="@id/fragment_settings_container" />
     </fragment>
     <fragment
         android:id="@+id/fragment_appointment_container"
@@ -96,8 +96,8 @@
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" >
         <action
-            android:id="@+id/action_fragment_settings_container_to_fragment_edit_profile_container"
-            app:destination="@id/fragment_edit_profile_container" />
+            android:id="@+id/action_fragment_settings_container_to_fragment_profile_information_container"
+            app:destination="@id/fragment_profile_information_container" />
     </fragment>
 
 </navigation>

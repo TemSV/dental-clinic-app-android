@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:ellipsize="end"
         android:maxLines="1"
-        android:textColor="@color/document_list_text_color"
+        android:textColor="?attr/text_color_secondary"
         android:fontFamily="@font/ubuntu_regular"
         android:letterSpacing=".0"
         android:textSize="18sp"

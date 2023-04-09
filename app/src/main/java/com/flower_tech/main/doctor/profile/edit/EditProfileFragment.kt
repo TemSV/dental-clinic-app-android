@@ -110,9 +110,6 @@ class EditProfileFragment : Fragment() {
 
     private fun setUpNavigation() {
         with(binding) {
-            root.findViewById<View>(R.id.settings).setOnClickListener {
-                findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_settings_container)
-            }
             profileEditAppBar.setNavigationOnClickListener {
                 findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_profile_information_container)
             }
