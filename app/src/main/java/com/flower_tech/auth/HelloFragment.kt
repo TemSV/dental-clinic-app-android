@@ -21,10 +21,10 @@ class HelloFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
-            EntryButton.setOnClickListener{
+            btnEntry.setOnClickListener{
                 findNavController().navigate(R.id.action_fragment_hello_container_to_fragment_enter_container)
             }
-            RegistrationButton.setOnClickListener{
+            btnReg.setOnClickListener{
                 findNavController().navigate(R.id.action_fragment_hello_container_to_fragment_choose_role_container)
             }
         }

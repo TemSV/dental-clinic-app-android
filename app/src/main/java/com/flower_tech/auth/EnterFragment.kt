@@ -22,7 +22,7 @@ class EnterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with (binding) {
-            EntryButtonToMainMenu.setOnClickListener{
+            entryButtonToMainMenu.setOnClickListener{
                 findNavController().navigate(R.id.action_fragment_enter_container_to_mainActivity)
             }
         }

@@ -5,115 +5,113 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".auth.EnterFragment"
-    android:background="@color/light_blue">
+    android:background="?attr/background_color_tertiary">
+
+    <ImageView
+        android:id="@+id/logo_acc_reg"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_logo_small"
+        app:layout_constraintStart_toStartOf="@id/text_phone_reg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_logo_reg_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/registration"
+        android:textAppearance="@style/label_text"
+        app:layout_constraintBottom_toBottomOf="@id/logo_acc_reg"
+        app:layout_constraintStart_toEndOf="@id/logo_acc_reg" />
+
+    <TextView
+        android:id="@+id/text_phone_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_enter"
+        android:textAppearance="@style/small_text"
+        app:layout_constraintBottom_toTopOf="@id/edit_phone_reg"
+        app:layout_constraintStart_toStartOf="@id/edit_phone_reg" />
+
+    <com.github.pinball83.maskededittext.MaskedEditText
+        android:id="@+id/edit_phone_reg"
+        android:inputType="number"
+        app:mask="+7(***) ***-**-**"
+        app:notMaskedSymbol="*"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textColor="?attr/text_color_primary"
+        app:backgroundTint="?attr/background_color_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_logo_reg_data" />
+
+    <TextView
+        android:id="@+id/text_password_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_password_enter"
+        android:textAppearance="@style/small_text"
+        app:layout_constraintBottom_toTopOf="@id/edit_password_reg"
+        app:layout_constraintStart_toStartOf="@id/edit_phone_reg" />
+
+    <EditText
+        android:id="@+id/edit_password_reg"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableEnd="@drawable/ic_password"
+        android:inputType="textPassword"
+        android:textColor="?attr/text_color_primary"
+        app:backgroundTint="?attr/background_color_primary"
+        app:layout_constraintStart_toStartOf="@id/text_password_reg"
+        app:layout_constraintTop_toBottomOf="@id/edit_phone_reg" />
+
+    <TextView
+        android:id="@+id/text_password_second_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_password_enter2"
+        android:textAppearance="@style/small_text"
+        app:layout_constraintBottom_toTopOf="@id/edit_password_second_reg"
+        app:layout_constraintStart_toStartOf="@id/edit_password_reg" />
+
+    <EditText
+        android:id="@+id/edit_password_second_reg"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableEnd="@drawable/ic_password"
+        android:inputType="textPassword"
+        android:textColor="?attr/text_color_primary"
+        app:backgroundTint="?attr/background_color_primary"
+        app:layout_constraintStart_toStartOf="@id/text_password_second_reg"
+        app:layout_constraintTop_toBottomOf="@id/edit_password_reg" />
+
+    <CheckBox
+        android:id="@+id/checkbox_reg"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:buttonTint="?attr/background_color_primary"
+        android:text="@string/checkbox_text"
+        android:textAppearance="@style/small_text"
+        android:textColor="?attr/text_color_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/edit_password_second_reg"
+        app:layout_constraintTop_toBottomOf="@id/edit_password_second_reg" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/EntryButtonToMainMenu"
+        android:id="@+id/entry_button_to_main_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/selector_enter_button_main"
         android:text="@string/invitation_to_registration"
         android:textAppearance="@style/button_text"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
-
-    <TextView
-        android:id="@+id/PasswordText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/new_password_enter"
-        android:textAppearance="@style/small_text"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordReg"
-        app:layout_constraintStart_toStartOf="@+id/editTextPhone" />
-
-    <ImageView
-        android:id="@+id/union2"
-        android:layout_width="50dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/ic_logo_small"
-        app:layout_constraintStart_toStartOf="@+id/phoneText2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/LogoTextRegistration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="@string/registration"
-        android:textAppearance="@style/label_text"
-        app:layout_constraintBottom_toBottomOf="@+id/union2"
-        app:layout_constraintStart_toEndOf="@+id/union2" />
-
-    <com.github.pinball83.maskededittext.MaskedEditText
-        android:id="@+id/editTextPhone"
-        android:inputType="number"
-        app:mask="+7(***) *** **-**"
-        app:notMaskedSymbol="*"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LogoTextRegistration" />
-
-    <TextView
-        android:id="@+id/phoneText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/phone_enter"
-        android:textAppearance="@style/small_text"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
-        app:layout_constraintStart_toStartOf="@+id/editTextPhone" />
-
-    <EditText
-        android:id="@+id/editTextPasswordReg"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:drawableEnd="@drawable/ic_password"
-        android:drawableTint="@color/white"
-        android:inputType="textPassword"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/PasswordText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword3"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:drawableEnd="@drawable/ic_password"
-        android:drawableTint="@color/white"
-        android:inputType="textPassword"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordReg" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/new_password_enter2"
-        android:textAppearance="@style/small_text"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
-        app:layout_constraintStart_toStartOf="@+id/editTextPasswordReg" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/white"
-        android:text="@string/checkbox_text"
-        android:textAppearance="@style/small_text"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+        app:layout_constraintStart_toStartOf="@id/checkbox_reg"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_reg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

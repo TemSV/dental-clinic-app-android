@@ -5,23 +5,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_blue"
+    android:background="?attr/background_color_tertiary"
     tools:context=".auth.HelloFragment">
 
+    <ImageView
+        android:id="@+id/logo_hello"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_logo_small"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/HelloText"
+        android:id="@+id/text_hello"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:gravity="center_horizontal|center_vertical"
+        android:textAlignment="center"
         android:text="@string/hello_to_user"
         android:textAppearance="@style/label_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/union" />
+        app:layout_constraintTop_toBottomOf="@id/logo_hello" />
 
     <TextView
-        android:id="@+id/HelloText2"
+        android:id="@+id/text_hello_invitation"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -30,44 +40,29 @@
         android:textAppearance="@style/simple_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HelloText" />
+        app:layout_constraintTop_toBottomOf="@id/text_hello" />
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/EntryButton"
+        android:id="@+id/btn_entry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/selector_enter_button_main"
         android:text="@string/entry"
         android:textAppearance="@style/button_text"
-        app:layout_constraintStart_toStartOf="@+id/HelloText2"
-        app:layout_constraintTop_toBottomOf="@+id/HelloText2" />
+        app:layout_constraintStart_toStartOf="@id/text_hello_invitation"
+        app:layout_constraintTop_toBottomOf="@id/text_hello_invitation" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/RegistrationButton"
+        android:id="@+id/btn_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/selector_enter_button_additional"
         android:text="@string/registration"
         android:textAppearance="@style/button_text"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/EntryButton"
-        app:layout_constraintTop_toBottomOf="@+id/EntryButton" />
-
-
-
-    <ImageView
-        android:id="@+id/union"
-        android:layout_width="50dp"
-        android:layout_height="35dp"
-        android:src="@drawable/ic_logo_small"
-        android:layout_marginStart="155dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="155dp"
-        android:gravity="center_horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="?attr/text_color_primary"
+        app:layout_constraintStart_toStartOf="@id/btn_entry"
+        app:layout_constraintTop_toBottomOf="@id/btn_entry" />
 </androidx.constraintlayout.widget.ConstraintLayout>

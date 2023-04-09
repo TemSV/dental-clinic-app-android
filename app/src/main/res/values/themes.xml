@@ -11,6 +11,7 @@
         <item name="background_color_primary">@color/white</item>
         <item name="background_color_secondary">@color/smoky_white</item>
         <item name="background_color_tertiary">@color/light_blue</item>
+        <item name="background_color_quaternary">@color/transparent_white</item>
 
         <item name="text_color_primary">@color/white</item>
         <item name="text_color_secondary">@color/signal_black</item>
@@ -77,29 +78,29 @@
     <style name="label_text">
         <item name="android:fontFamily">@font/ubuntu_bold</item>
         <item name="android:textSize">30sp</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">?attr/text_color_primary</item>
     </style>
 
     <style name="button_text">
         <item name="android:fontFamily">@font/ubuntu_bold</item>
         <item name="android:textSize">22sp</item>
-        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:textColor">?attr/text_color_tertiary</item>
     </style>
 
     <style name="small_button_text">
         <item name="android:fontFamily">@font/ubuntu_bold</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:textColor">?attr/text_color_tertiary</item>
     </style>
 
     <style name="simple_text">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">?attr/text_color_primary</item>
     </style>
 
     <style name="small_text">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">?attr/text_color_primary</item>
     </style>
 
     <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
