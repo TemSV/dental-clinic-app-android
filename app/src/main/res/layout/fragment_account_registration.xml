@@ -25,7 +25,7 @@
         android:text="@string/new_password_enter"
         android:textAppearance="@style/small_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextPasswordReg"
-        app:layout_constraintStart_toStartOf="@+id/editTextPasswordReg" />
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone" />
 
     <ImageView
         android:id="@+id/union2"
@@ -41,8 +41,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFeatureSettings="pnum, lnum"
-        android:gravity="center_vertical"
         android:text="@string/registration"
         android:textAppearance="@style/label_text"
         app:layout_constraintBottom_toBottomOf="@+id/union2"
@@ -80,38 +78,30 @@
         android:inputType="textPassword"
         android:textColor="@color/white"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/PasswordText"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
 
     <EditText
         android:id="@+id/editTextTextPassword3"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="30dp"
         android:drawableEnd="@drawable/ic_password"
         android:drawableTint="@color/white"
         android:inputType="textPassword"
         android:textColor="@color/white"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/editTextPasswordReg" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         android:text="@string/new_password_enter2"
         android:textAppearance="@style/small_text"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordReg"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="@+id/editTextPasswordReg" />
 
     <CheckBox
         android:id="@+id/checkBox"

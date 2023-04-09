@@ -13,7 +13,6 @@
         android:layout_width="50dp"
         android:layout_height="35dp"
         android:layout_marginTop="60dp"
-        android:gravity="center_horizontal"
         android:src="@drawable/ic_logo_small"
         app:layout_constraintStart_toStartOf="@+id/surnameText"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFeatureSettings="pnum, lnum"
         android:gravity="center_vertical"
         android:text="@string/registration"
         android:textAppearance="@style/label_text"
@@ -166,7 +164,6 @@
         android:id="@+id/edit_text_date"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="date"
         android:textColor="@color/white"
         app:backgroundTint="@color/white"
