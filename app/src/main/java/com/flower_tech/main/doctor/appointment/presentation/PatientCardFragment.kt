@@ -32,11 +32,6 @@ class PatientCardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(PatientCardViewModel::class.java)
-        with(binding) {
-            patientCardAppBar.setNavigationOnClickListener {
-                findNavController().navigate(R.id.action_patientCardFragment_to_fragment_appointment_container)
-            }
-        }
 
     }
 

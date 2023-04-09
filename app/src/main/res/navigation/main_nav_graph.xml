@@ -23,11 +23,11 @@
     <fragment
         android:id="@+id/fragment_appointment_list_container"
         android:name="com.flower_tech.main.doctor.appointment.presentation.AppointmentListFragment"
-        android:label="fragment_appointment_list"
+        android:label="fragment_appointments"
         tools:layout="@layout/fragment_appointment_list" >
         <action
             android:id="@+id/action_fragment_appointment_container_to_appointmentFragment"
-            app:destination="@id/fragment_appointment_container"/>
+            app:destination="@id/fragment_appointment_container" />
     </fragment>
     <fragment
         android:id="@+id/fragment_patient_list_container"
@@ -73,6 +73,24 @@
             app:destination="@id/fragment_profile_information_container" />
     </fragment>
     <fragment
+        android:id="@+id/fragment_schedule_container"
+        android:name="com.flower_tech.main.doctor.profile.schedule.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" >
+        <action
+            android:id="@+id/action_fragment_schedule_container_to_fragment_profile_container"
+            app:destination="@id/fragment_profile_container" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_settings_container"
+        android:name="com.flower_tech.main.doctor.profile.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_fragment_settings_container_to_fragment_profile_information_container"
+            app:destination="@id/fragment_profile_information_container" />
+    </fragment>
+    <fragment
         android:id="@+id/fragment_appointment_container"
         android:name="com.flower_tech.main.doctor.appointment.presentation.AppointmentFragment"
         android:label="fragment_appointment"
@@ -89,46 +107,5 @@
         <argument
             android:name="time"
             app:argType="string" />
-        <action
-            android:id="@+id/action_fragment_appointment_container_to_patientCardFragment"
-            app:destination="@id/patientCardFragment" />
-        <action
-            android:id="@+id/action_fragment_appointment_container_to_dentalFormulaFragment"
-            app:destination="@id/dentalFormulaFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/fragment_schedule_container"
-        android:name="com.flower_tech.main.doctor.profile.schedule.ScheduleFragment"
-        android:label="fragment_schedule"
-        tools:layout="@layout/fragment_schedule" >
-        <action
-            android:id="@+id/action_fragment_schedule_container_to_fragment_profile_container"
-            app:destination="@id/fragment_profile_container" />
-    </fragment>
-    <fragment
-        android:id="@+id/patientCardFragment"
-        android:name="com.flower_tech.main.doctor.appointment.presentation.PatientCardFragment"
-        android:label="fragment_patient_card"
-        tools:layout="@layout/fragment_patient_card" >
-        <action
-            android:id="@+id/action_patientCardFragment_to_fragment_appointment_container"
-            app:destination="@id/fragment_appointment_container" />
-    </fragment>
-    <fragment
-        android:id="@+id/dentalFormulaFragment"
-        android:name="com.flower_tech.main.doctor.appointment.presentation.DentalFormulaFragment"
-        android:label="fragment_dental_formula"
-        tools:layout="@layout/fragment_dental_formula" >
-        <action
-            android:id="@+id/action_dentalFormulaFragment_to_fragment_appointment_container"
-            app:destination="@id/fragment_appointment_container" />
-        android:id="@+id/fragment_settings_container"
-        android:name="com.flower_tech.main.doctor.profile.settings.SettingsFragment"
-        android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" >
-        <action
-            android:id="@+id/action_fragment_settings_container_to_fragment_profile_information_container"
-            app:destination="@id/fragment_profile_information_container" />
-    </fragment>
-
 </navigation>

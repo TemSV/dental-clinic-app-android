@@ -12,7 +12,6 @@
     <string name="invitation_to_registration">Зарегистрироваться</string>
     <string name="invitation_to_registration_underline"><u>Зарегистрироваться</u></string>
     <string name="forgot_password">Забыли пароль?</string>
-    <string name="patient">пациент</string>
     <string name="doctor">врач</string>
     <string name="phone_enter">Телефон</string>
     <string name="password_enter">Пароль</string>
