@@ -188,8 +188,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/years_of_education_data_label"
-            app:mask="____-____"
-            app:maskCharacter="_"
+            app:mask="    -    "
+            app:maskCharacter=" "
             app:maskStyle="completable" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
