@@ -72,7 +72,7 @@
 
             <TextView
                 android:id="@+id/degree_data_label"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:fontFamily="@font/ubuntu_regular"
@@ -120,7 +120,7 @@
 
         <TextView
             android:id="@+id/specialization_data_label"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:ellipsize="end"
@@ -157,7 +157,7 @@
 
         <TextView
             android:id="@+id/years_of_education_data_label"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:ellipsize="end"

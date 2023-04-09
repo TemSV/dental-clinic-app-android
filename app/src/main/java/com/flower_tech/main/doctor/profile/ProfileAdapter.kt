@@ -12,7 +12,7 @@ class ProfileAdapter(private val events: List<Event>) :
     RecyclerView.Adapter<ProfileAdapter.EventItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = EventItemViewHolder(
-        LayoutInflater.from(parent.context).inflate(R.layout.item_events, null)
+        LayoutInflater.from(parent.context).inflate(R.layout.item_events, parent, false)
     )
 
     override fun getItemCount() = events.size
