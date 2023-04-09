@@ -7,10 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
-import com.flower_tech.structures.PatientCard
 
 class PatientRecyclerViewAdapter(
-    private val patientCards: ArrayList<PatientCard>
+    private val patientCards: MutableList<PatientCard>
 ) : RecyclerView.Adapter<PatientRecyclerViewAdapter.PatientRecyclerViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PatientRecyclerViewHolder {
@@ -27,14 +26,14 @@ class PatientRecyclerViewAdapter(
         holder.bindPatientCard(patientCards[position])
     }
 
-    class PatientRecyclerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class PatientRecyclerViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
 
-        private val patientIcon: ImageView = itemView.findViewById(R.id.patient_icon_image_view)
-        private val patientName: TextView = itemView.findViewById(R.id.patient_name_text_view)
+        private val patientIcon : ImageView = itemView.findViewById(R.id.patient_icon_image_view)
+        private val patientName : TextView = itemView.findViewById(R.id.patient_name_text_view)
 
         fun bindPatientCard(patientCard: PatientCard) {
-            patientIcon.setImageResource(patientCard.patientIcon)
-            patientName.text = patientCard.patientName
+            patientIcon.setImageResource(patientCard.icon)
+            patientName.text = patientCard.name
         }
     }
 

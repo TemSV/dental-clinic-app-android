@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:background="@color/smoky_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools%22%3E
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/patient_icon_image_view"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_download" />
+        android:layout_marginTop="8dp"
+        tools:background="@color/light_grey" />
 
     <TextView
         android:id="@+id/patient_name_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:ellipsize="end"
-        android:maxLines="2"
-        android:textSize="16sp"
-        app:layout_constrainedWidth="true"
-        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintLeft_toRightOf="@id/patient_icon_image_view"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/patient_icon_image_view"
-        tools:text="hbtyhbtyb" />
+        app:layout_constraintBottom_toBottomOf="@id/patient_icon_image_view"
+        tools:text="Иван Иванович Иванов"
+        android:textSize="16sp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntu_bold"/>
 
+    <ImageButton
+        android:id="@+id/patient_message_image_button"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/patient_icon_image_view"
+        app:layout_constraintBottom_toBottomOf="@id/patient_icon_image_view"
+        app:layout_constraintStart_toEndOf="@id/patient_name_text_view"
+        android:layout_marginStart="144dp"
+        android:src="@drawable/ic_message"
+        android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
