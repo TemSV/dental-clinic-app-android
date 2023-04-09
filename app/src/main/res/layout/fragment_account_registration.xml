@@ -46,13 +46,14 @@
         app:layout_constraintBottom_toBottomOf="@+id/union2"
         app:layout_constraintStart_toEndOf="@+id/union2" />
 
-    <EditText
+    <com.github.pinball83.maskededittext.MaskedEditText
         android:id="@+id/editTextPhone"
+        android:inputType="number"
+        app:mask="+7(***) *** **-**"
+        app:notMaskedSymbol="*"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:ems="12"
-        android:inputType="phone"
         android:textColor="@color/white"
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
