@@ -7,41 +7,46 @@
     android:background="?attr/background_color_tertiary"
     tools:context=".auth.ChooseRoleFragment">
 
-    <TextView
-        android:id="@+id/choose_profile_text"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hello_container"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:layout_marginBottom="375dp"
-        android:text="@string/choose_role"
-        android:textAlignment="center"
-        android:textColor="?attr/text_color_primary"
-        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="30dp">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/doctor_btn"
-        android:layout_width="240dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/selector_enter_button_main"
-        android:text="@string/doctor"
-        android:textAppearance="@style/button_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/choose_profile_text" />
+        <TextView
+            android:id="@+id/choose_profile_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_role"
+            android:textAlignment="center"
+            android:textColor="?attr/text_color_primary"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/patient_btn"
-        android:layout_width="240dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/selector_enter_button_main"
-        android:text="@string/patient"
-        android:textAppearance="@style/button_text"
-        app:layout_constraintStart_toStartOf="@id/doctor_btn"
-        app:layout_constraintTop_toBottomOf="@id/doctor_btn" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/doctor_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/selector_button_choose_role"
+            android:text="@string/doctor"
+            android:textAppearance="@style/button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/choose_profile_text" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/patient_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_button_choose_role"
+            android:text="@string/patient"
+            android:textAppearance="@style/button_text"
+            app:layout_constraintStart_toStartOf="@id/doctor_btn"
+            app:layout_constraintTop_toBottomOf="@id/doctor_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
