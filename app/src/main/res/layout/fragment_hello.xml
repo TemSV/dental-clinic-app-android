@@ -10,12 +10,12 @@
 
     <ImageView
         android:id="@+id/logo_hello"
-        android:layout_width="50dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
         android:src="@drawable/ic_logo_small"
         android:contentDescription="@string/logo_description"
-        app:layout_constraintBottom_toTopOf="@+id/hello_container"
+        app:layout_constraintBottom_toTopOf="@id/hello_container"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -73,3 +73,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
