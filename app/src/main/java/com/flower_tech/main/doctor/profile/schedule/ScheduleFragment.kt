@@ -10,6 +10,8 @@ import android.widget.TextView
 import androidx.core.view.children
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 import com.flower_tech.R
 import com.flower_tech.databinding.FragmentScheduleBinding
 import com.flower_tech.databinding.LayoutCalendarDayBinding
@@ -39,6 +41,12 @@ class ScheduleFragment : Fragment() {
         val currentMonth = YearMonth.now()
         val startMonth = currentMonth.minusMonths(100) // Adjust as needed
         val endMonth = currentMonth.plusMonths(100) // Adjust as needed
+
+        val navController = findNavController()
+        val appBarConfiguration = AppBarConfiguration(navController.graph)
+
+        binding.scheduleAppBar.setupWithNavController(navController, appBarConfiguration)
+
         with(binding) {
             calendarView.setup(startMonth, endMonth, daysOfTheWeek.first())
             calendarView.monthScrollListener = { updateTitle() }
@@ -49,9 +57,6 @@ class ScheduleFragment : Fragment() {
                 calendarView.findFirstVisibleMonth()?.let {
                     calendarView.scrollToMonth(it.yearMonth.nextMonth)
                 }
-            }
-            scheduleAppBar.setNavigationOnClickListener {
-                findNavController().navigate(R.id.action_fragment_schedule_container_to_fragment_profile_container)
             }
 
             titlesContainer.prevMonth.setOnClickListener {

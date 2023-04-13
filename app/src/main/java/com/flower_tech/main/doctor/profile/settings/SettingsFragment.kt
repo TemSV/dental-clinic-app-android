@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 import com.flower_tech.R
 import com.flower_tech.databinding.FragmentSettingsBinding
 
@@ -27,11 +29,10 @@ class SettingsFragment : Fragment() {
     }
 
     private fun setUpNavigation() {
-        with(binding) {
-            profileSettingsAppBar.setNavigationOnClickListener {
-                findNavController().navigate(R.id.action_fragment_settings_container_to_fragment_profile_information_container)
-            }
-        }
+        val navController = findNavController()
+        val appBarConfiguration = AppBarConfiguration(navController.graph)
+
+        binding.profileSettingsAppBar.setupWithNavController(navController, appBarConfiguration)
     }
 
     companion object {

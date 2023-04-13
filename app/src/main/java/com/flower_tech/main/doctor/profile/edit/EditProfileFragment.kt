@@ -13,6 +13,8 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
@@ -33,6 +35,9 @@ class EditProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
+
         with(binding) {
             setUpRecyclerView(educationList)
             setUpAddButton(addDocumentBtn)
@@ -109,11 +114,10 @@ class EditProfileFragment : Fragment() {
     }
 
     private fun setUpNavigation() {
-        with(binding) {
-            profileEditAppBar.setNavigationOnClickListener {
-                findNavController().navigate(R.id.action_fragment_edit_profile_container_to_fragment_profile_information_container)
-            }
-        }
+        val navController = findNavController()
+        val appBarConfiguration = AppBarConfiguration(navController.graph)
+
+        binding.profileEditAppBar.setupWithNavController(navController, appBarConfiguration)
     }
 
     @SuppressLint("NotifyDataSetChanged")
