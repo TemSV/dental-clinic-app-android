@@ -25,7 +25,6 @@ class AppointmentListAdapter(private val appointment: List<Appointment>) :
 
     override fun onBindViewHolder(holder: AppointmentViewHolder, position: Int) {
         holder.bind(appointment[position])
-        var navController: NavController? = null
         holder.itemView.setOnClickListener {
             val name = holder.getName().text.toString()
             val data = holder.getData().text.toString()
@@ -34,8 +33,8 @@ class AppointmentListAdapter(private val appointment: List<Appointment>) :
                 AppointmentListFragmentDirections.actionFragmentAppointmentContainerToAppointmentFragment(
                     data, name, address
                 )
-            navController = Navigation.findNavController(holder.itemView)
-            navController!!.navigate(directions)
+            val navController = Navigation.findNavController(holder.itemView)
+            navController.navigate(directions)
         }
     }
 
