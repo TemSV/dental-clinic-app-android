@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.flower_tech.R
@@ -32,10 +34,12 @@ class ProfileInformationFragment : Fragment() {
     }
 
     private fun setUpNavigation() {
+        val navController = findNavController()
+        val appBarConfiguration = AppBarConfiguration(navController.graph)
+
+        binding.profileInformationAppBar.setupWithNavController(navController, appBarConfiguration)
+
         with(binding) {
-            profileInformationAppBar.setNavigationOnClickListener {
-                findNavController().navigate(R.id.action_fragment_profile_information_container_to_fragment_profile_container)
-            }
             root.findViewById<View>(R.id.chatSettings).setOnClickListener {
                 findNavController().navigate(R.id.action_fragment_profile_information_container_to_fragment_settings_container)
             }

@@ -9,6 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI.setupWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.flower_tech.R
 import com.flower_tech.databinding.FragmentAppointmentBinding
 import com.flower_tech.databinding.FragmentAppointmentListBinding
@@ -37,13 +40,15 @@ class AppointmentFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this)[AppointmentViewModel::class.java]
 
+        val navController = findNavController()
+        val appBarConfiguration = AppBarConfiguration(navController.graph)
+
+        binding.appointmentAppBar.setupWithNavController(navController, appBarConfiguration)
+
         with(binding) {
             appointmentTimeText.text = args.data
             appointmentNameText.text = args.name
             appointmentAppBar.title = args.time
-            appointmentAppBar.setNavigationOnClickListener {
-                findNavController().navigate(R.id.action_appointmentFragment_to_fragment_appointment_container)
-            }
         }
     }
 
