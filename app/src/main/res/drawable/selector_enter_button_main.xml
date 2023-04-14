@@ -10,6 +10,16 @@
                 android:height="70dp" />
         </shape>
 </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="61dp" />
+
+            <solid android:color="?attr/background_color_quaternary" />
+            <size
+                android:width="360dp"
+                android:height="70dp" />
+        </shape>
+    </item>
 <item android:state_pressed="true">
         <shape android:shape="rectangle">
             <corners android:radius="61dp" />

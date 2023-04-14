@@ -22,6 +22,10 @@ class AccountRegistrationFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
+            entryButtonToMainMenu.isEnabled = false
+            checkboxReg.setOnCheckedChangeListener{ _, isChecked ->
+                entryButtonToMainMenu.isEnabled = isChecked
+            }
             entryButtonToMainMenu.setOnClickListener{
                 findNavController().navigate(R.id.action_fragment_account_registration_container_to_main_activity)
             }
