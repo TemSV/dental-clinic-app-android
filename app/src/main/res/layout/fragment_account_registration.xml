@@ -20,7 +20,7 @@
         android:id="@+id/text_logo_reg_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="32dp"
         android:text="@string/registration"
         android:textAppearance="@style/label_text"
         app:layout_constraintBottom_toBottomOf="@id/logo_acc_reg"
