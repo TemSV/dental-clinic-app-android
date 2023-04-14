@@ -49,16 +49,16 @@
             android:id="@+id/edit_phone_entry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            app:mask="+7(***) ***-**-**"
-            app:maskCharacter="*"
-            app:maskStyle="completable"
             android:layout_marginBottom="40dp"
+            android:inputType="number"
             android:textColor="?attr/text_color_primary"
             app:backgroundTint="?attr/background_color_primary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_phone_entry" />
+            app:layout_constraintTop_toBottomOf="@id/text_phone_entry"
+            app:mask="+7(***) ***-**-**"
+            app:maskCharacter="*"
+            app:maskStyle="completable" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/password_layout_entry"
@@ -105,32 +105,34 @@
             android:background="@drawable/selector_enter_button_main"
             android:text="@string/invitation_to_entry"
             android:textAppearance="@style/button_text"
-            app:layout_constraintStart_toStartOf="@id/password_layout_entry"
-            app:layout_constraintTop_toBottomOf="@id/password_layout_entry"
-            />
-
-        <TextView
-            android:id="@+id/forgot_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:text="@string/forgot_password"
-            android:textAppearance="@style/small_text"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/entry_button_to_main_menu" />
+            app:layout_constraintTop_toBottomOf="@id/password_layout_entry" />
 
-        <TextView
-            android:id="@+id/invitation_to_registration"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="@string/invitation_to_registration_underline"
-            android:textAppearance="@style/small_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/forgot_password" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/forgot_password"
+        android:textAppearance="@style/small_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_container" />
+
+    <TextView
+        android:id="@+id/invitation_to_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/invitation_to_registration_underline"
+        android:textAppearance="@style/small_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
