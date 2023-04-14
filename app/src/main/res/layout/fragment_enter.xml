@@ -21,7 +21,7 @@
         android:id="@+id/logo_text_entry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="28dp"
         android:text="@string/entry"
         android:textAppearance="@style/label_text"
         app:layout_constraintBottom_toBottomOf="@id/logo_acc_entry"
@@ -45,43 +45,57 @@
             app:layout_constraintStart_toStartOf="@id/edit_phone_entry"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.github.pinball83.maskededittext.MaskedEditText
+        <com.santalu.maskara.widget.MaskEditText
             android:id="@+id/edit_phone_entry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             app:mask="+7(***) ***-**-**"
-            app:notMaskedSymbol="*"
+            app:maskCharacter="*"
+            app:maskStyle="completable"
             android:layout_marginBottom="40dp"
             android:textColor="?attr/text_color_primary"
             app:backgroundTint="?attr/background_color_primary"
-            app:layout_constraintBottom_toTopOf="@id/edit_password_entry"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_phone_entry" />
 
-        <TextView
-            android:id="@+id/text_password_entry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/password_enter"
-            android:textAppearance="@style/small_text"
-            app:layout_constraintBottom_toTopOf="@id/edit_password_entry"
-            app:layout_constraintStart_toStartOf="@id/edit_password_entry"
-            app:layout_constraintTop_toBottomOf="@id/edit_phone_entry" />
-
-        <EditText
-            android:id="@+id/edit_password_entry"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/password_layout_entry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            android:drawableEnd="@drawable/ic_password"
-            android:inputType="textPassword"
-            android:textColor="?attr/text_color_primary"
-            app:backgroundTint="?attr/background_color_primary"
-            app:layout_constraintStart_toStartOf="@id/edit_phone_entry"
-            app:layout_constraintTop_toBottomOf="@id/edit_phone_entry" />
+            app:layout_constraintBottom_toTopOf="@id/entry_button_to_main_menu"
+            app:layout_constraintTop_toBottomOf="@id/edit_phone_entry">
+
+            <TextView
+                android:id="@+id/text_password_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_enter"
+                android:textAppearance="@style/small_text"
+                app:layout_constraintBottom_toTopOf="@id/edit_password_entry"
+                app:layout_constraintStart_toStartOf="@id/edit_password_entry" />
+
+            <EditText
+                android:id="@+id/edit_password_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="?attr/text_color_primary"
+                app:backgroundTint="?attr/background_color_primary"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_password_entry" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_password"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/entry_button_to_main_menu"
@@ -91,8 +105,8 @@
             android:background="@drawable/selector_enter_button_main"
             android:text="@string/invitation_to_entry"
             android:textAppearance="@style/button_text"
-            app:layout_constraintStart_toStartOf="@id/edit_password_entry"
-            app:layout_constraintTop_toBottomOf="@id/edit_password_entry"
+            app:layout_constraintStart_toStartOf="@id/password_layout_entry"
+            app:layout_constraintTop_toBottomOf="@id/password_layout_entry"
             />
 
         <TextView

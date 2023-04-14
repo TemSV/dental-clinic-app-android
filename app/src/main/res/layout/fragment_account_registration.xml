@@ -35,11 +35,12 @@
         app:layout_constraintBottom_toTopOf="@id/edit_phone_reg"
         app:layout_constraintStart_toStartOf="@id/edit_phone_reg" />
 
-    <com.github.pinball83.maskededittext.MaskedEditText
+    <com.santalu.maskara.widget.MaskEditText
         android:id="@+id/edit_phone_reg"
         android:inputType="number"
         app:mask="+7(***) ***-**-**"
-        app:notMaskedSymbol="*"
+        app:maskCharacter="*"
+        app:maskStyle="completable"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
