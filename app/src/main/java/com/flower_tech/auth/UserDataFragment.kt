@@ -22,6 +22,17 @@ class UserDataFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
+            btnMale.isEnabled = true
+            btnFemale.isEnabled = false
+            btnFemale.setOnClickListener {
+                btnFemale.isEnabled = false
+                btnFemale.setTextColor(resources.getColor(R.color.white, null))
+                btnMale.isEnabled = true
+            }
+            btnMale.setOnClickListener {
+                btnFemale.isEnabled = true
+                btnMale.isEnabled = false
+            }
             btnSwitch.setOnClickListener {
                 findNavController().navigate(R.id.action_fragment_user_data_container_to_fragment_account_registration_container)
             }
