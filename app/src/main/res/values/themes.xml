@@ -51,10 +51,11 @@
         <item name="android:letterSpacing">.0</item>
     </style>
 
-
-
-
-
+    <style name="PrimarySpinnerButtonTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">?attr/background_color_primary</item>
+        <item name="android:src">@drawable/ic_select_btn</item>
+        <item name="tint">?attr/color_primary</item>
+    </style>
 
     <style name="PrimaryEditTextHintTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily">@font/ubuntu_regular</item>
@@ -64,6 +65,7 @@
         <item name="android:maxLines">1</item>
         <item name="android:ellipsize">end</item>
     </style>
+
     <style name="PrimaryEditTextTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily">@font/ubuntu_regular</item>
         <item name="android:textSize">18sp</item>
