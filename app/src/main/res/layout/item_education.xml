@@ -22,16 +22,12 @@
         tools:text="Бакалавриат" />
 
     <TextView
+        style="@style/PrimaryEducationItemTheme"
         android:id="@+id/educational_institution"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="12dp"
-        android:ellipsize="end"
-        android:fontFamily="@font/ubuntu_regular"
-        android:letterSpacing=".0"
-        android:textColor="?attr/text_color_secondary"
-        android:textSize="18sp"
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toStartOf="@id/years"
         app:layout_constraintHorizontal_bias="0"
@@ -40,16 +36,12 @@
         tools:text="Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)" />
 
     <TextView
+        style="@style/PrimaryEducationItemTheme"
         android:id="@+id/years"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:ellipsize="end"
-        android:fontFamily="@font/ubuntu_regular"
-        android:letterSpacing=".0"
         android:maxLines="1"
-        android:textColor="?attr/text_color_secondary"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/educational_institution"
         tools:text="2010-2014" />
