@@ -270,16 +270,18 @@
                 android:layout_marginTop="24dp"
                 android:ellipsize="end"
                 android:fontFamily="@font/ubuntu_medium"
+                app:layout_constrainedWidth="true"
                 android:letterSpacing=".0"
                 android:maxLines="1"
                 android:text="@string/profile_education_label"
                 android:textColor="?attr/text_color_secondary"
                 android:textSize="20sp"
-                app:layout_constrainedWidth="true"
+                app:layout_constraintTop_toBottomOf="@id/second_profile_divider"
+                app:layout_constraintStart_toStartOf="@id/second_profile_divider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="@id/second_profile_divider"
-                app:layout_constraintTop_toBottomOf="@id/second_profile_divider" />
+
+                 />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/education_container"

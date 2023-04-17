@@ -50,7 +50,7 @@
             android:button="@null"
             android:gravity="center"
             android:text="@string/actual"
-            android:textColor="@color/black" />
+            android:textColor="@color/signal_black" />
 
         <RadioButton
             android:id="@+id/finished_appointment"
@@ -61,7 +61,7 @@
             android:button="@null"
             android:gravity="center"
             android:text="@string/completed"
-            android:textColor="@color/black" />
+            android:textColor="@color/signal_black" />
     </RadioGroup>
 
     <androidx.recyclerview.widget.RecyclerView

@@ -66,7 +66,7 @@
                 android:letterSpacing=".0"
                 android:maxLines="1"
                 android:text="@string/personal_data_text"
-                android:textColor="?attr/text_color_fivefold"
+                android:textColor="?attr/text_color_secondary"
                 android:textSize="20sp"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintBottom_toBottomOf="@id/personal_data_btn"
@@ -343,7 +343,7 @@
                 android:letterSpacing=".0"
                 android:maxLines="1"
                 android:text="@string/education_address_data_text"
-                android:textColor="?attr/text_color_fivefold"
+                android:textColor="?attr/text_color_secondary"
                 android:textSize="20sp"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintBottom_toBottomOf="@id/education_data_btn"
@@ -415,7 +415,7 @@
                 android:letterSpacing=".0"
                 android:maxLines="1"
                 android:text="@string/documents_data_text"
-                android:textColor="?attr/text_color_fivefold"
+                android:textColor="?attr/text_color_secondary"
                 android:textSize="20sp"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintBottom_toBottomOf="@id/documents_data_btn"
@@ -768,79 +768,6 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/residential_address_data_label" />
-
-                <TextView
-                    android:id="@+id/snils_data_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/ubuntu_regular"
-                    android:letterSpacing=".0"
-                    android:maxLines="1"
-                    android:text="@string/snils_data_text"
-                    android:textColor="?attr/text_color_tertiary"
-                    android:textSize="12sp"
-                    app:layout_constrainedWidth="true"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0"
-                    app:layout_constraintStart_toStartOf="@id/residential_address_input"
-                    app:layout_constraintTop_toBottomOf="@id/residential_address_input" />
-
-
-                <com.santalu.maskara.widget.MaskEditText
-                    android:id="@+id/snils_input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="16dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/bg_edit_text"
-                    android:fontFamily="@font/ubuntu_regular"
-                    android:inputType="number"
-                    android:letterSpacing=".0"
-                    android:textColor="?attr/text_color_secondary"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/snils_data_label"
-                    app:mask="___ ___ ___ __" />
-
-                <TextView
-                    android:id="@+id/polis_data_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/ubuntu_regular"
-                    android:letterSpacing=".0"
-                    android:maxLines="1"
-                    android:text="@string/polis_data_text"
-                    android:textColor="?attr/text_color_tertiary"
-                    android:textSize="12sp"
-                    app:layout_constrainedWidth="true"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0"
-                    app:layout_constraintStart_toStartOf="@id/snils_input"
-                    app:layout_constraintTop_toBottomOf="@id/snils_input" />
-
-
-                <com.santalu.maskara.widget.MaskEditText
-                    android:id="@+id/polis_input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="16dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="32dp"
-                    android:background="@drawable/bg_edit_text"
-                    android:fontFamily="@font/ubuntu_regular"
-                    android:inputType="number"
-                    android:letterSpacing=".0"
-                    android:textColor="?attr/text_color_secondary"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/polis_data_label"
-                    app:mask="____ ____ ____ ____" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
