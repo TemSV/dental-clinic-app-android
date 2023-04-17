@@ -326,20 +326,13 @@
             app:tint="?attr/color_tertiary" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     <Button
         android:id="@+id/logout_btn"
+        style="@style/PrimaryButtonTheme"
         android:layout_width="178dp"
         android:layout_height="50dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/bg_save_all_btn"
-        android:fontFamily="@font/ubuntu_medium"
-        android:letterSpacing=".0"
         android:text="@string/logout_btn_text"
-        android:textAllCaps="false"
-        android:textColor="?attr/text_color_primary"
-        android:textSize="16sp"
-        app:backgroundTint="?attr/color_primary"
         app:layout_constraintBottom_toTopOf="@id/delete_account_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
