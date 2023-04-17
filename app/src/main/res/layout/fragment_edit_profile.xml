@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/color_secondary"
-            android:theme="@style/ProfileInformationToolbarTheme"
+            android:theme="@style/PrimaryToolbarTheme"
             app:menu="@menu/profile_edit_app_bar"
             app:navigationIcon="@drawable/ic_back">
 

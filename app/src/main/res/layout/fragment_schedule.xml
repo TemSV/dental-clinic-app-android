@@ -20,7 +20,7 @@
             android:id="@+id/schedule_app_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/ScheduleToolbarTheme"
+            android:theme="@style/PrimaryToolbarTheme"
             android:navigationIcon="@drawable/ic_back"
             >
 

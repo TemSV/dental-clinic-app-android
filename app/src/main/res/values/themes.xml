@@ -60,38 +60,14 @@
 
 
 
-    <style name="ProfileToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+    <style name="SecondaryToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily">@font/ubuntu_bold</item>
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">#303030</item>
         <item name="android:letterSpacing">.0</item>
     </style>
 
-    <style name="EventsToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
-        <item name="android:fontFamily">@font/ubuntu_bold</item>
-        <item name="android:textSize">22sp</item>
-        <item name="android:textColor">#61A0EA</item>
-        <item name="android:letterSpacing">.0</item>
-        <item name="android:tint">#61A0EA</item>
-    </style>
-
-    <style name="ProfileInformationToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
-        <item name="android:fontFamily">@font/ubuntu_bold</item>
-        <item name="android:textSize">22sp</item>
-        <item name="android:textColor">#61A0EA</item>
-        <item name="android:letterSpacing">.0</item>
-        <item name="android:tint">#61A0EA</item>
-    </style>
-
-    <style name="ScheduleToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
-        <item name="android:fontFamily">@font/ubuntu_bold</item>
-        <item name="android:textSize">22sp</item>
-        <item name="android:textColor">#61A0EA</item>
-        <item name="android:letterSpacing">.0</item>
-        <item name="android:tint">#61A0EA</item>
-    </style>
-
-    <style name="ProfileSettingsToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+    <style name="PrimaryToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily">@font/ubuntu_bold</item>
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">#61A0EA</item>
