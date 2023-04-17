@@ -21,6 +21,8 @@
         <item name="icon_tint_color_tertiary">@color/orange</item>
     </style>
 
+
+
     <style name="Toolbar" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:textSize" >26sp</item>
         <item name="android:fontFamily">@font/ubuntu_bold</item>
@@ -66,6 +68,24 @@
         <item name="android:ellipsize">end</item>
     </style>
 
+    <style name="PrimarySettingsTitleTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/text_color_tertiary</item>
+        <item name="android:letterSpacing">.0</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="PrimarySettingsSubtitleTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?attr/text_color_secondary</item>
+        <item name="android:letterSpacing">.0</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
     <style name="PrimaryEditTextTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily">@font/ubuntu_regular</item>
         <item name="android:textSize">18sp</item>
@@ -73,6 +93,12 @@
         <item name="android:letterSpacing">.0</item>
         <item name="android:autofillHints" />
         <item name="android:background">@drawable/bg_edit_text</item>
+    </style>
+
+    <style name="PrimarySettingsGoOverButtonTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">?attr/color_secondary</item>
+        <item name="android:src">@drawable/ic_next</item>
+        <item name="tint">?attr/color_tertiary</item>
     </style>
 
     <style name="SecondaryEditTextTheme" parent="ThemeOverlay.AppCompat.Light">
@@ -119,13 +145,14 @@
     </style>
 
     <style name="PrimaryTextButtonTheme" parent="ThemeOverlay.AppCompat.Light">
-        <item name="android:fontFamily">@font/ubuntu_medium</item>
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textColor">?attr/text_color_tertiary</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">?attr/text_color_primary</item>
+        <item name="android:onClick">onClick</item>
         <item name="android:letterSpacing">.0</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="backgroundTint">?attr/color_primary</item>
-        <item name="android:background">@drawable/bg_save_all_btn</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+
     </style>
 
     <style name="SecondaryToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
