@@ -64,6 +64,33 @@
         <item name="android:maxLines">1</item>
         <item name="android:ellipsize">end</item>
     </style>
+    <style name="PrimaryEditTextTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?attr/text_color_secondary</item>
+        <item name="android:letterSpacing">.0</item>
+        <item name="android:autofillHints" />
+        <item name="android:background">@drawable/bg_edit_text</item>
+    </style>
+
+    <style name="SecondaryEditTextTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?attr/text_color_secondary</item>
+        <item name="android:letterSpacing">.0</item>
+        <item name="android:maxLines" >1</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:completionThreshold">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="PrimarySpinnerTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?attr/text_color_secondary</item>
+        <item name="android:letterSpacing">.0</item>
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
 
     <style name="EditProfileSectionLabelTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily">@font/ubuntu_medium</item>
