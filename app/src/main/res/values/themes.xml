@@ -56,6 +56,14 @@
 
 
 
+    <style name="PrimaryEditTextHintTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/text_color_tertiary</item>
+        <item name="android:letterSpacing">.0</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
 
     <style name="PrimaryButtonTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily">@font/ubuntu_medium</item>
