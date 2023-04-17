@@ -57,17 +57,12 @@
             android:layout_height="wrap_content">
 
             <TextView
+                style="@style/EditProfileSectionLabelTheme"
                 android:id="@+id/personal_data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/ubuntu_medium"
-                android:letterSpacing=".0"
-                android:maxLines="1"
                 android:text="@string/personal_data_text"
-                android:textColor="?attr/text_color_secondary"
-                android:textSize="20sp"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintBottom_toBottomOf="@id/personal_data_btn"
                 app:layout_constraintEnd_toStartOf="@id/personal_data_btn"
@@ -304,17 +299,12 @@
                 app:layout_constraintTop_toBottomOf="@id/personal_data_container" />
 
             <TextView
+                style="@style/EditProfileSectionLabelTheme"
                 android:id="@+id/education_data_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/ubuntu_medium"
-                android:letterSpacing=".0"
-                android:maxLines="1"
                 android:text="@string/education_address_data_text"
-                android:textColor="?attr/text_color_secondary"
-                android:textSize="20sp"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintBottom_toBottomOf="@id/education_data_btn"
                 app:layout_constraintEnd_toStartOf="@id/education_data_btn"
@@ -376,17 +366,12 @@
                 app:layout_constraintTop_toBottomOf="@id/education_container" />
 
             <TextView
+                style="@style/EditProfileSectionLabelTheme"
                 android:id="@+id/documents_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/ubuntu_medium"
-                android:letterSpacing=".0"
-                android:maxLines="1"
                 android:text="@string/documents_data_text"
-                android:textColor="?attr/text_color_secondary"
-                android:textSize="20sp"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintBottom_toBottomOf="@id/documents_data_btn"
                 app:layout_constraintEnd_toStartOf="@id/documents_data_btn"
