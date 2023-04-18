@@ -21,8 +21,6 @@
         <item name="icon_tint_color_tertiary">@color/orange</item>
     </style>
 
-
-
     <style name="Toolbar" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:textSize" >26sp</item>
         <item name="android:fontFamily">@font/ubuntu_bold</item>
