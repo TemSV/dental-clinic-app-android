@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.Android" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Android" parent="Theme.MaterialComponents.NoActionBar">
         <item name="color_primary">@color/light_blue</item>
         <item name="color_secondary">@color/white</item>
         <item name="color_tertiary">@color/signal_black</item>
@@ -21,7 +21,7 @@
         <item name="icon_tint_color_tertiary">@color/orange</item>
     </style>
 
-    <style name="Toolbar" parent="ThemeOverlay.AppCompat.Light">
+        <style name="Toolbar" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:textSize" >26sp</item>
         <item name="android:fontFamily">@font/ubuntu_bold</item>
         <item name="android:letterSpacing">.0</item>
