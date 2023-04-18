@@ -294,6 +294,7 @@
                     android:id="@+id/education_list"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="?attr/background_color_primary"
                     app:layout_constrainedHeight="true"
                     app:layout_constraintBottom_toBottomOf="@id/add_document_btn"
                     app:layout_constraintEnd_toEndOf="parent"
