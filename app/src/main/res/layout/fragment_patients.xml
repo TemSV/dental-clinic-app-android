@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/smoky_white">
+    android:background="?background_color_secondary">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/patient_app_bar"
@@ -13,12 +13,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/white">
+        android:background="?background_color_primary">
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
+            android:background="?background_color_primary"
             android:theme="@style/PatientToolbarTheme">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -40,7 +40,7 @@
     <androidx.appcompat.widget.SearchView
         android:id="@+id/patient_search_view"
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="16dp"
         android:gravity="center"
@@ -48,8 +48,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/patient_app_bar"
         android:background="@drawable/search_view_background"
-        android:queryHint="@string/search"
-        android:iconifiedByDefault="false" />
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="@string/search"
+        app:iconifiedByDefault="false" />
 
     <androidx.recyclerview.widget.RecyclerView
         app:layoutManager="LinearLayoutManager"
@@ -60,6 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="16dp"
-        app:layout_constraintTop_toBottomOf="@id/patient_search_view"/>
+        app:layout_constraintTop_toBottomOf="@id/patient_search_view"
+        android:background="?attr/background_color_secondary"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/smoky_white"
+    android:layout_height="wrap_content"
+    android:background="?attr/background_color_secondary"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="4dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/patient_icon_image_view"
@@ -13,7 +14,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
-        tools:background="@color/light_grey" />
+        tools:background="?attr/background_color_secondary" />
 
     <TextView
         android:id="@+id/patient_name_text_view"
@@ -27,18 +28,17 @@
         android:lines="2"
         android:ellipsize="end"
         android:layout_marginStart="16dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/ubuntu_bold"/>
+        android:textColor="?text_color_fivefold"
+        android:fontFamily="@font/ubuntu_medium"/>
 
     <ImageButton
         android:id="@+id/patient_message_image_button"
-        android:background="@color/white"
+        android:background="?attr/background_color_secondary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/patient_icon_image_view"
         app:layout_constraintBottom_toBottomOf="@id/patient_icon_image_view"
-        app:layout_constraintStart_toEndOf="@id/patient_name_text_view"
-        android:layout_marginStart="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/ic_message"
         android:contentDescription="TODO" />
 

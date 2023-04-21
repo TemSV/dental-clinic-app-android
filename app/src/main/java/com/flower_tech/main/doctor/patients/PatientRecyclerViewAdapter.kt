@@ -14,7 +14,7 @@ class PatientRecyclerViewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PatientRecyclerViewHolder {
         return PatientRecyclerViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.item_patient_card, null, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_patient_card, parent, false)
         )
     }
 
