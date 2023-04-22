@@ -9,130 +9,94 @@
 
     <ImageView
         android:id="@+id/logo_acc_entry"
-        android:layout_width="50dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/logo_description"
         android:src="@drawable/ic_logo_small"
-        app:layout_constraintBottom_toTopOf="@+id/hello_container"
-        app:layout_constraintStart_toStartOf="@id/hello_container"
+        app:layout_constraintBottom_toTopOf="@+id/enter_container"
+        app:layout_constraintStart_toStartOf="@id/enter_container"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/logo_text_entry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="@dimen/logo_padding"
         android:text="@string/entry"
-        android:textAppearance="@style/label_text"
+        android:textAppearance="@style/LabelTextTheme"
         app:layout_constraintBottom_toBottomOf="@id/logo_acc_entry"
         app:layout_constraintStart_toEndOf="@id/logo_acc_entry" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/hello_container"
+        android:id="@+id/enter_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="@dimen/screen_padding"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="30dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/text_phone_entry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/phone_enter"
-            android:textAppearance="@style/small_text"
             app:layout_constraintStart_toStartOf="@id/edit_phone_entry"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/SmallTextLabelView" />
 
         <com.santalu.maskara.widget.MaskEditText
             android:id="@+id/edit_phone_entry"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
-            android:inputType="number"
-            android:textColor="?attr/text_color_primary"
-            app:backgroundTint="?attr/background_color_primary"
+            style="@style/PhoneMaskStyle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_phone_entry"
-            app:mask="+7(***) ***-**-**"
-            app:maskCharacter="*"
-            app:maskStyle="completable" />
+            app:layout_constraintTop_toBottomOf="@id/text_phone_entry" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/password_layout_entry"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@id/entry_button_to_main_menu"
-            app:layout_constraintTop_toBottomOf="@id/edit_phone_entry">
+        <TextView
+            android:id="@+id/text_password_entry"
+            android:text="@string/password_enter"
+            app:layout_constraintStart_toStartOf="@id/edit_password_entry"
+            app:layout_constraintTop_toBottomOf="@id/edit_phone_entry"
+            style="@style/SmallTextLabelView" />
 
-            <TextView
-                android:id="@+id/text_password_entry"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/password_enter"
-                android:textAppearance="@style/small_text"
-                app:layout_constraintBottom_toTopOf="@id/edit_password_entry"
-                app:layout_constraintStart_toStartOf="@id/edit_password_entry" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_password_entry"
+            style="@style/TextInputLayoutStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_password_entry" >
 
-            <EditText
-                android:id="@+id/edit_password_entry"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:textColor="?attr/text_color_primary"
-                app:backgroundTint="?attr/background_color_primary"
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/PasswordEditTextStyle" />
 
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/text_password_entry" />
-
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_password"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
+        </com.google.android.material.textfield.TextInputLayout>
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/entry_button_to_main_menu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:background="@drawable/selector_enter_button_main"
             android:text="@string/invitation_to_entry"
-            android:textAppearance="@style/button_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/password_layout_entry" />
+            app:layout_constraintTop_toBottomOf="@id/edit_password_entry"
+            style="@style/EnterButtonStyle" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="@string/forgot_password"
-        android:textAppearance="@style/small_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hello_container" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_container"
+        style="@style/SmallTextLabelView" />
 
     <TextView
         android:id="@+id/invitation_to_registration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/invitation_to_registration_underline"
-        android:textAppearance="@style/small_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgot_password" />
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password"
+        style="@style/SmallTextLabelView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

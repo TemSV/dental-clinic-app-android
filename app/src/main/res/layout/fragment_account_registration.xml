@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/logo_acc_reg"
-        android:layout_width="50dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/ic_logo_small"
         app:layout_constraintBottom_toTopOf="@+id/account_registration_layout"
         app:layout_constraintStart_toStartOf="@+id/account_registration_layout"
@@ -20,9 +20,9 @@
         android:id="@+id/text_logo_reg_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="@dimen/logo_padding"
         android:text="@string/registration"
-        android:textAppearance="@style/label_text"
+        android:textAppearance="@style/LabelTextTheme"
         app:layout_constraintBottom_toBottomOf="@id/logo_acc_reg"
         app:layout_constraintStart_toEndOf="@id/logo_acc_reg" />
 
@@ -30,8 +30,7 @@
         android:id="@+id/account_registration_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginHorizontal="@dimen/screen_padding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,68 +38,55 @@
 
         <TextView
             android:id="@+id/text_phone_reg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/phone_enter"
-            android:textAppearance="@style/small_text"
             app:layout_constraintStart_toStartOf="@id/edit_phone_reg"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/SmallTextLabelView" />
 
         <com.santalu.maskara.widget.MaskEditText
             android:id="@+id/edit_phone_reg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:textColor="?attr/text_color_primary"
-            app:backgroundTint="?attr/background_color_primary"
+            style="@style/PhoneMaskStyle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_phone_reg"
-            app:mask="+7(***) ***-**-**"
-            app:maskCharacter="*"
-            app:maskStyle="completable" />
+            app:layout_constraintTop_toBottomOf="@+id/text_phone_reg"/>
 
         <TextView
             android:id="@+id/text_password_reg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/new_password_enter"
-            android:textAppearance="@style/small_text"
             app:layout_constraintBottom_toTopOf="@id/edit_password_reg"
-            app:layout_constraintStart_toStartOf="@id/edit_phone_reg" />
+            app:layout_constraintStart_toStartOf="@id/edit_phone_reg"
+            style="@style/SmallTextLabelView" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edit_password_reg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:drawableEnd="@drawable/ic_password"
-            android:inputType="textPassword"
-            android:textColor="?attr/text_color_primary"
-            app:backgroundTint="?attr/background_color_primary"
+            style="@style/TextInputLayoutStyle"
             app:layout_constraintStart_toStartOf="@id/text_password_reg"
-            app:layout_constraintTop_toBottomOf="@id/edit_phone_reg" />
+            app:layout_constraintTop_toBottomOf="@id/edit_phone_reg" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/PasswordEditTextStyle" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/text_password_second_reg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/new_password_enter2"
-            android:textAppearance="@style/small_text"
             app:layout_constraintBottom_toTopOf="@id/edit_password_second_reg"
-            app:layout_constraintStart_toStartOf="@id/edit_password_reg" />
+            app:layout_constraintStart_toStartOf="@id/edit_password_reg"
+            style="@style/SmallTextLabelView" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edit_password_second_reg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:drawableEnd="@drawable/ic_password"
-            android:inputType="textPassword"
-            android:textColor="?attr/text_color_primary"
-            app:backgroundTint="?attr/background_color_primary"
-            app:layout_constraintStart_toStartOf="@id/text_password_second_reg"
-            app:layout_constraintTop_toBottomOf="@id/edit_password_reg" />
+            style="@style/TextInputLayoutStyle"
+            app:layout_constraintStart_toStartOf="@id/edit_password_reg"
+            app:layout_constraintTop_toBottomOf="@id/edit_password_reg">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/PasswordEditTextStyle" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
             android:id="@+id/checkbox_reg"
@@ -108,8 +94,8 @@
             android:layout_height="wrap_content"
             android:buttonTint="?attr/background_color_primary"
             android:text="@string/checkbox_text"
-            android:textAppearance="@style/small_text"
-            android:textColor="?attr/text_color_primary"
+            android:textAppearance="@style/SmallTextTheme"
+            android:textColor="@null"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@id/edit_password_second_reg"
             app:layout_constraintTop_toBottomOf="@id/edit_password_second_reg" />
@@ -118,14 +104,11 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/entry_button_to_main_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/selector_enter_button_main"
         android:text="@string/invitation_to_registration"
-        android:textAppearance="@style/button_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/account_registration_layout"
         app:layout_constraintStart_toStartOf="@+id/account_registration_layout"
-        app:layout_constraintTop_toBottomOf="@+id/account_registration_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/account_registration_layout"
+        style="@style/EnterButtonStyle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
