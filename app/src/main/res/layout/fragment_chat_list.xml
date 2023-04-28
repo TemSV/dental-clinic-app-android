@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?background_color_secondary">
+    android:background="?attr/background_color_secondary">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/chats_app_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="?background_color_secondary"
+        android:background="?attr/background_color_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -17,7 +17,7 @@
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="?background_color_primary"
+            android:background="?attr/background_color_primary"
             android:theme="@style/ChatToolbarTheme">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -42,7 +42,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="16dp"
         android:background="@drawable/search_view_background"
-        app:queryBackground="@android:color/transparent"
+        app:queryBackground="?attr/background_color_hexadecimal"
         android:gravity="center"
         app:queryHint="@string/search"
         app:iconifiedByDefault="false"

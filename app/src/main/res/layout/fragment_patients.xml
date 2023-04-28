@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?background_color_secondary">
+    android:background="?attr/background_color_secondary">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/patient_app_bar"
@@ -13,12 +13,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="?background_color_primary">
+        android:background="?attr/background_color_primary">
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="?background_color_primary"
+            android:background="?attr/background_color_primary"
             android:theme="@style/PatientToolbarTheme">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -48,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/patient_app_bar"
         android:background="@drawable/search_view_background"
-        app:queryBackground="@android:color/transparent"
+        app:queryBackground="?attr/background_color_hexadecimal"
         app:queryHint="@string/search"
         app:iconifiedByDefault="false" />
 
