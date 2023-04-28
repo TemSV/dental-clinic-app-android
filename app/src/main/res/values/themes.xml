@@ -125,4 +125,11 @@
         <item name="android:windowBackground">@drawable/ic_logo_splashscreen</item>
         <item name="android:statusBarColor">@color/light_blue</item>
     </style>
+
+    <style name="SearchViewTheme" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@drawable/search_view_background</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="android:gravity">center</item>
+        <item name="queryBackground">?attr/background_color_hexadecimal</item>
+    </style>
 </resources>

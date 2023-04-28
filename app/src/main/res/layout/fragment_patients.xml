@@ -43,14 +43,11 @@
         android:layout_height="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="16dp"
-        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/patient_app_bar"
-        android:background="@drawable/search_view_background"
-        app:queryBackground="?attr/background_color_hexadecimal"
         app:queryHint="@string/search"
-        app:iconifiedByDefault="false" />
+        style="@style/SearchViewTheme"/>
 
     <androidx.recyclerview.widget.RecyclerView
         app:layoutManager="LinearLayoutManager"
