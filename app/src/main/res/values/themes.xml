@@ -145,6 +145,27 @@
         <item name="android:background">@drawable/bg_spinner</item>
     </style>
 
+    <style name="PrimaryEventItemTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">?attr/text_color_tertiary</item>
+        <item name="android:letterSpacing">.0</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SecondaryEventItemTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">?attr/text_color_secondary</item>
+        <item name="android:letterSpacing">.0</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+
+
+
     <style name="EditProfileSectionLabelTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily">@font/ubuntu_medium</item>
         <item name="android:textSize">20sp</item>
@@ -203,7 +224,6 @@
         <item name="android:letterSpacing">.0</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
-
     </style>
 
     <style name="SecondaryToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
