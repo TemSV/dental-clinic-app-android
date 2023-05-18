@@ -67,5 +67,4 @@ dependencies {
     implementation 'androidx.fragment:fragment:1.5.6'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.afollestad:sectioned-recyclerview:0.2.3'
-    implementation 'com.github.pinball83:masked-edittext:1.0.4'
 }

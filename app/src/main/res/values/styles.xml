@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LabelTextTheme">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">?attr/text_color_primary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ButtonTextTheme">
+        <item name="android:fontFamily">@font/ubuntu_medium</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">?attr/text_color_tertiary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SmallButtonTheme">
+        <item name="android:fontFamily">@font/ubuntu_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/text_color_tertiary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SimpleTextTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/text_color_primary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SmallTextTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/text_color_primary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="PhoneMaskStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColor">@null</item>
+        <item name="mask">+7(***) ***-**-**</item>
+        <item name="maskCharacter">*</item>
+        <item name="maskStyle">completable</item>
+        <item name="backgroundTint">?attr/background_color_primary</item>
+    </style>
+
+    <style name="SmallTextLabelView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/SmallTextTheme</item>
+    </style>
+
+    <style name="SmallEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/SmallTextTheme</item>
+        <item name="backgroundTint">?attr/background_color_primary</item>
+        <item name="android:textColor">@null</item>
+    </style>
+
+    <style name="EnterButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_enter_button_main</item>
+        <item name="android:textAppearance">@style/ButtonTextTheme</item>
+    </style>
+
+    <style name="ChooseRoleButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_button_choose_role</item>
+        <item name="android:textAppearance">@style/ButtonTextTheme</item>
+    </style>
+
+    <style name="PasswordEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textAppearance">@style/SmallTextTheme</item>
+        <item name="android:textColor">?attr/text_color_primary</item>
+        <item name="backgroundTint">?attr/text_color_primary</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="passwordToggleDrawable">@drawable/selector_eye</item>
+        <item name="endIconMode">password_toggle</item>
+        <item name="passwordToggleEnabled">true</item>
+        <item name="hintEnabled">false</item>
+    </style>
+</resources>

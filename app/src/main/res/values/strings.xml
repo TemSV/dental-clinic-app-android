@@ -12,7 +12,7 @@
     <string name="invitation_to_registration">Зарегистрироваться</string>
     <string name="invitation_to_registration_underline"><u>Зарегистрироваться</u></string>
     <string name="forgot_password">Забыли пароль?</string>
-    <string name="doctor">врач</string>
+    <string name="doctor">Врач</string>
     <string name="phone_enter">Телефон</string>
     <string name="password_enter">Пароль</string>
     <string name="checkbox_text">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных</string>
