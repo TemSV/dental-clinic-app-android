@@ -43,11 +43,7 @@
         android:id="@+id/fragment_events_container"
         tools:layout="@layout/fragment_events"
         android:name="com.flower_tech.main.doctor.profile.events.EventsFragment"
-        android:label="EventsFragment" >
-        <action
-            android:id="@+id/action_fragment_events_container_to_fragment_profile_container"
-            app:destination="@id/fragment_profile_container" />
-    </fragment>
+        android:label="EventsFragment" />
     <fragment
         android:id="@+id/fragment_profile_information_container"
         android:name="com.flower_tech.main.doctor.profile.information.ProfileInformationFragment"
@@ -57,9 +53,6 @@
             android:id="@+id/action_fragment_profile_information_container_to_fragment_edit_profile_container"
             app:destination="@id/fragment_edit_profile_container" />
         <action
-            android:id="@+id/action_fragment_profile_information_container_to_fragment_profile_container"
-            app:destination="@id/fragment_profile_container" />
-        <action
             android:id="@+id/action_fragment_profile_information_container_to_fragment_settings_container"
             app:destination="@id/fragment_settings_container" />
     </fragment>
@@ -67,37 +60,30 @@
         android:id="@+id/fragment_edit_profile_container"
         tools:layout="@layout/fragment_edit_profile"
         android:name="com.flower_tech.main.doctor.profile.edit.EditProfileFragment"
-        android:label="EditProfileFragment" >
-        <action
-            android:id="@+id/action_fragment_edit_profile_container_to_fragment_profile_information_container"
-            app:destination="@id/fragment_profile_information_container" />
-    </fragment>
+        android:label="EditProfileFragment" />
+    <fragment
+        android:id="@+id/fragment_schedule_container"
+        android:name="com.flower_tech.main.doctor.profile.schedule.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/fragment_settings_container"
+        android:name="com.flower_tech.main.doctor.profile.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/fragment_appointment_container"
         android:name="com.flower_tech.main.doctor.appointment.presentation.AppointmentFragment"
         android:label="fragment_appointment"
         tools:layout="@layout/fragment_appointment" >
-        <action
-            android:id="@+id/action_appointmentFragment_to_fragment_appointment_container"
-            app:destination="@id/fragment_appointment_list_container" />
+        <argument
+            android:name="data"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="time"
+            app:argType="string" />
     </fragment>
-    <fragment
-        android:id="@+id/fragment_schedule_container"
-        android:name="com.flower_tech.main.doctor.profile.schedule.ScheduleFragment"
-        android:label="fragment_schedule"
-        tools:layout="@layout/fragment_schedule" >
-        <action
-            android:id="@+id/action_fragment_schedule_container_to_fragment_profile_container"
-            app:destination="@id/fragment_profile_container" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragment_settings_container"
-        android:name="com.flower_tech.main.doctor.profile.settings.SettingsFragment"
-        android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" >
-        <action
-            android:id="@+id/action_fragment_settings_container_to_fragment_profile_information_container"
-            app:destination="@id/fragment_profile_information_container" />
-    </fragment>
-
 </navigation>

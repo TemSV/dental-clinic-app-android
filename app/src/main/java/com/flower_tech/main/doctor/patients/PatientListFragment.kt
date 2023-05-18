@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.flower_tech.R
 import com.flower_tech.databinding.FragmentPatientsBinding
-import com.flower_tech.structures.PatientCard
 
 class PatientListFragment : Fragment() {
 
@@ -17,60 +16,59 @@ class PatientListFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         binding = FragmentPatientsBinding.inflate(layoutInflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val patientRecyclerView = binding.patientRecyclerView
-        patientRecyclerView.adapter = PatientRecyclerViewAdapter(getPatientCards())
-        patientRecyclerView.layoutManager = LinearLayoutManager(context)
+        binding.patientRecyclerView.adapter = PatientRecyclerViewAdapter(getPatientCards())
+        binding.patientRecyclerView.layoutManager = LinearLayoutManager(this.context)
     }
 
 
     private fun getPatientCards(): ArrayList<PatientCard> {
         return arrayListOf(
             PatientCard(
-                R.drawable.bg_search_view,
-                "Иван Иванович Ианов",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.bg_search_view,
-                "Иван Иванович Ианов",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.bg_search_view,
-                "Иван Иванович Ианов",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.bg_search_view,
-                "Иван Иванович Ианов",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.bg_search_view,
-                "Иван Иванович Ианов",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.bg_search_view,
-                "Иван Иванович Ианов",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.bg_search_view,
-                "Иван Иванович Ианов",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.bg_search_view,
-                "Иван Иванович Ианов",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.bg_search_view,
-                "Иван Иванович Ианов",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
             PatientCard(
-                R.drawable.bg_search_view,
-                "Иван Иванович Ианов",
+                icon = R.drawable.ic_empty_profile_pic,
+                name = "Юлия Сергеевна\nИванова",
             ),
         )
     }

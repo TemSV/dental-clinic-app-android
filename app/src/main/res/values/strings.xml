@@ -3,6 +3,30 @@
     <string name="default_notifications_counter">0</string>
     <string name="shedule">Расписание</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_to_user">Здравствуйте!</string>
+    <string name="message_to_user">Войдите или зарегистрируйтесь,\n чтобы получить доступ</string>
+    <string name="entry">Вход</string>
+    <string name="registration">Регистрация</string>
+    <string name="choose_role">Выберите\n ваш профиль</string>
+    <string name="invitation_to_entry">Войти</string>
+    <string name="invitation_to_registration">Зарегистрироваться</string>
+    <string name="invitation_to_registration_underline"><u>Зарегистрироваться</u></string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="doctor">врач</string>
+    <string name="phone_enter">Телефон</string>
+    <string name="password_enter">Пароль</string>
+    <string name="checkbox_text">Нажимая на кнопку «Зарегистрироваться», я даю согласие на обработку персональных данных</string>
+    <string name="new_password_enter2">Подтвердите пароль</string>
+    <string name="new_password_enter">Придумайте пароль</string>
+    <string name="surname_enter">Фамилия</string>
+    <string name="name_enter">Имя</string>
+    <string name="second_name_enter">Отчество</string>
+    <string name="gender_enter">Пол</string>
+    <string name="city_enter">Город</string>
+    <string name="male_gender">Мужской</string>
+    <string name="female_gender">Женский</string>
+    <string name="date_enter">Дата рождения</string>
+    <string name="logo_description">Лого</string>
     <string name="go_to_profile_btn_desc">Go to profile</string>
     <string name="edit_schedule_btn_desc">Edit schedule</string>
     <string name="go_to_portfolio_btn_desc">Go to profile</string>
@@ -61,7 +85,6 @@
         <item>Паспорт1</item>
         <item>Паспорт2</item>
     </string-array>
-
     <string-array name="degree_types">
         <item>Не выбрано</item>
         <item>Бакалавриат</item>
@@ -74,6 +97,13 @@
     <string name="completed">Завершенные</string>
     <string name="cancel_appointment">Отменить запись</string>
     <string name="patients">Пациенты</string>
+    <string name="chats">Чаты</string>
+    <string name="search">Поиск</string>
+    <string name="patient_card">Карта пациента</string>
+    <string name="time">Время</string>
+    <string name="patient">Пациент</string>
+    <string name="dental_formula">Зубная формула</string>
+    <string name="complete_appointment">Завершить запись</string>
     <string name="show_notifications_text">Show notifications</string>
     <string name="security_label">Безопастность</string>
     <string name="change_password_label">Сменить пароль</string>
@@ -86,5 +116,4 @@
     <string name="default_name">Иванов Александр Дмитриевич</string>
     <string name="default_city">Санкт-петербург, 37 лет</string>
     <string name="default_date">Март 2023</string>
-
 </resources>

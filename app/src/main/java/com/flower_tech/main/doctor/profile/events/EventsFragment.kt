@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.flower_tech.R
 import com.flower_tech.databinding.FragmentEventsBinding
@@ -48,11 +50,10 @@ class EventsFragment : Fragment() {
     }
 
     private fun setUpNavigation() {
-        with(binding) {
-            eventAppBar.setNavigationOnClickListener {
-                findNavController().navigate(R.id.action_fragment_events_container_to_fragment_profile_container)
-            }
-        }
+        val navController = findNavController()
+        val appBarConfiguration = AppBarConfiguration(navController.graph)
+
+        binding.eventAppBar.setupWithNavController(navController, appBarConfiguration)
     }
 
     companion object {

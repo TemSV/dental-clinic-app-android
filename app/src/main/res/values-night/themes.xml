@@ -12,13 +12,13 @@
         <item name="background_color_tertiary">@color/light_blue</item>
 
         <item name="text_color_primary">@color/white</item>
-        <item name="text_color_secondary">@color/signal_black</item>
+        <item name="text_color_secondary">@color/black</item>
         <item name="text_color_tertiary">@color/light_blue</item>
         <item name="text_color_quaternary">@color/orange</item>
         <item name="text_color_sevenfold">@color/dark_grey</item>
 
         <item name="icon_tint_color_primary">@color/light_blue</item>
-        <item name="icon_tint_color_secondary">@color/signal_black</item>
+        <item name="icon_tint_color_secondary">@color/black</item>
         <item name="icon_tint_color_tertiary">@color/orange</item>
     </style>
 
