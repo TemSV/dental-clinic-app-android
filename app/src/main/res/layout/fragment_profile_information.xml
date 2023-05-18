@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/background_color_primary"
-            android:theme="@style/ProfileInformationToolbarTheme"
+            android:theme="@style/PrimaryToolbarTheme"
             app:menu="@menu/profile_information_app_bar"
             app:navigationIcon="@drawable/ic_back">
 
@@ -30,14 +30,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/ubuntu_bold"
-                    android:letterSpacing=".0"
-                    android:maxLines="1"
                     android:text="@string/profile_information_app_bar_name"
-                    android:textSize="22sp"
-                    app:layout_constrainedHeight="true"
-                    app:layout_constrainedWidth="true"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +63,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
+                    android:background="?attr/background_color_primary"
                     android:layout_height="wrap_content">
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -93,32 +87,22 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <TextView
+                            style="@style/PrimaryUsernameTheme"
                             android:id="@+id/profile_username"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:ellipsize="end"
-                            android:fontFamily="@font/ubuntu_bold"
-                            android:letterSpacing=".0"
-                            android:maxLines="2"
                             android:text="@string/default_profile_username"
-                            android:textColor="?attr/text_color_secondary"
-                            android:textSize="22sp"
                             app:layout_constraintLeft_toLeftOf="parent"
                             app:layout_constraintRight_toRightOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
+                            style="@style/PrimaryUsernameInfoTheme"
                             android:id="@+id/user_profession"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:ellipsize="end"
-                            android:fontFamily="@font/ubuntu_regular"
-                            android:letterSpacing=".0"
-                            android:maxLines="1"
                             android:text="@string/default_user_profession"
-                            android:textColor="?attr/text_color_secondary"
-                            android:textSize="18sp"
                             app:layout_constraintHorizontal_bias="0"
                             app:layout_constraintLeft_toLeftOf="parent"
                             app:layout_constraintRight_toRightOf="parent"
@@ -130,47 +114,35 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintGuide_percent="0.5"
+                            app:layout_constraintGuide_begin="130dp"
                             app:layout_constraintStart_toStartOf="parent" />
 
                         <TextView
+                            style="@style/SecondaryUsernameInfoTheme"
                             android:id="@+id/user_rating"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="10dp"
-                            android:ellipsize="end"
-                            android:fontFamily="@font/ubuntu_medium"
-                            android:letterSpacing=".0"
-                            android:maxLines="1"
                             android:text="@string/default_user_rating"
-                            android:textColor="?attr/text_color_quaternary"
-                            android:textSize="16sp"
                             app:layout_constraintLeft_toLeftOf="parent"
                             app:layout_constraintRight_toRightOf="@+id/center_guideline"
                             app:layout_constraintTop_toBottomOf="@id/user_profession"
                             tools:ignore="SmallSp" />
 
                         <TextView
+                            style="@style/SecondaryUsernameInfoTheme"
                             android:id="@+id/user_experience"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:ellipsize="end"
-                            android:fontFamily="@font/ubuntu_medium"
-                            android:letterSpacing=".0"
-                            android:maxLines="1"
                             android:text="@string/default_user_experience"
-                            android:textColor="?attr/text_color_quaternary"
-                            android:textSize="16sp"
                             app:layout_constraintLeft_toLeftOf="@+id/center_guideline"
                             app:layout_constraintRight_toRightOf="parent"
                             app:layout_constraintTop_toTopOf="@id/user_rating"
                             tools:ignore="SmallSp" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
             </androidx.cardview.widget.CardView>
 
             <View
@@ -185,18 +157,13 @@
                 app:layout_constraintTop_toBottomOf="@id/user_info_card" />
 
             <TextView
+                style="@style/ProfileInformationSectionLabelTheme"
                 android:id="@+id/profile_city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="24dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/ubuntu_medium"
-                android:letterSpacing=".0"
-                android:maxLines="1"
                 android:text="@string/default_profile_city"
-                android:textColor="?attr/text_color_secondary"
-                android:textSize="20sp"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -216,17 +183,12 @@
 
             <TextView
                 android:id="@+id/clinic_address"
+                style="@style/ProfileInformationPlaceTheme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="16dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/ubuntu_regular"
-                android:letterSpacing=".0"
-                android:maxLines="1"
                 android:text="@string/default_clinic_address"
-                android:textColor="?attr/text_color_sevenfold"
-                android:textSize="16sp"
                 app:layout_constrainedWidth="true"
                 app:layout_constraintBottom_toBottomOf="@id/map_marker"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -264,22 +226,19 @@
                 app:layout_constraintTop_toBottomOf="@id/mapWithClinics" />
 
             <TextView
+                style="@style/ProfileInformationSectionLabelTheme"
                 android:id="@+id/profile_education_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/ubuntu_medium"
-                android:letterSpacing=".0"
-                android:maxLines="1"
-                android:text="@string/profile_education_label"
-                android:textColor="?attr/text_color_secondary"
-                android:textSize="20sp"
                 app:layout_constrainedWidth="true"
+                android:text="@string/profile_education_label"
+                app:layout_constraintTop_toBottomOf="@id/second_profile_divider"
+                app:layout_constraintStart_toStartOf="@id/second_profile_divider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="@id/second_profile_divider"
-                app:layout_constraintTop_toBottomOf="@id/second_profile_divider" />
+
+                 />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/education_container"
@@ -295,18 +254,12 @@
                 tools:listitem="@layout/item_education" />
 
             <TextView
+                style="@style/PrimaryTextButtonTheme"
                 android:id="@+id/edit_information_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:fontFamily="@font/ubuntu_medium"
-                android:letterSpacing=".0"
-                android:onClick="onClick"
                 android:text="@string/edit_information_btn"
-                android:textColor="?attr/text_color_tertiary"
-                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/education_container" />

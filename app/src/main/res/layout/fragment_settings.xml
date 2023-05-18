@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/background_color_primary"
-            android:theme="@style/ProfileSettingsToolbarTheme"
+            android:theme="@style/PrimaryToolbarTheme"
             app:navigationIcon="@drawable/ic_back">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,7 +32,7 @@
                     android:text="@string/profile_settings_app_bar_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.3"
+                    app:layout_constraintHorizontal_bias="0.38"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,18 +41,13 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
+        style="@style/PrimarySettingsTitleTheme"
         android:id="@+id/security_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="30dp"
-        android:ellipsize="end"
-        android:fontFamily="@font/ubuntu_regular"
-        android:letterSpacing=".0"
-        android:maxLines="1"
         android:text="@string/security_label"
-        android:textColor="?attr/text_color_tertiary"
-        android:textSize="14sp"
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
@@ -70,17 +65,12 @@
         app:layout_constraintTop_toBottomOf="@id/security_label">
 
         <TextView
+            style="@style/PrimarySettingsSubtitleTheme"
             android:id="@+id/change_password_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:ellipsize="end"
-            android:fontFamily="@font/ubuntu_regular"
-            android:letterSpacing=".0"
-            android:maxLines="1"
             android:text="@string/change_password_label"
-            android:textColor="?attr/text_color_secondary"
-            android:textSize="18sp"
             app:layout_constrainedWidth="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/change_password_btn"
@@ -89,30 +79,23 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
+            style="@style/PrimarySettingsGoOverButtonTheme"
             android:id="@+id/change_password_btn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:background="?attr/color_secondary"
-            android:src="@drawable/ic_next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="?attr/color_octal" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <TextView
         android:id="@+id/notification_label"
+        style="@style/PrimarySettingsTitleTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:ellipsize="end"
-        android:fontFamily="@font/ubuntu_regular"
-        android:letterSpacing=".0"
-        android:maxLines="1"
         android:text="@string/notification_label"
-        android:textColor="?attr/text_color_tertiary"
-        android:textSize="14sp"
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="@id/security_card"
         app:layout_constraintHorizontal_bias="0"
@@ -130,17 +113,12 @@
         app:layout_constraintTop_toBottomOf="@id/notification_label">
 
         <TextView
+            style="@style/PrimarySettingsSubtitleTheme"
             android:id="@+id/message_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:ellipsize="end"
-            android:fontFamily="@font/ubuntu_regular"
-            android:letterSpacing=".0"
-            android:maxLines="1"
             android:text="@string/message_label"
-            android:textColor="?attr/text_color_secondary"
-            android:textSize="18sp"
             app:layout_constrainedWidth="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/message_switch_btn"
@@ -151,7 +129,7 @@
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/message_switch_btn"
             android:layout_width="wrap_content"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:checked="true"
             android:thumb="@drawable/bg_settings_thumb"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -174,17 +152,12 @@
         app:layout_constraintTop_toBottomOf="@id/messages_card">
 
         <TextView
+            style="@style/PrimarySettingsSubtitleTheme"
             android:id="@+id/record_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:ellipsize="end"
-            android:fontFamily="@font/ubuntu_regular"
-            android:letterSpacing=".0"
-            android:maxLines="1"
             android:text="@string/record_label"
-            android:textColor="?attr/text_color_secondary"
-            android:textSize="18sp"
             app:layout_constrainedWidth="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/record_switch_btn"
@@ -195,7 +168,7 @@
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/record_switch_btn"
             android:layout_width="wrap_content"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:checked="true"
             android:thumb="@drawable/bg_settings_thumb"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -204,21 +177,15 @@
             app:track="@drawable/bg_settings_track"
             app:useMaterialThemeColors="false" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/info_label"
         android:layout_width="wrap_content"
+        style="@style/PrimarySettingsTitleTheme"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:ellipsize="end"
-        android:fontFamily="@font/ubuntu_regular"
-        android:letterSpacing=".0"
-        android:maxLines="1"
         android:text="@string/info_label"
-        android:textColor="?attr/text_color_tertiary"
-        android:textSize="14sp"
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="@id/security_card"
         app:layout_constraintHorizontal_bias="0"
@@ -227,17 +194,12 @@
 
     <TextView
         android:id="@+id/version_label"
+        style="@style/PrimarySettingsSubtitleTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:ellipsize="end"
-        android:fontFamily="@font/ubuntu_regular"
-        android:letterSpacing=".0"
-        android:maxLines="1"
         android:text="@string/version_label"
-        android:textColor="?attr/text_color_secondary"
-        android:textSize="18sp"
         app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
@@ -255,17 +217,12 @@
         app:layout_constraintTop_toBottomOf="@id/version_label">
 
         <TextView
+            style="@style/PrimarySettingsSubtitleTheme"
             android:id="@+id/feedback_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:ellipsize="end"
-            android:fontFamily="@font/ubuntu_regular"
-            android:letterSpacing=".0"
-            android:maxLines="1"
             android:text="@string/feedback_label"
-            android:textColor="?attr/text_color_secondary"
-            android:textSize="18sp"
             app:layout_constrainedWidth="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/feedback_btn"
@@ -274,15 +231,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
+            style="@style/PrimarySettingsGoOverButtonTheme"
             android:id="@+id/feedback_btn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:background="?attr/color_secondary"
-            android:src="@drawable/ic_next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="?attr/color_octal" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -296,17 +251,12 @@
         app:layout_constraintTop_toBottomOf="@id/feedback_card">
 
         <TextView
+            style="@style/PrimarySettingsSubtitleTheme"
             android:id="@+id/user_agreement_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:ellipsize="end"
-            android:fontFamily="@font/ubuntu_regular"
-            android:letterSpacing=".0"
-            android:maxLines="1"
             android:text="@string/user_agreement_label"
-            android:textColor="?attr/text_color_secondary"
-            android:textSize="18sp"
             app:layout_constrainedWidth="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/user_agreement_btn"
@@ -315,48 +265,33 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
+            style="@style/PrimarySettingsGoOverButtonTheme"
             android:id="@+id/user_agreement_btn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:background="?attr/color_secondary"
-            android:src="@drawable/ic_next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="?attr/color_octal" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     <Button
         android:id="@+id/logout_btn"
+        style="@style/PrimaryButtonTheme"
         android:layout_width="178dp"
         android:layout_height="50dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/bg_save_all_btn"
-        android:fontFamily="@font/ubuntu_medium"
-        android:letterSpacing=".0"
         android:text="@string/logout_btn_text"
-        android:textAllCaps="false"
-        android:textColor="?attr/text_color_primary"
-        android:textSize="16sp"
-        app:backgroundTint="?attr/color_primary"
         app:layout_constraintBottom_toTopOf="@id/delete_account_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        style="@style/PrimaryTextButtonTheme"
         android:id="@+id/delete_account_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/ubuntu_medium"
-        android:letterSpacing=".0"
-        android:onClick="onClick"
         android:text="@string/delete_account_btn"
-        android:textColor="?attr/text_color_tertiary"
-        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

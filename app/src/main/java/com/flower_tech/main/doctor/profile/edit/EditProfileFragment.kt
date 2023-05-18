@@ -211,27 +211,9 @@ class EditProfileFragment : Fragment() {
         return arrayListOf(
             Education(
                 degree = "Бакалавриат",
-                educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010",
-                specialization = "Bac"
-            ),
-            Education(
-                degree = "Бакалавриат",
-                educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010",
-                specialization = "Bac"
-            ),
-            Education(
-                degree = "Бакалавриат",
-                educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010",
-                specialization = "Bac"
-            ),
-            Education(
-                degree = "Бакалавриат",
-                educationalInstitution = "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)",
-                date = "2000-2010",
-                specialization = "Bac"
+                educationalInstitution = "Алмазово",
+                date = "2005-2010",
+                specialization = "Ортодонт"
             )
         )
     }
