@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/background_color_secondary"
-            android:theme="@style/ProfileToolbarTheme">
+            android:theme="@style/SecondaryToolbarTheme">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -90,7 +90,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/name_card"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="170dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="16dp"
@@ -139,9 +139,9 @@
                     android:fontFamily="@font/ubuntu_bold"
                     android:letterSpacing=".0"
                     android:maxLines="3"
-                    android:text="Иванов Александр Дмитриевич"
+                    android:text="@string/default_name"
                     android:textColor="?attr/text_color_primary"
-                    android:textSize="22sp"
+                    android:textSize="20sp"
                     app:layout_constrainedWidth="true"
                     app:layout_constraintHorizontal_bias="0" />
 
@@ -154,9 +154,9 @@
                     android:fontFamily="@font/ubuntu_regular"
                     android:letterSpacing=".0"
                     android:maxLines="1"
-                    android:text="Санкт-петербург, 37 лет"
+                    android:text="@string/default_city"
                     android:textColor="?attr/text_color_primary"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constrainedWidth="true"
                     app:layout_constraintHorizontal_bias="0" />
 
@@ -185,7 +185,6 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="20dp"
-        android:background="?attr/color_secondary"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -194,6 +193,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/calendar_container"
             android:layout_width="match_parent"
+            android:background="?attr/color_secondary"
             android:layout_height="match_parent">
 
             <TextView
@@ -221,7 +221,7 @@
                 android:fontFamily="@font/ubuntu_regular"
                 android:letterSpacing=".0"
                 android:maxLines="1"
-                android:text="Март 2023"
+                android:text="@string/default_date"
                 android:textColor="?attr/text_color_secondary"
                 android:textSize="16sp"
                 app:layout_constraintLeft_toLeftOf="@id/schedule_label"
@@ -245,10 +245,10 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/portfolio_card"
         android:layout_width="0dp"
-        android:layout_height="59dp"
+        android:layout_height="75dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="4dp"
-        android:background="?attr/color_secondary"
+
         app:cardCornerRadius="10dp"
         app:layout_constraintLeft_toLeftOf="@id/schedule_card"
         app:layout_constraintRight_toRightOf="@id/center_guideline"
@@ -257,6 +257,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/portfolio_container"
             android:layout_width="match_parent"
+            android:background="?attr/color_secondary"
             android:layout_height="match_parent">
 
             <TextView
@@ -269,7 +270,7 @@
                 android:letterSpacing=".0"
                 android:maxLines="1"
                 android:text="@string/portfolio_label_text"
-                android:textColor="?attr/text_color_hexadecimal"
+                android:textColor="?attr/text_color_tertiary"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -287,22 +288,22 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:tint="?attr/color_fivefold" />
+                app:tint="?attr/color_primary" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/review_card"
         android:layout_width="0dp"
-        android:layout_height="59dp"
+        android:layout_height="75dp"
         android:layout_marginStart="4dp"
-        android:background="?attr/color_secondary"
         app:cardCornerRadius="10dp"
         app:layout_constraintLeft_toRightOf="@id/center_guideline"
         app:layout_constraintRight_toRightOf="@id/schedule_card"
         app:layout_constraintTop_toTopOf="@id/portfolio_card">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="?attr/color_secondary"
             android:id="@+id/review_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -317,7 +318,7 @@
                 android:letterSpacing=".0"
                 android:maxLines="1"
                 android:text="@string/review_label_text"
-                android:textColor="?attr/text_color_hexadecimal"
+                android:textColor="?attr/text_color_tertiary"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -335,7 +336,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:tint="?attr/color_fivefold" />
+                app:tint="?attr/color_primary" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

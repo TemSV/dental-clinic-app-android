@@ -85,7 +85,6 @@
         <item>Паспорт1</item>
         <item>Паспорт2</item>
     </string-array>
-
     <string-array name="degree_types">
         <item>Не выбрано</item>
         <item>Бакалавриат</item>
@@ -114,4 +113,7 @@
     <string name="default_user_experience">Стаж: 40 лет</string>
     <string name="default_profile_city">Санкт-Петербург</string>
     <string name="default_clinic_address">Клиника “Название” ул. Политехническая д. 29</string>
+    <string name="default_name">Иванов Александр Дмитриевич</string>
+    <string name="default_city">Санкт-петербург, 37 лет</string>
+    <string name="default_date">Март 2023</string>
 </resources>

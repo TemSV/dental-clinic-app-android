@@ -21,7 +21,7 @@ class EventsAdapter(
             R.layout.item_events
         }
         return EventsViewHolder(
-            LayoutInflater.from(parent.context).inflate(layout, null),
+            LayoutInflater.from(parent.context).inflate(layout, parent, false),
             viewType
         )
     }
